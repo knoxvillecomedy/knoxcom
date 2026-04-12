@@ -45,15 +45,15 @@ export function Venue() {
             href="https://centralcinemaknox.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-foreground rounded-2xl h-72 flex items-center justify-center border border-border shadow-lg overflow-hidden group transition-transform hover:scale-[1.02] p-10"
+            className="flex items-center justify-center group"
             title="Visit Central Cinema (opens in new tab)"
           >
             <Image
               src="/logos/central-cinema.png"
               alt="Central Cinema"
-              width={320}
-              height={180}
-              className="object-contain w-full h-full opacity-90 group-hover:opacity-100 transition-opacity"
+              width={400}
+              height={240}
+              className="object-contain w-full opacity-90 group-hover:opacity-100 transition-opacity"
             />
           </a>
         </div>

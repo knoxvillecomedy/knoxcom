@@ -51,7 +51,7 @@ export default function AboutPage() {
             <h2 className="text-xl font-semibold text-foreground mb-6">Our Partners</h2>
             <div className="flex flex-wrap gap-8 items-center">
               <a
-                href="https://tinystagecomedy.com"
+                href="https://instagram.com/tinystagecomedy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block hover:opacity-80 transition-opacity"
@@ -66,7 +66,7 @@ export default function AboutPage() {
                 />
               </a>
               <a
-                href="https://yellowdoormedia.com"
+                href="https://instagram.com/yellowdoormediatn"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block hover:opacity-80 transition-opacity"

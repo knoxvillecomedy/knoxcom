@@ -6,13 +6,13 @@ export function Organizers() {
       name: "Tiny Stage Comedy",
       description: "Bringing stand-up to unexpected places across East Tennessee.",
       logo: "/logos/tiny-stage-comedy.png",
-      url: "https://tinystagecomedy.com",
+      url: "https://instagram.com/tinystagecomedy",
     },
     {
       name: "Yellow Door Media",
       description: "Creative production and event marketing for local culture.",
       logo: "/logos/yellow-door-media.png",
-      url: "https://yellowdoormedia.com",
+      url: "https://instagram.com/yellowdoormediatn",
     },
   ]
 

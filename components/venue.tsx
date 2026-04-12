@@ -31,7 +31,7 @@ export function Venue() {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Knoxville&apos;s coolest independent cinema and event space. Great seats, great sound, and an atmosphere made for laughing. Plus, they&apos;ve got beer.
+              Knoxville&apos;s Neighborhood Moviehouse and event space. Great seats, great sound, and an atmosphere made for laughing. Plus, they&apos;ve got beer.
             </p>
             
             <p className="text-foreground font-medium flex items-center gap-2">
@@ -45,7 +45,7 @@ export function Venue() {
             href="https://centralcinemaknox.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center group"
+            className="flex items-center justify-center group animate-link-hover cursor-pointer"
             title="Visit Central Cinema (opens in new tab)"
           >
             <Image

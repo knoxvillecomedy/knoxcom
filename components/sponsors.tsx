@@ -18,25 +18,13 @@ export function Sponsors() {
         <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
           Sponsor The Hoot
         </h2>
-        
+
         <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
           Want to get your business in front of Knoxville&apos;s most fun-loving crowd? Partner with us for our inaugural festival.
         </p>
 
-        {/* Sponsor logos placeholder */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
-          {[1, 2, 3, 4].map((i) => (
-            <div 
-              key={i} 
-              className="bg-card rounded-xl h-28 flex items-center justify-center border border-border shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 group"
-            >
-              <span className="text-muted-foreground text-sm group-hover:text-primary transition-colors">Your Logo Here</span>
-            </div>
-          ))}
-        </div>
-
-        <Button 
-          variant="outline" 
+        <Button
+          variant="outline"
           size="lg"
           className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-5 h-auto font-semibold transition-all hover:scale-105"
         >

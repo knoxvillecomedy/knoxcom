@@ -20,7 +20,17 @@ export default function AboutPage() {
           Back to The Hoot
         </Link>
         
-        <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-8 font-display">
+        <div className="flex justify-center mb-12">
+          <Image
+            src="/logos/knoxville-comedy.png"
+            alt="Knoxville Comedy"
+            width={300}
+            height={300}
+            className="object-contain"
+          />
+        </div>
+        
+        <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-8 font-display text-center">
           About Knoxville Comedy
         </h1>
         

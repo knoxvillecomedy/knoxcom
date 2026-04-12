@@ -1,7 +1,26 @@
 "use client"
 
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Handshake, Heart, Star } from "lucide-react"
+
+const sponsors = [
+  {
+    name: "Tiny Stage Comedy",
+    logo: "/logos/tiny-stage-comedy.png",
+    url: "https://tinystagecomedy.com",
+  },
+  {
+    name: "Yellow Door Media",
+    logo: "/logos/yellow-door-media.png",
+    url: "https://yellowdoormedia.com",
+  },
+  {
+    name: "Central Cinema",
+    logo: "/logos/central-cinema.png",
+    url: "https://centralcinemaknox.com",
+  },
+]
 
 export function Sponsors() {
   return (
@@ -16,24 +35,38 @@ export function Sponsors() {
 
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-          Sponsor The Hoot
+          Our Partners
         </h2>
         
         <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-          Want to get your business in front of Knoxville&apos;s most fun-loving crowd? Partner with us for our inaugural festival.
+          The Hoot in The Holler is made possible by these amazing partners. Click a logo to learn more about them.
         </p>
 
-        {/* Sponsor logos placeholder */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
-          {[1, 2, 3, 4].map((i) => (
-            <div 
-              key={i} 
-              className="bg-card rounded-xl h-28 flex items-center justify-center border border-border shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 group"
+        {/* Sponsor logos */}
+        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 mb-10">
+          {sponsors.map((sponsor) => (
+            <a
+              key={sponsor.name}
+              href={sponsor.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-card rounded-xl p-6 flex items-center justify-center border border-border shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 group"
+              title={`Visit ${sponsor.name} (opens in new tab)`}
             >
-              <span className="text-muted-foreground text-sm group-hover:text-primary transition-colors">Your Logo Here</span>
-            </div>
+              <Image
+                src={sponsor.logo}
+                alt={sponsor.name}
+                width={160}
+                height={80}
+                className="object-contain max-h-20 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
+              />
+            </a>
           ))}
         </div>
+
+        <p className="text-sm text-muted-foreground mb-6">
+          Want to get your business in front of Knoxville&apos;s most fun-loving crowd?
+        </p>
 
         <Button 
           variant="outline" 

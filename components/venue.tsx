@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { MapPin, Star } from "lucide-react"
 
 export function Venue() {
@@ -39,15 +40,22 @@ export function Venue() {
             </p>
           </div>
 
-          {/* Venue image/logo placeholder */}
-          <div className="bg-gradient-to-br from-secondary to-muted rounded-2xl h-72 flex items-center justify-center border border-border shadow-lg overflow-hidden group transition-transform hover:scale-[1.02]">
-            <div className="text-center p-8">
-              <div className="w-28 h-28 bg-card rounded-xl mx-auto mb-4 flex items-center justify-center border-2 border-dashed border-border shadow-inner">
-                <span className="text-xs text-muted-foreground text-center px-2">Venue Logo</span>
-              </div>
-              <span className="text-muted-foreground text-sm font-medium">Central Cinema</span>
-            </div>
-          </div>
+          {/* Central Cinema logo */}
+          <a
+            href="https://centralcinemaknox.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-foreground rounded-2xl h-72 flex items-center justify-center border border-border shadow-lg overflow-hidden group transition-transform hover:scale-[1.02] p-10"
+            title="Visit Central Cinema (opens in new tab)"
+          >
+            <Image
+              src="/logos/central-cinema.png"
+              alt="Central Cinema"
+              width={320}
+              height={180}
+              className="object-contain w-full h-full opacity-90 group-hover:opacity-100 transition-opacity"
+            />
+          </a>
         </div>
       </div>
     </section>

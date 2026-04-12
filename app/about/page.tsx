@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowLeft } from "lucide-react"
 import type { Metadata } from "next"
 
@@ -37,23 +38,37 @@ export default function AboutPage() {
           </p>
 
           <div className="border-t border-border pt-8 mt-8">
-            <h2 className="text-xl font-semibold text-foreground mb-4">Our Partners</h2>
+            <h2 className="text-xl font-semibold text-foreground mb-6">Our Partners</h2>
             <div className="flex flex-wrap gap-8 items-center">
-              <a 
-                href="https://tinystagecomedy.com" 
-                target="_blank" 
+              <a
+                href="https://tinystagecomedy.com"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="block hover:opacity-80 transition-opacity"
+                title="Visit Tiny Stage Comedy (opens in new tab)"
               >
-                Tiny Stage Comedy
+                <Image
+                  src="/logos/tiny-stage-comedy.png"
+                  alt="Tiny Stage Comedy"
+                  width={100}
+                  height={100}
+                  className="object-contain"
+                />
               </a>
-              <a 
-                href="https://yellowdoormedia.com" 
-                target="_blank" 
+              <a
+                href="https://yellowdoormedia.com"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
+                className="block hover:opacity-80 transition-opacity"
+                title="Visit Yellow Door Media (opens in new tab)"
               >
-                Yellow Door Media
+                <Image
+                  src="/logos/yellow-door-media.png"
+                  alt="Yellow Door Media"
+                  width={120}
+                  height={100}
+                  className="object-contain"
+                />
               </a>
             </div>
           </div>

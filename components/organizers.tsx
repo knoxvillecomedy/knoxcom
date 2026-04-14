@@ -45,11 +45,6 @@ export function Organizers() {
               className="bg-card rounded-xl p-6 border border-border text-center hover:shadow-lg hover:-translate-y-1 transition-all group relative"
               title={`Visit ${org.name} (opens in new tab)`}
             >
-              {org.badge && (
-                <span className="absolute -top-3 -right-3 bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full shadow-md animate-float-slow">
-                  {org.badge}
-                </span>
-              )}
               <div className="h-24 flex items-center justify-center mb-4">
                 <Image
                   src={org.logo}
@@ -59,8 +54,13 @@ export function Organizers() {
                   className="object-contain max-h-24 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
                 />
               </div>
-              <h3 className="text-lg font-semibold text-card-foreground mb-2">
+              <h3 className="text-lg font-semibold text-card-foreground mb-2 flex items-center justify-center gap-2 flex-wrap">
                 {org.name}
+                {org.badge && (
+                  <span className="bg-primary/10 text-primary text-xs font-medium px-2 py-0.5 rounded-full">
+                    {org.badge}
+                  </span>
+                )}
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
                 {org.description}

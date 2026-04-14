@@ -31,13 +31,19 @@ export function Venue() {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              Knoxville&apos;s Neighborhood Moviehouse and event space. Great seats, great sound, and an atmosphere made for laughing. Plus, they&apos;ve got beer.
+              Knoxville&apos;s Neighborhood Moviehouse and legendary event space. Great seats, great sound, and an atmosphere made for laughing. Plus, they&apos;ve got beer.
             </p>
             
-            <p className="text-foreground font-medium flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-              1205 N Central St, Knoxville, TN
-            </p>
+            <a
+              href="https://maps.app.goo.gl/Yz8WvJZYz1qz1sKX6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-foreground font-medium flex items-center gap-2 hover:text-primary transition-colors group w-fit"
+              title="Open in Google Maps (new tab)"
+            >
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse group-hover:scale-125 transition-transform"></span>
+              <span className="underline underline-offset-4 decoration-primary/50 group-hover:decoration-primary transition-colors">1205 N Central St, Knoxville, TN</span>
+            </a>
           </div>
 
           {/* Central Cinema logo */}

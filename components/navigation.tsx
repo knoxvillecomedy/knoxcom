@@ -52,7 +52,7 @@ export function Navigation() {
             <button
               key={link.href}
               onClick={() => handleLinkClick(link.href)}
-              className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm font-medium"
+              className="text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/15 transition-all text-sm font-medium px-3 py-1.5 rounded-md"
             >
               {link.label}
             </button>
@@ -85,7 +85,7 @@ export function Navigation() {
             <button
               key={link.href}
               onClick={() => handleLinkClick(link.href)}
-              className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-lg font-medium text-left py-2"
+              className="text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/15 transition-all text-lg font-medium text-left py-2 px-3 rounded-md"
             >
               {link.label}
             </button>

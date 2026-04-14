@@ -36,25 +36,32 @@ export default function AboutPage() {
         
         <div className="prose prose-neutral max-w-none">
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-            Knoxville Comedy is dedicated to fostering and celebrating the local comedy scene in Knoxville, Tennessee. We believe that laughter brings communities together, and our mission is to create spaces where both performers and audiences can experience the joy of live comedy.
+            We love comedy, and we love Knoxville — well, except I-40 during rush hour!
           </p>
           
           <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-            From intimate open mics to large-scale festivals like The Hoot in The Holler, we work to showcase the incredible talent that calls East Tennessee home while bringing in voices from across the region.
+            This project was founded by local comedy producers who have been part of Knoxville&apos;s growing independent comedy scene since the closing of Side Splitters Comedy Club in 2014.
           </p>
           
-          <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-            Whether you&apos;re a seasoned comedy fan or new to the scene, we invite you to join us for a night of laughs. Because in Knoxville, we take our comedy seriously.
+          <p className="text-lg text-foreground font-medium mb-4">
+            Our mission is to build a thriving future for comedy in East Tennessee:
           </p>
+          
+          <ol className="text-lg text-muted-foreground leading-relaxed mb-8 list-decimal list-inside space-y-2">
+            <li>Build ongoing relationships with audiences, local business owners, and event producers</li>
+            <li>Provide quality stage time for local comedians pursuing a career in entertainment</li>
+            <li>Bring more national and regional touring comedians to East Tennessee</li>
+            <li>Establish an independent comedy club in Knoxville</li>
+          </ol>
 
           <div className="border-t border-border pt-8 mt-8">
             <h2 className="text-xl font-semibold text-foreground mb-6">Our Partners</h2>
-            <div className="flex flex-wrap gap-8 items-center">
+            <div className="flex flex-wrap gap-8 items-center justify-center">
               <a
                 href="https://instagram.com/tinystagecomedy"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block hover:opacity-80 transition-opacity"
+                className="block hover:opacity-80 transition-opacity animate-link-hover"
                 title="Visit Tiny Stage Comedy (opens in new tab)"
               >
                 <Image
@@ -69,13 +76,28 @@ export default function AboutPage() {
                 href="https://instagram.com/yellowdoormediatn"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block hover:opacity-80 transition-opacity"
+                className="block hover:opacity-80 transition-opacity animate-link-hover"
                 title="Visit Yellow Door Media (opens in new tab)"
               >
                 <Image
                   src="/logos/yellow-door-media.png"
                   alt="Yellow Door Media"
                   width={120}
+                  height={100}
+                  className="object-contain"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/ivanharperphoto/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block hover:opacity-80 transition-opacity animate-link-hover"
+                title="Visit Ivan Harper Photo (opens in new tab)"
+              >
+                <Image
+                  src="/logos/knoxville-comedy.png"
+                  alt="Ivan Harper Photo"
+                  width={100}
                   height={100}
                   className="object-contain"
                 />

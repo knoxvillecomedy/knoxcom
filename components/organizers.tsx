@@ -4,53 +4,65 @@ export function Organizers() {
   const organizers = [
     {
       name: "Tiny Stage Comedy",
-      description: "Bringing stand-up to unexpected places across East Tennessee.",
+      description: "A Knoxville-based collective that produces inclusive, community-driven comedy shows to bring people together through laughter.",
       logo: "/logos/tiny-stage-comedy.png",
       url: "https://instagram.com/tinystagecomedy",
+      badge: "Est. 2020",
     },
     {
       name: "Yellow Door Media",
-      description: "Creative production and event marketing for local culture.",
+      description: "YDM produces and promotes local standup and variety shows. Their mission is to create a locally-centered performing arts culture in Knoxville, TN.",
       logo: "/logos/yellow-door-media.png",
       url: "https://instagram.com/yellowdoormediatn",
+    },
+    {
+      name: "Ivan Harper Photo",
+      description: "Comedy photography, performance, and production since 2021.",
+      logo: "/logos/knoxville-comedy.png",
+      url: "https://www.instagram.com/ivanharperphoto/",
     },
   ]
 
   return (
     <section id="organizers" className="py-12 md:py-20 px-4 bg-background">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Who&apos;s Behind This?
           </h2>
           <p className="text-lg text-muted-foreground">
-            The Hoot is brought to you by two local crews who love comedy and community.
+            The Hoot is brought to you by three local crews who love comedy and community.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-6">
           {organizers.map((org) => (
             <a
               key={org.name}
               href={org.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-card rounded-xl p-8 border border-border text-center hover:shadow-lg hover:-translate-y-1 transition-all group"
+              className="bg-card rounded-xl p-6 border border-border text-center hover:shadow-lg hover:-translate-y-1 transition-all group relative"
               title={`Visit ${org.name} (opens in new tab)`}
             >
-              <div className="h-28 flex items-center justify-center mb-5">
+              {org.badge && (
+                <span className="absolute -top-3 -right-3 bg-primary text-primary-foreground text-xs font-semibold px-3 py-1 rounded-full shadow-md animate-float-slow">
+                  {org.badge}
+                </span>
+              )}
+              <div className="h-24 flex items-center justify-center mb-4">
                 <Image
                   src={org.logo}
                   alt={org.name}
-                  width={160}
-                  height={112}
-                  className="object-contain max-h-28 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
+                  width={140}
+                  height={96}
+                  className="object-contain max-h-24 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
                 />
               </div>
-              <h3 className="text-xl font-semibold text-card-foreground mb-2">
+              <h3 className="text-lg font-semibold text-card-foreground mb-2">
                 {org.name}
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground text-sm leading-relaxed">
                 {org.description}
               </p>
             </a>

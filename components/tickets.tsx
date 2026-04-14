@@ -42,7 +42,7 @@ export function Tickets() {
 
         <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
           <Sparkles className="w-4 h-4 text-accent" />
-          Early bird pricing available for a limited time.
+          Limited single-day passes available.
         </p>
       </div>
     </section>

@@ -55,10 +55,10 @@ export function Tickets() {
         </p>
 
         {/* Tixtree widget - the script creates an iframe that renders here */}
-        <div className="bg-card rounded-2xl p-6 md:p-8 mb-8 border border-border shadow-sm overflow-hidden">
+        <div className="mb-8">
           <div 
             id="tixtree-wrapper" 
-            className="min-h-[400px] w-full [&>iframe]:w-full [&>iframe]:min-h-[400px] [&>iframe]:border-0"
+            className="w-full [&>iframe]:w-full [&>iframe]:border-0"
           />
         </div>
 

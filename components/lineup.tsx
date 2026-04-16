@@ -9,13 +9,13 @@ export function Lineup() {
     {
       icon: Mic,
       title: "Stand-Up Comedy",
-      description: "Local headliners and rising stars take the stage for laugh-out-loud sets.",
+      description: "From sharp one-liners to storytelling sets, experience the art form that started it all.",
       image: "/images/standup-placeholder.jpg"
     },
     {
       icon: Star,
-      title: "Featured Performers",
-      description: "Curated acts that represent the best of Tennessee&apos;s comedy scene.",
+      title: "Specialty Shows",
+      description: "Original formats born right here in Knoxville: competitive comedy game shows and high-energy improv.",
       image: "/images/performers-placeholder.jpg"
     },
     {

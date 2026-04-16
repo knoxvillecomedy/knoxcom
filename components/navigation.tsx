@@ -52,7 +52,7 @@ export function Navigation() {
             <button
               key={link.href}
               onClick={() => handleLinkClick(link.href)}
-              className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-sm font-medium"
+              className="text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/15 transition-all text-sm font-medium px-3 py-1.5 rounded-md"
             >
               {link.label}
             </button>
@@ -60,9 +60,11 @@ export function Navigation() {
           <Button 
             size="sm" 
             className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold"
-            onClick={() => handleLinkClick("#tickets")}
+            asChild
           >
-            Get Tickets
+            <a href="https://www.tixtree.com/e/hoot-in-the-holler-fundraiser-c3eb4c2ca88a" target="_blank" rel="noopener noreferrer">
+              Get Tickets
+            </a>
           </Button>
         </div>
 
@@ -85,7 +87,7 @@ export function Navigation() {
             <button
               key={link.href}
               onClick={() => handleLinkClick(link.href)}
-              className="text-primary-foreground/80 hover:text-primary-foreground transition-colors text-lg font-medium text-left py-2"
+              className="text-primary-foreground/80 hover:text-primary-foreground hover:bg-primary-foreground/15 transition-all text-lg font-medium text-left py-2 px-3 rounded-md"
             >
               {link.label}
             </button>
@@ -93,9 +95,11 @@ export function Navigation() {
           <Button 
             size="lg" 
             className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold mt-2"
-            onClick={() => handleLinkClick("#tickets")}
+            asChild
           >
-            Get Tickets
+            <a href="https://www.tixtree.com/e/hoot-in-the-holler-fundraiser-c3eb4c2ca88a" target="_blank" rel="noopener noreferrer">
+              Get Tickets
+            </a>
           </Button>
         </div>
       </div>

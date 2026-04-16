@@ -11,30 +11,56 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-background relative overflow-hidden">
-      {/* Black geometric decorative elements */}
+      {/* Aggressive geometric background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Large hexagons - matching KC logo shape */}
-        <div className="absolute -top-20 -left-20 w-80 h-80 border-[3px] border-foreground/10 rotate-12" style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }} />
-        <div className="absolute top-1/4 -right-16 w-64 h-64 border-[2px] border-foreground/8 -rotate-6" style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }} />
-        <div className="absolute bottom-20 -left-10 w-48 h-48 border-[2px] border-foreground/10 rotate-45" style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }} />
-        <div className="absolute -bottom-10 right-10 w-56 h-56 border-[3px] border-foreground/6 rotate-[20deg]" style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }} />
+        {/* Large diagonal stripes */}
+        <div className="absolute -top-40 -left-40 w-[600px] h-[200px] bg-foreground/[0.03] rotate-[-35deg]" />
+        <div className="absolute top-20 -left-20 w-[500px] h-[120px] bg-foreground/[0.05] rotate-[-35deg]" />
+        <div className="absolute -bottom-20 -right-40 w-[600px] h-[180px] bg-foreground/[0.04] rotate-[-35deg]" />
+        <div className="absolute bottom-40 -right-20 w-[400px] h-[100px] bg-foreground/[0.06] rotate-[-35deg]" />
         
-        {/* Geometric lines and shapes */}
-        <div className="absolute top-40 left-[10%] w-24 h-[2px] bg-foreground/10 rotate-45" />
-        <div className="absolute top-60 right-[15%] w-32 h-[2px] bg-foreground/8 -rotate-12" />
-        <div className="absolute bottom-1/3 left-[5%] w-20 h-[2px] bg-foreground/10 rotate-[30deg]" />
-        <div className="absolute bottom-40 right-[8%] w-28 h-[2px] bg-foreground/8 rotate-[60deg]" />
+        {/* Large filled hexagons */}
+        <div className="absolute -top-16 -left-16 w-72 h-72 bg-foreground/[0.06] rotate-12" style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }} />
+        <div className="absolute top-1/3 -right-20 w-80 h-80 bg-foreground/[0.04] -rotate-6" style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }} />
+        <div className="absolute bottom-10 -left-16 w-64 h-64 bg-foreground/[0.05] rotate-[25deg]" style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }} />
+        <div className="absolute -bottom-20 right-20 w-72 h-72 bg-foreground/[0.03] rotate-[45deg]" style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }} />
         
-        {/* Small geometric accents */}
-        <div className="absolute top-32 right-[20%] w-4 h-4 bg-foreground/15 rotate-45" />
-        <div className="absolute top-1/2 left-[8%] w-3 h-3 bg-foreground/12 rotate-45" />
-        <div className="absolute bottom-1/4 right-[12%] w-5 h-5 border-2 border-foreground/15 rotate-45" />
-        <div className="absolute top-[60%] left-[15%] w-4 h-4 border-2 border-foreground/10 rotate-12" />
+        {/* Outlined hexagons for depth */}
+        <div className="absolute top-20 left-[15%] w-40 h-40 border-[3px] border-foreground/10 rotate-[15deg]" style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }} />
+        <div className="absolute top-[55%] right-[10%] w-32 h-32 border-[2px] border-foreground/8 rotate-[-20deg]" style={{ clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)' }} />
         
-        {/* Crown-inspired triangles (from KC logo) */}
-        <div className="absolute top-20 left-[25%] w-0 h-0 border-l-[8px] border-l-transparent border-r-[8px] border-r-transparent border-b-[12px] border-b-foreground/10" />
-        <div className="absolute bottom-32 right-[25%] w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[15px] border-b-foreground/8" />
-        <div className="absolute top-[45%] right-[5%] w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-b-[10px] border-b-foreground/12" />
+        {/* Bold geometric lines */}
+        <div className="absolute top-28 left-[5%] w-40 h-[4px] bg-foreground/10 rotate-[50deg]" />
+        <div className="absolute top-48 right-[8%] w-32 h-[3px] bg-foreground/12 -rotate-[25deg]" />
+        <div className="absolute bottom-1/3 left-[3%] w-28 h-[4px] bg-foreground/8 rotate-[70deg]" />
+        <div className="absolute bottom-48 right-[5%] w-36 h-[3px] bg-foreground/10 rotate-[40deg]" />
+        <div className="absolute top-[40%] left-[2%] w-24 h-[3px] bg-foreground/8 rotate-[-15deg]" />
+        
+        {/* Scattered squares and diamonds */}
+        <div className="absolute top-24 right-[22%] w-8 h-8 bg-foreground/15 rotate-45" />
+        <div className="absolute top-[45%] left-[6%] w-6 h-6 bg-foreground/12 rotate-45" />
+        <div className="absolute bottom-[30%] right-[15%] w-10 h-10 border-[3px] border-foreground/15 rotate-45" />
+        <div className="absolute top-[65%] left-[12%] w-7 h-7 border-[2px] border-foreground/10 rotate-12" />
+        <div className="absolute top-16 left-[40%] w-5 h-5 bg-foreground/10 rotate-45" />
+        <div className="absolute bottom-24 left-[35%] w-6 h-6 bg-foreground/8 rotate-[30deg]" />
+        
+        {/* Crown-inspired triangles - larger and bolder */}
+        <div className="absolute top-12 left-[20%] w-0 h-0 border-l-[14px] border-l-transparent border-r-[14px] border-r-transparent border-b-[20px] border-b-foreground/12" />
+        <div className="absolute bottom-20 right-[22%] w-0 h-0 border-l-[16px] border-l-transparent border-r-[16px] border-r-transparent border-b-[24px] border-b-foreground/10" />
+        <div className="absolute top-[50%] right-[3%] w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[16px] border-b-foreground/12" />
+        <div className="absolute top-[30%] left-[4%] w-0 h-0 border-l-[12px] border-l-transparent border-r-[12px] border-r-transparent border-b-[18px] border-b-foreground/8" />
+        
+        {/* Dot grid pattern in corner */}
+        <div className="absolute bottom-16 left-8 grid grid-cols-4 gap-3">
+          {[...Array(16)].map((_, i) => (
+            <div key={i} className="w-2 h-2 rounded-full bg-foreground/10" />
+          ))}
+        </div>
+        <div className="absolute top-32 right-12 grid grid-cols-3 gap-2">
+          {[...Array(9)].map((_, i) => (
+            <div key={i} className="w-1.5 h-1.5 rounded-full bg-foreground/8" />
+          ))}
+        </div>
       </div>
 
       <div className="max-w-2xl mx-auto px-4 py-16 relative z-10">

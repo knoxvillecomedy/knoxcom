@@ -83,15 +83,15 @@ export default function AboutPage() {
           />
         </div>
         
-        <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-12 font-display text-center">
+        <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
           About Knoxville Comedy
         </h1>
         
         {/* Body content - consistent card style */}
-        <div className="space-y-6">
+        <div className="space-y-6 font-sans">
           {/* Intro & History */}
           <div className="bg-foreground text-background rounded-xl p-6">
-            <p className="text-lg md:text-xl font-medium leading-relaxed text-center mb-4">
+            <p className="text-lg leading-relaxed text-center mb-4">
               We love comedy, and we love Knoxville — well, except I-40 during rush hour!
             </p>
             <p className="text-base text-background/80 leading-relaxed text-center">
@@ -101,8 +101,8 @@ export default function AboutPage() {
           
           {/* Mission */}
           <div className="bg-card border border-border rounded-xl p-6">
-            <h2 className="text-lg font-semibold text-foreground mb-4">Our Mission</h2>
-            <p className="text-muted-foreground mb-5 text-sm">
+            <h2 className="text-lg font-bold text-foreground mb-4">Our Mission</h2>
+            <p className="text-muted-foreground mb-5">
               Building a thriving future for comedy in East Tennessee:
             </p>
             <div className="space-y-3">
@@ -113,10 +113,10 @@ export default function AboutPage() {
                 "Establish an independent comedy club in Knoxville"
               ].map((item, index) => (
                 <div key={index} className="flex gap-3 items-start">
-                  <span className="w-6 h-6 rounded bg-foreground text-background text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
+                  <span className="w-6 h-6 rounded bg-foreground text-background text-sm font-bold flex items-center justify-center shrink-0 mt-0.5">
                     {index + 1}
                   </span>
-                  <p className="text-foreground text-sm leading-relaxed">{item}</p>
+                  <p className="text-foreground leading-relaxed">{item}</p>
                 </div>
               ))}
             </div>
@@ -125,7 +125,7 @@ export default function AboutPage() {
 
         {/* Partners section */}
         <div className="mt-12 pt-8 border-t border-border">
-          <h2 className="text-lg font-semibold text-foreground mb-6 text-center">Our Partners</h2>
+          <h2 className="text-lg font-bold text-foreground mb-6 text-center">Our Partners</h2>
           <div className="flex flex-wrap gap-8 items-center justify-center">
             <a
               href="https://instagram.com/tinystagecomedy"

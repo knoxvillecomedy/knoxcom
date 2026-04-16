@@ -116,7 +116,7 @@ export default function AboutPage() {
             <div className="space-y-3">
               {[
                 "Build ongoing relationships with audiences, local business owners, and event producers.",
-                "Provide quality stage time for local comedians pursuing a career in entertainment.",
+                "Provide high quality, inclusive stage time for local comedians pursuing a career in entertainment.",
                 "Bring more national and regional touring comedians to East Tennessee.",
                 "Establish an independent comedy club in Knoxville."
               ].map((item, index) => (

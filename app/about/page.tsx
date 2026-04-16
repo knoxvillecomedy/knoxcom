@@ -107,10 +107,10 @@ export default function AboutPage() {
             </p>
             <div className="space-y-3">
               {[
-                "Build ongoing relationships with audiences, local business owners, and event producers",
-                "Provide quality stage time for local comedians pursuing a career in entertainment",
-                "Bring more national and regional touring comedians to East Tennessee",
-                "Establish an independent comedy club in Knoxville"
+                "Build ongoing relationships with audiences, local business owners, and event producers.",
+                "Provide quality stage time for local comedians pursuing a career in entertainment.",
+                "Bring more national and regional touring comedians to East Tennessee.",
+                "Establish an independent comedy club in Knoxville."
               ].map((item, index) => (
                 <div key={index} className="flex gap-3 items-start">
                   <span className="w-6 h-6 rounded bg-foreground text-background text-sm font-bold flex items-center justify-center shrink-0 mt-0.5">

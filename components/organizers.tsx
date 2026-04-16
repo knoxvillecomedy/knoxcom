@@ -17,7 +17,7 @@ export function Organizers() {
     },
     {
       name: "Ivan Harper Photo",
-      description: "Live event photography and show production since 2021. Creator of Comedy Deception: Knoxville's Degenerate Game Show.",
+      description: "Live event photography and show production since 2021. Creator of Comedy Deception: Knoxville's Degenerate Game Show, monthly at Central Cinema.",
       logo: "/logos/knoxville-comedy.png",
       url: "https://www.instagram.com/ivanharperphoto/",
     },

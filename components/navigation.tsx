@@ -60,9 +60,11 @@ export function Navigation() {
           <Button 
             size="sm" 
             className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold"
-            onClick={() => handleLinkClick("#tickets")}
+            asChild
           >
-            Get Tickets
+            <a href="https://www.tixtree.com/e/hoot-in-the-holler-fundraiser-c3eb4c2ca88a" target="_blank" rel="noopener noreferrer">
+              Get Tickets
+            </a>
           </Button>
         </div>
 
@@ -93,9 +95,11 @@ export function Navigation() {
           <Button 
             size="lg" 
             className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold mt-2"
-            onClick={() => handleLinkClick("#tickets")}
+            asChild
           >
-            Get Tickets
+            <a href="https://www.tixtree.com/e/hoot-in-the-holler-fundraiser-c3eb4c2ca88a" target="_blank" rel="noopener noreferrer">
+              Get Tickets
+            </a>
           </Button>
         </div>
       </div>

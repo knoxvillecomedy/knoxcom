@@ -1,9 +1,26 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
+import { useEffect } from "react"
 import { Ticket, Sparkles, Star } from "lucide-react"
 
 export function Tickets() {
+  useEffect(() => {
+    // Load Tixtree widget script
+    const existingScript = document.getElementById("tixtree-script")
+    if (!existingScript) {
+      const script = document.createElement("script")
+      script.id = "tixtree-script"
+      script.src = "https://www.tixtree.com/widgets/tixtree.js"
+      script.setAttribute("data-type", "event")
+      script.setAttribute("data-id", "hoot-in-the-holler-fundraiser-c3eb4c2ca88a")
+      script.async = true
+      const wrapper = document.getElementById("tixtree-wrapper")
+      if (wrapper) {
+        wrapper.appendChild(script)
+      }
+    }
+  }, [])
+
   return (
     <section id="tickets" className="py-12 md:py-20 px-4 bg-background relative overflow-hidden">
       {/* Decorative elements */}
@@ -27,17 +44,9 @@ export function Tickets() {
           One pass. Two nights. Unlimited laughs. Don&apos;t wait—limited seats available for the inaugural festival.
         </p>
 
-        {/* Tixtree embed placeholder */}
-        <div className="bg-gradient-to-br from-muted to-secondary rounded-2xl p-8 mb-8 border-2 border-dashed border-border shadow-inner">
-          <p className="text-muted-foreground text-sm mb-4">
-            Ticket widget coming soon
-          </p>
-          <Button 
-            size="lg" 
-            className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-10 py-6 h-auto font-semibold shadow-lg transition-all hover:scale-105 hover:shadow-xl"
-          >
-            Buy Festival Pass
-          </Button>
+        {/* Tixtree widget */}
+        <div className="bg-card rounded-2xl p-6 md:p-8 mb-8 border border-border shadow-sm">
+          <div id="tixtree-wrapper" className="min-h-[200px] flex items-center justify-center" />
         </div>
 
         <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">

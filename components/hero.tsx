@@ -55,8 +55,11 @@ export function Hero() {
         <Button 
           size="lg" 
           className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-10 py-6 h-auto font-semibold shadow-lg transition-all hover:scale-105 hover:shadow-xl"
+          asChild
         >
-          Buy Festival Pass
+          <a href="https://www.tixtree.com/e/hoot-in-the-holler-fundraiser-c3eb4c2ca88a" target="_blank" rel="noopener noreferrer">
+            Buy Festival Pass
+          </a>
         </Button>
       </div>
     </section>

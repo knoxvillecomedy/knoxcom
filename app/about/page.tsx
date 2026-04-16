@@ -4,8 +4,16 @@ import { ArrowLeft } from "lucide-react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "About | Knoxville Comedy",
-  description: "Learn about Knoxville Comedy - bringing live comedy and laughter to Knoxville, Tennessee.",
+  title: "About Knoxville Comedy | East Tennessee Comedy Scene",
+  description: "Meet the organizers behind Knoxville Comedy and The Hoot in The Holler festival. Local comedy producers building a thriving comedy scene in East Tennessee since 2014.",
+  alternates: {
+    canonical: 'https://knoxvillecomedy.com/about',
+  },
+  openGraph: {
+    title: 'About Knoxville Comedy | East Tennessee Comedy Scene',
+    description: 'Meet the organizers behind Knoxville Comedy and The Hoot in The Holler festival. Local comedy producers building a thriving comedy scene in East Tennessee.',
+    url: 'https://knoxvillecomedy.com/about',
+  },
 }
 
 export default function AboutPage() {

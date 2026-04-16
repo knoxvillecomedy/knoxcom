@@ -10,19 +10,19 @@ export function Lineup() {
       icon: Mic,
       title: "Stand-Up Comedy",
       description: "From sharp one-liners to storytelling sets, experience the art form that started it all.",
-      image: "/images/standup-placeholder.jpg"
+      image: "/images/amber.svg"
     },
     {
       icon: Star,
       title: "Specialty Shows",
       description: "Original formats born right here in Knoxville: competitive comedy game shows and high-energy improv.",
-      image: "/images/performers-placeholder.jpg"
+      image: "/images/saxton.svg"
     },
     {
       icon: Sparkles,
       title: "Surprise Guests",
       description: "You never know who might drop in. Stay tuned for lineup announcements.",
-      image: "/images/surprise-placeholder.jpg"
+      image: "/images/riffstomper.svg"
     }
   ]
 

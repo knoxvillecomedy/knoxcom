@@ -46,20 +46,20 @@ export function Venue() {
             </a>
           </div>
 
-          {/* Central Cinema logo */}
+          {/* Central Cinema live photo */}
           <a
             href="https://centralcinemaknox.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center group animate-link-hover cursor-pointer"
+            className="flex items-center justify-center group cursor-pointer"
             title="Visit Central Cinema (opens in new tab)"
           >
             <Image
-              src="/logos/central-cinema.png"
-              alt="Central Cinema"
-              width={400}
-              height={240}
-              className="object-contain w-full opacity-90 group-hover:opacity-100 transition-opacity"
+              src="/images/central-live.svg"
+              alt="Live comedy at Central Cinema"
+              width={500}
+              height={400}
+              className="object-cover w-full rounded-xl shadow-lg group-hover:shadow-xl transition-shadow"
             />
           </a>
         </div>

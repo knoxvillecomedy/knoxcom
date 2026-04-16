@@ -1,9 +1,40 @@
 "use client"
 
-import Script from "next/script"
+import { useEffect, useRef } from "react"
 import { Ticket, Sparkles, Star } from "lucide-react"
 
 export function Tickets() {
+  const widgetRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    // Remove any existing script to prevent duplicates
+    const existingScript = document.getElementById("tixtree-script")
+    if (existingScript) {
+      existingScript.remove()
+    }
+
+    // Create and append the script element
+    const script = document.createElement("script")
+    script.id = "tixtree-script"
+    script.src = "https://www.tixtree.com/widgets/tixtree.js"
+    script.setAttribute("data-type", "event")
+    script.setAttribute("data-id", "hoot-in-the-holler-fundraiser-c3eb4c2ca88a")
+    script.async = true
+
+    // Append to the widget container
+    if (widgetRef.current) {
+      widgetRef.current.appendChild(script)
+    }
+
+    return () => {
+      // Cleanup on unmount
+      const scriptToRemove = document.getElementById("tixtree-script")
+      if (scriptToRemove) {
+        scriptToRemove.remove()
+      }
+    }
+  }, [])
+
   return (
     <section id="tickets" className="py-12 md:py-20 px-4 bg-background relative overflow-hidden">
       {/* Decorative elements */}
@@ -29,14 +60,8 @@ export function Tickets() {
 
         {/* Tixtree widget */}
         <div className="bg-card rounded-2xl p-6 md:p-8 mb-8 border border-border shadow-sm">
-          <div id="tixtree-wrapper" className="min-h-[100px]">
-            <Script
-              id="tixtree-script"
-              src="https://www.tixtree.com/widgets/tixtree.js"
-              data-type="event"
-              data-id="hoot-in-the-holler-fundraiser-c3eb4c2ca88a"
-              strategy="afterInteractive"
-            />
+          <div ref={widgetRef} id="tixtree-wrapper" className="min-h-[100px]">
+            {/* Tixtree script will be injected here */}
           </div>
         </div>
 

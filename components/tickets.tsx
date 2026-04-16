@@ -1,26 +1,9 @@
 "use client"
 
-import { useEffect } from "react"
+import Script from "next/script"
 import { Ticket, Sparkles, Star } from "lucide-react"
 
 export function Tickets() {
-  useEffect(() => {
-    // Load Tixtree widget script
-    const existingScript = document.getElementById("tixtree-script")
-    if (!existingScript) {
-      const script = document.createElement("script")
-      script.id = "tixtree-script"
-      script.src = "https://www.tixtree.com/widgets/tixtree.js"
-      script.setAttribute("data-type", "event")
-      script.setAttribute("data-id", "hoot-in-the-holler-fundraiser-c3eb4c2ca88a")
-      script.async = true
-      const wrapper = document.getElementById("tixtree-wrapper")
-      if (wrapper) {
-        wrapper.appendChild(script)
-      }
-    }
-  }, [])
-
   return (
     <section id="tickets" className="py-12 md:py-20 px-4 bg-background relative overflow-hidden">
       {/* Decorative elements */}
@@ -46,7 +29,15 @@ export function Tickets() {
 
         {/* Tixtree widget */}
         <div className="bg-card rounded-2xl p-6 md:p-8 mb-8 border border-border shadow-sm">
-          <div id="tixtree-wrapper" className="min-h-[200px] flex items-center justify-center" />
+          <div id="tixtree-wrapper" className="min-h-[100px]">
+            <Script
+              id="tixtree-script"
+              src="https://www.tixtree.com/widgets/tixtree.js"
+              data-type="event"
+              data-id="hoot-in-the-holler-fundraiser-c3eb4c2ca88a"
+              strategy="afterInteractive"
+            />
+          </div>
         </div>
 
         <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">

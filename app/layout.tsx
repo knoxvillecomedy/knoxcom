@@ -14,11 +14,32 @@ const _fraunces = Fraunces({
 
 export const metadata: Metadata = {
   title: 'The Hoot in The Holler | Comedy Festival | July 18-19, 2026',
-  description: 'Knoxville&apos;s inaugural comedy festival at Central Cinema. Two nights of local laughs, good vibes, and unforgettable fun. Get your festival pass now!',
+  description: "Knoxville's inaugural comedy festival at Central Cinema. Two nights of local laughs, good vibes, and unforgettable fun. Get your festival pass now!",
   generator: 'v0.app',
+  metadataBase: new URL('https://knoxvillecomedy.com'),
   icons: {
     icon: '/icon.png',
     apple: '/icon.png',
+  },
+  openGraph: {
+    title: 'The Hoot in The Holler | Knoxville Comedy Festival',
+    description: "Knoxville's inaugural comedy festival at Central Cinema. Two nights of stand-up comedy, specialty shows, and surprise guests. July 18-19, 2026.",
+    url: 'https://knoxvillecomedy.com',
+    siteName: 'The Hoot in The Holler',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'The Hoot in The Holler | Knoxville Comedy Festival',
+    description: "Knoxville's inaugural comedy festival at Central Cinema. July 18-19, 2026.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: 'https://knoxvillecomedy.com',
   },
 }
 

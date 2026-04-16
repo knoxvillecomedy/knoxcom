@@ -5,21 +5,24 @@ export function Organizers() {
     {
       name: "Tiny Stage Comedy",
       description: "A Knoxville-based collective that produces inclusive, community-driven comedy shows to bring people together through laughter.",
-      logo: "/logos/tiny-stage-comedy.png",
+      logo: "/logos/tiny-stage-comedy.jpg",
       url: "https://instagram.com/tinystagecomedy",
       badge: "Est. 2020",
+      alt: "Tiny Stage Comedy logo - Knoxville comedy collective and festival organizer",
     },
     {
       name: "Yellow Door Media",
       description: "YDM produces and promotes local standup and variety shows. Their mission is to create a locally-centered performing arts culture in Knoxville, TN.",
-      logo: "/logos/yellow-door-media.png",
+      logo: "/logos/yellow-door-media.jpg",
       url: "https://instagram.com/yellowdoormediatn",
+      alt: "Yellow Door Media logo - Knoxville standup comedy producer and promoter",
     },
     {
       name: "Ivan Harper Photo",
-      description: "Comedy photography, performance, and production since 2021.",
-      logo: "/logos/knoxville-comedy.png",
+      description: "Live event photography and show production since 2021. Creator of Comedy Deception: Knoxville's Degenerate Game Show, monthly at Central Cinema.",
+      logo: "/logos/knoxville-comedy.jpg",
       url: "https://www.instagram.com/ivanharperphoto/",
+      alt: "Knoxville Comedy logo - local comedy photography and show production",
     },
   ]
 
@@ -48,7 +51,7 @@ export function Organizers() {
               <div className="h-24 flex items-center justify-center mb-4">
                 <Image
                   src={org.logo}
-                  alt={org.name}
+                  alt={org.alt}
                   width={140}
                   height={96}
                   className="object-contain max-h-24 w-auto opacity-90 group-hover:opacity-100 transition-opacity"

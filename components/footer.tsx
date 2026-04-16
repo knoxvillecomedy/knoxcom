@@ -8,7 +8,7 @@ export function Footer() {
           The Hoot in The Holler
         </p>
         <p className="text-background/70 text-sm mb-4">
-          July 18–19, 2026 • Central Cinema, Knoxville, TN
+          July 17–18, 2026 • Central Cinema, Knoxville, TN
         </p>
         <div className="flex items-center justify-center gap-4 mb-4">
           <Link 

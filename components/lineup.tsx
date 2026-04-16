@@ -26,8 +26,8 @@ export function Lineup() {
       icon: Sparkles,
       title: "Surprise Guests",
       description: "You never know who might drop in. Stay tuned for lineup announcements.",
-      image: "/images/riffstomper.jpg",
-      imagePosition: "25%",
+      image: "/images/audience.jpg",
+      imagePosition: "center",
       alt: "Audience laughing at live comedy event in Knoxville Tennessee"
     }
   ]

@@ -37,7 +37,7 @@ export function Hero() {
       
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-slide-up">
         <p className="text-primary-foreground/80 text-sm md:text-base uppercase tracking-widest mb-4 font-medium">
-          July 18-19, 2026 &bull; Central Cinema, Knoxville
+          July 17-18, 2026 &bull; Central Cinema, Knoxville
         </p>
         
         <h1 

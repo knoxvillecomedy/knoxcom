@@ -38,13 +38,18 @@ export function Navigation() {
       isScrolled ? "bg-primary/95 backdrop-blur-sm shadow-lg" : "bg-transparent"
     }`}>
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <a 
-          href="#" 
-          className="font-display text-xl md:text-2xl font-bold text-primary-foreground"
-          style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.4)" }}
-        >
-          The Hoot
-        </a>
+        <div>
+          <a 
+            href="#" 
+            className="font-display text-xl md:text-2xl font-bold text-primary-foreground block"
+            style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.4)" }}
+          >
+            The Hoot
+          </a>
+          <p className="text-primary-foreground/70 text-xs md:text-sm font-medium">
+            July 17–18, 2026
+          </p>
+        </div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-6">

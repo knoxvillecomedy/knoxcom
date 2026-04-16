@@ -5,7 +5,7 @@ import { Star, Sparkles, Laugh } from "lucide-react"
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary pt-16">
+    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-primary pt-16 pb-12">
       {/* Animated background blobs */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-accent animate-pulse-soft blur-3xl" />
@@ -48,7 +48,7 @@ export function Hero() {
           <span className="block text-accent italic" style={{ textShadow: "3px 3px 0 rgba(0,0,0,0.4), 6px 6px 0 rgba(0,0,0,0.2)" }}>in The Holler</span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-primary-foreground/90 mb-6 max-w-2xl mx-auto text-pretty font-sans">
+        <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto text-pretty font-sans">
           Two nights of laughs, local comics, and good vibes. Knoxville&apos;s comedy scene is about to get loud.
         </p>
         

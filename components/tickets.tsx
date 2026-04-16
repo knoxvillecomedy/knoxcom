@@ -51,7 +51,7 @@ export function Tickets() {
         </h2>
         
         <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
-          Support The Hoot in The Holler! Join us for a special fundraiser show to help bring Knoxville&apos;s inaugural comedy festival to life.
+          Join us at The Pink Cactus for a special fundraiser to help kickstart Knoxville&apos;s inaugural comedy festival.
         </p>
 
         {/* Tixtree widget - the script creates an iframe that renders here */}

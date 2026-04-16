@@ -51,7 +51,7 @@ export function Tickets() {
         </h2>
         
         <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
-          Join us at The Pink Cactus for a special fundraiser to help kickstart Knoxville&apos;s inaugural comedy festival.
+          Join us at The Pink Cactus for a one-off comedy showcase to help kickstart Knoxville&apos;s inaugural comedy festival.
         </p>
 
         {/* Tixtree widget - the script creates an iframe that renders here */}

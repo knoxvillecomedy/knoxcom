@@ -49,7 +49,7 @@ export default function AboutPage() {
         {/* Logo */}
         <div className="flex justify-center mb-8">
           <Image
-            src="/logos/knoxville-comedy.png"
+            src="/logos/knoxville-comedy.jpg"
             alt="Knoxville Comedy"
             width={260}
             height={260}
@@ -109,7 +109,7 @@ export default function AboutPage() {
               title="Visit Tiny Stage Comedy (opens in new tab)"
             >
               <Image
-                src="/logos/tiny-stage-comedy.png"
+                src="/logos/tiny-stage-comedy.jpg"
                 alt="Tiny Stage Comedy"
                 width={100}
                 height={100}
@@ -124,7 +124,7 @@ export default function AboutPage() {
               title="Visit Yellow Door Media (opens in new tab)"
             >
               <Image
-                src="/logos/yellow-door-media.png"
+                src="/logos/yellow-door-media.jpg"
                 alt="Yellow Door Media"
                 width={120}
                 height={100}

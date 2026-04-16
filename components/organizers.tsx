@@ -5,20 +5,20 @@ export function Organizers() {
     {
       name: "Tiny Stage Comedy",
       description: "A Knoxville-based collective that produces inclusive, community-driven comedy shows to bring people together through laughter.",
-      logo: "/logos/tiny-stage-comedy.png",
+      logo: "/logos/tiny-stage-comedy.jpg",
       url: "https://instagram.com/tinystagecomedy",
       badge: "Est. 2020",
     },
     {
       name: "Yellow Door Media",
       description: "YDM produces and promotes local standup and variety shows. Their mission is to create a locally-centered performing arts culture in Knoxville, TN.",
-      logo: "/logos/yellow-door-media.svg",
+      logo: "/logos/yellow-door-media.jpg",
       url: "https://instagram.com/yellowdoormediatn",
     },
     {
       name: "Ivan Harper Photo",
       description: "Live event photography and show production since 2021. Creator of Comedy Deception: Knoxville's Degenerate Game Show, monthly at Central Cinema.",
-      logo: "/logos/knoxville-comedy.svg",
+      logo: "/logos/knoxville-comedy.jpg",
       url: "https://www.instagram.com/ivanharperphoto/",
     },
   ]

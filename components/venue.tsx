@@ -55,7 +55,7 @@ export function Venue() {
             title="Visit Central Cinema (opens in new tab)"
           >
             <Image
-              src="/images/central-live.svg"
+              src="/images/central-live.jpg"
               alt="Live comedy at Central Cinema"
               width={500}
               height={400}

@@ -18,7 +18,7 @@ const tier3Sponsors = [
   },
   {
     name: "All Star Parties & Events",
-    logo: "/logos/sponsors/all-star.png",
+    logo: "/logos/sponsors/all-star.jpg",
     url: "https://www.allstarparties.com/",
   },
 ]
@@ -31,7 +31,7 @@ const tier1Sponsors = [
   },
   {
     name: "Young Healing Arts Massage",
-    logo: "/logos/sponsors/young-healing.png",
+    logo: "/logos/sponsors/young-healing.jpg",
     url: "https://www.instagram.com/young_healing_knoxville/",
   },
   {
@@ -41,7 +41,7 @@ const tier1Sponsors = [
   },
   {
     name: "The Mowalition Lawn Care",
-    logo: "/logos/sponsors/mowalition.png",
+    logo: "/logos/sponsors/mowalition.jpg",
     url: "https://www.facebook.com/themowalitionknoxville/",
   },
 ]

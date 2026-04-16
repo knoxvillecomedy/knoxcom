@@ -58,7 +58,7 @@ export function Hero() {
           asChild
         >
           <a href="https://www.tixtree.com/e/hoot-in-the-holler-fundraiser-c3eb4c2ca88a" target="_blank" rel="noopener noreferrer">
-            Buy Festival Pass
+            Get Fundraiser Tickets
           </a>
         </Button>
       </div>

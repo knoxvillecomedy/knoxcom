@@ -20,11 +20,11 @@ export function Tickets() {
         </div>
         
         <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-          Get Your Pass
+          Fundraiser Show
         </h2>
         
         <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
-          One pass. Two nights. Unlimited laughs. Don&apos;t wait—limited seats available for the inaugural festival.
+          Support The Hoot in The Holler! Join us for a special fundraiser show to help bring Knoxville&apos;s inaugural comedy festival to life.
         </p>
 
         {/* Tixtree widget */}
@@ -42,7 +42,7 @@ export function Tickets() {
 
         <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">
           <Sparkles className="w-4 h-4 text-accent" />
-          Limited single-day passes available.
+          Festival passes coming soon!
         </p>
       </div>
     </section>

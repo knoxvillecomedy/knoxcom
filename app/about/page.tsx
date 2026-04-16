@@ -63,16 +63,12 @@ export default function AboutPage() {
         
         {/* Body content - consistent card style */}
         <div className="space-y-6">
-          {/* Intro */}
-          <div className="bg-foreground text-background rounded-xl p-6 text-center">
-            <p className="text-lg md:text-xl font-medium leading-relaxed">
+          {/* Intro & History */}
+          <div className="bg-foreground text-background rounded-xl p-6">
+            <p className="text-lg md:text-xl font-medium leading-relaxed text-center mb-4">
               We love comedy, and we love Knoxville — well, except I-40 during rush hour!
             </p>
-          </div>
-          
-          {/* History */}
-          <div className="bg-card border border-border rounded-xl p-6">
-            <p className="text-base text-muted-foreground leading-relaxed">
+            <p className="text-base text-background/80 leading-relaxed text-center">
               This project was founded by local comedy producers who have been part of Knoxville&apos;s growing independent comedy scene since the closing of Side Splitters Comedy Club in 2014.
             </p>
           </div>

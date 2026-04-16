@@ -116,7 +116,7 @@ export default function AboutPage() {
             <div className="space-y-3">
               {[
                 "Build ongoing relationships with audiences, local business owners, and event producers.",
-                "Provide quality stage time for local comedians pursuing a career in entertainment.",
+                "Provide high quality, inclusive stage time for local comedians pursuing a career in entertainment.",
                 "Bring more national and regional touring comedians to East Tennessee.",
                 "Establish an independent comedy club in Knoxville."
               ].map((item, index) => (
@@ -133,7 +133,7 @@ export default function AboutPage() {
 
         {/* Partners section */}
         <div className="mt-12 pt-8 border-t border-border">
-          <h2 className="text-lg font-bold text-foreground mb-6 text-center">Our Partners</h2>
+          <h2 className="text-lg font-bold text-foreground mb-6 text-center">Partners</h2>
           <div className="flex flex-wrap gap-8 items-center justify-center">
             <a
               href="https://instagram.com/tinystagecomedy"

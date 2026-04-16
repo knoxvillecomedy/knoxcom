@@ -5,7 +5,7 @@ import { Star, Sparkles, Laugh } from "lucide-react"
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-primary pt-16">
+    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-primary pt-16 pb-12">
       {/* Animated background blobs */}
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-accent animate-pulse-soft blur-3xl" />

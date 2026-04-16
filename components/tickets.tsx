@@ -1,30 +1,23 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import { useEffect } from "react"
 import { Ticket, Sparkles, Star } from "lucide-react"
 
 export function Tickets() {
-  const widgetRef = useRef<HTMLDivElement>(null)
-
   useEffect(() => {
-    // Remove any existing script to prevent duplicates
-    const existingScript = document.getElementById("tixtree-script")
-    if (existingScript) {
-      existingScript.remove()
+    // Check if script already exists
+    if (document.getElementById("tixtree-script")) {
+      return
     }
 
-    // Create and append the script element
+    // Create and append the script element to document body
+    // Tixtree widget expects the script to be in the body, not inside a container
     const script = document.createElement("script")
     script.id = "tixtree-script"
     script.src = "https://www.tixtree.com/widgets/tixtree.js"
     script.setAttribute("data-type", "event")
     script.setAttribute("data-id", "hoot-in-the-holler-fundraiser-c3eb4c2ca88a")
-    script.async = true
-
-    // Append to the widget container
-    if (widgetRef.current) {
-      widgetRef.current.appendChild(script)
-    }
+    document.body.appendChild(script)
 
     return () => {
       // Cleanup on unmount
@@ -32,6 +25,9 @@ export function Tickets() {
       if (scriptToRemove) {
         scriptToRemove.remove()
       }
+      // Also remove any iframes created by tixtree
+      const iframes = document.querySelectorAll('iframe[id^="tixtree"]')
+      iframes.forEach(iframe => iframe.remove())
     }
   }, [])
 
@@ -58,11 +54,12 @@ export function Tickets() {
           Support The Hoot in The Holler! Join us for a special fundraiser show to help bring Knoxville&apos;s inaugural comedy festival to life.
         </p>
 
-        {/* Tixtree widget */}
-        <div className="bg-card rounded-2xl p-6 md:p-8 mb-8 border border-border shadow-sm">
-          <div ref={widgetRef} id="tixtree-wrapper" className="min-h-[100px]">
-            {/* Tixtree script will be injected here */}
-          </div>
+        {/* Tixtree widget - the script creates an iframe that renders here */}
+        <div className="bg-card rounded-2xl p-6 md:p-8 mb-8 border border-border shadow-sm overflow-hidden">
+          <div 
+            id="tixtree-wrapper" 
+            className="min-h-[400px] w-full [&>iframe]:w-full [&>iframe]:min-h-[400px] [&>iframe]:border-0"
+          />
         </div>
 
         <p className="text-sm text-muted-foreground flex items-center justify-center gap-2">

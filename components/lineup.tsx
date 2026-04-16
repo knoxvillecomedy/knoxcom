@@ -11,21 +11,24 @@ export function Lineup() {
       title: "Stand-Up Comedy",
       description: "From sharp one-liners to storytelling sets, experience the art form that started it all.",
       image: "/images/amber.jpg",
-      imagePosition: "top"
+      imagePosition: "top",
+      alt: "Stand-up comedian performing at Knoxville comedy show"
     },
     {
       icon: Star,
       title: "Specialty Shows",
       description: "Original formats born right here in Knoxville: competitive comedy game shows and high-energy improv.",
       image: "/images/saxton.jpg",
-      imagePosition: "top"
+      imagePosition: "top",
+      alt: "Local comedian at Knoxville specialty comedy show"
     },
     {
       icon: Sparkles,
       title: "Surprise Guests",
       description: "You never know who might drop in. Stay tuned for lineup announcements.",
       image: "/images/riffstomper.jpg",
-      imagePosition: "25%"
+      imagePosition: "25%",
+      alt: "Audience laughing at live comedy event in Knoxville Tennessee"
     }
   ]
 
@@ -60,7 +63,7 @@ export function Lineup() {
               <div className="relative h-48 bg-gradient-to-br from-primary/20 to-chart-2/20 overflow-hidden">
                 <Image
                   src={feature.image}
-                  alt={feature.title}
+                  alt={feature.alt}
                   fill
                   className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-500"
                   style={{ objectPosition: `center ${feature.imagePosition}` }}

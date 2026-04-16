@@ -56,7 +56,7 @@ export function Venue() {
           >
             <Image
               src="/images/central-live.jpg"
-              alt="Live comedy at Central Cinema"
+              alt="Live comedy show at Central Cinema Knoxville with Tiny Stage Comedy logos on screen"
               width={500}
               height={400}
               className="object-cover w-full rounded-xl shadow-lg group-hover:shadow-xl transition-shadow"

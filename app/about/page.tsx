@@ -76,7 +76,7 @@ export default function AboutPage() {
         <div className="flex justify-center mb-8">
           <Image
             src="/logos/knoxville-comedy.jpg"
-            alt="Knoxville Comedy"
+            alt="Knoxville Comedy logo - local comedy community organization in East Tennessee"
             width={260}
             height={260}
             className="object-contain"
@@ -136,7 +136,7 @@ export default function AboutPage() {
             >
               <Image
                 src="/logos/tiny-stage-comedy.jpg"
-                alt="Tiny Stage Comedy"
+                alt="Tiny Stage Comedy logo - Knoxville comedy collective partner"
                 width={100}
                 height={100}
                 className="object-contain"
@@ -151,7 +151,7 @@ export default function AboutPage() {
             >
               <Image
                 src="/logos/yellow-door-media.jpg"
-                alt="Yellow Door Media"
+                alt="Yellow Door Media logo - Knoxville comedy producer partner"
                 width={120}
                 height={100}
                 className="object-contain"

@@ -10,16 +10,19 @@ const tier3Sponsors = [
     name: "The Pink Cactus",
     logo: "/logos/sponsors/pink-cactus.jpg",
     url: "https://www.thepinkcactusknox.com/",
+    alt: "The Pink Cactus bar and restaurant logo - Knoxville comedy festival sponsor",
   },
   {
     name: "Knox Box Karaoke",
     logo: "/logos/sponsors/knox-box.jpg",
     url: "https://www.thepinkcactusknox.com/",
+    alt: "Knox Box Karaoke logo - Knoxville entertainment sponsor",
   },
   {
     name: "All Star Parties & Events",
     logo: "/logos/sponsors/all-star.jpg",
     url: "https://www.allstarparties.com/",
+    alt: "All Star Parties and Events logo - Knoxville event planning sponsor",
   },
 ]
 
@@ -28,21 +31,25 @@ const tier1Sponsors = [
     name: "Frog Juice Boocherie",
     logo: "/logos/sponsors/boocherie.jpg",
     url: "https://www.frogjuicekombucha.com/the-boocherie",
+    alt: "Frog Juice Boocherie kombucha logo - local Knoxville beverage sponsor",
   },
   {
     name: "Young Healing Arts Massage",
     logo: "/logos/sponsors/young-healing.jpg",
     url: "https://www.instagram.com/young_healing_knoxville/",
+    alt: "Young Healing Arts Massage logo - Knoxville wellness sponsor",
   },
   {
     name: "Knox and Go",
     logo: "/logos/sponsors/knox-go.jpg",
     url: "https://www.instagram.com/knoxandgo/",
+    alt: "Knox and Go logo - Knoxville local business sponsor",
   },
   {
     name: "The Mowalition Lawn Care",
     logo: "/logos/sponsors/mowalition.jpg",
     url: "https://www.facebook.com/themowalitionknoxville/",
+    alt: "H&H Lawn Service The Mowalition logo - Knoxville lawn care sponsor",
   },
 ]
 
@@ -90,7 +97,7 @@ export function Sponsors() {
               <div className="bg-card rounded-xl p-4 border border-border shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-2 group-hover:border-primary/30">
                 <Image
                   src={sponsor.logo}
-                  alt={sponsor.name}
+                  alt={sponsor.alt}
                   width={160}
                   height={160}
                   className="object-contain w-32 h-32 md:w-40 md:h-40 opacity-95 group-hover:opacity-100 transition-opacity"
@@ -114,7 +121,7 @@ export function Sponsors() {
               <div className="bg-card rounded-lg p-3 border border-border shadow-sm transition-all duration-300 group-hover:shadow-md group-hover:-translate-y-1 group-hover:border-primary/30">
                 <Image
                   src={sponsor.logo}
-                  alt={sponsor.name}
+                  alt={sponsor.alt}
                   width={120}
                   height={120}
                   className="object-contain w-20 h-20 md:w-24 md:h-24 opacity-90 group-hover:opacity-100 transition-opacity"

@@ -133,7 +133,7 @@ export default function AboutPage() {
 
         {/* Partners section */}
         <div className="mt-12 pt-8 border-t border-border">
-          <h2 className="text-lg font-bold text-foreground mb-6 text-center">Our Partners</h2>
+          <h2 className="text-lg font-bold text-foreground mb-6 text-center">Partners</h2>
           <div className="flex flex-wrap gap-8 items-center justify-center">
             <a
               href="https://instagram.com/tinystagecomedy"

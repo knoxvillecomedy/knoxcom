@@ -59,7 +59,7 @@ export function Lineup() {
                   src={feature.image}
                   alt={feature.title}
                   fill
-                  className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-500"
+                  className="object-cover object-top opacity-80 group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent" />
                 <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-primary/90 flex items-center justify-center">

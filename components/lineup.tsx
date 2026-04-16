@@ -27,7 +27,7 @@ export function Lineup() {
       title: "Surprise Guests",
       description: "You never know who might drop in. Stay tuned for lineup announcements.",
       image: "/images/riffstomper.jpg",
-      imagePosition: "15%",
+      imagePosition: "top",
       alt: "Audience laughing at live comedy event in Knoxville Tennessee"
     }
   ]

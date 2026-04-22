@@ -10,7 +10,7 @@ export function Lineup() {
       icon: Mic,
       title: "Stand-Up Comedy",
       description: "From sharp one-liners to storytelling sets, experience the art form that started it all.",
-      image: "/images/amber.jpg",
+      image: "/images/lep.jpg",
       imagePosition: "top",
       alt: "Stand-up comedian performing at Knoxville comedy show"
     },
@@ -26,7 +26,7 @@ export function Lineup() {
       icon: Sparkles,
       title: "Surprise Guests",
       description: "You never know who might drop in. Stay tuned for lineup announcements.",
-      image: "/images/audience.jpg",
+      image: "/images/riffstomper.jpg",
       imagePosition: "center",
       alt: "Audience laughing at live comedy event in Knoxville Tennessee"
     }

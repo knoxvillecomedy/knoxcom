@@ -10,7 +10,7 @@ export function Lineup() {
       icon: Mic,
       title: "Stand-Up Comedy",
       description: "From sharp one-liners to storytelling sets, experience the art form that started it all.",
-      image: "/images/amber.jpg",
+      image: "/images/lep.jpg",
       imagePosition: "top",
       alt: "Stand-up comedian performing at Knoxville comedy show"
     },

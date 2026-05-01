@@ -49,7 +49,7 @@ export function Hero() {
         </h1>
         
         <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto text-pretty font-sans">
-          Two nights of laughs, stand-up comedy, and good vibes. Knoxville&apos;s comedy scene is about to get loud.
+          Two nights of laughs, standup comedy, and good vibes. Knoxville&apos;s comedy scene is about to get loud.
         </p>
         
         <Button 

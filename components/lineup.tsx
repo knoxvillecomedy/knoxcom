@@ -87,7 +87,7 @@ export function Lineup() {
         </div>
 
         {/* Good Cop / Rad Cop Headliner Section */}
-        <div className="mt-20 pt-16 relative">
+        <div className="mt-8 pt-8 relative border-t border-primary/20">
           {/* Decorative gradient line */}
           <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-3/4 h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
           

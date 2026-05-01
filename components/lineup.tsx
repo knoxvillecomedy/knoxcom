@@ -162,8 +162,7 @@ export function Lineup() {
               </div>
 
               <div className="space-y-4 rounded-xl bg-gradient-to-br from-primary/5 to-transparent p-6 border-l-4 border-primary/60">
-                <h3 className="text-sm uppercase tracking-wider text-primary font-semibold flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                <h3 className="text-sm uppercase tracking-wider text-primary font-semibold">
                   Featured In
                 </h3>
                 <ul className="space-y-3 text-muted-foreground">

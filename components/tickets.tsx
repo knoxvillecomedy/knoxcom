@@ -42,10 +42,6 @@ export function Tickets() {
       </div>
 
       <div className="max-w-3xl mx-auto text-center relative z-10">
-        <div className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary/15 to-accent/15 border border-primary/30 mb-6 animate-bounce">
-          <span className="text-sm font-semibold text-primary">Festival Passes On Sale Soon!</span>
-        </div>
-        
         <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-6 animate-float">
           <Ticket className="w-8 h-8 text-primary" />
         </div>

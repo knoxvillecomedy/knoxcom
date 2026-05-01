@@ -47,7 +47,7 @@ export function Tickets() {
         </div>
         
         <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-          Fundraiser Showcase
+          Fundraiser Show
         </h2>
         
         <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">

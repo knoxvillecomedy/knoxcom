@@ -85,6 +85,86 @@ export function Lineup() {
             </Card>
           ))}
         </div>
+
+        {/* Good Cop / Rad Cop Headliner Section */}
+        <div className="mt-20 pt-16 border-t border-primary/20">
+          <div className="text-center mb-12 animate-slide-up">
+            <span className="inline-block px-4 py-2 bg-primary/10 rounded-full text-sm uppercase tracking-wider text-primary font-semibold mb-4">
+              Fest Headliner
+            </span>
+            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+              Good Cop / Rad Cop
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              High-energy comedy duo from Atlanta bringing fast banter and barn-burning performances
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Images */}
+            <div className="space-y-6">
+              <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GoodCopRadCop_Fly25_1128-b8cICOUv1nEIDgYSzy19EHHLWBa2bg.jpg"
+                  alt="Good Cop / Rad Cop headshot with Dave Hannah and Ryan Darling against purple background"
+                  width={600}
+                  height={500}
+                  className="object-cover w-full h-auto"
+                />
+              </div>
+              <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20250728-_M2A0920-DNhpGrwO09yrWY0IF0GnRywaWHXlQ5.jpg"
+                  alt="Good Cop / Rad Cop performing live on stage with guitar engaging the crowd"
+                  width={600}
+                  height={400}
+                  className="object-cover w-full h-auto"
+                />
+              </div>
+            </div>
+
+            {/* Bio and Details */}
+            <div className="space-y-6">
+              <div className="space-y-4">
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Good Cop / Rad Cop (Netflix, Netflix is a Joke Festival, Moontower Comedy Fest) is a high-energy comedy duo from Atlanta, Georgia. With fast banter and barn-burning performances, they leave audiences on their feet singing and laughing.
+                </p>
+                <p className="text-lg text-muted-foreground leading-relaxed">
+                  Armed with nothing but a guitar, a kazoo, and a robot that does crowdwork, comedians Dave Hannah and Ryan Darling sing, scream, and harmonize their way into the hearts of every crowd, with absurd and often poignant songs influenced by their love of punk and country.
+                </p>
+              </div>
+
+              <div className="space-y-3 pt-6 border-t border-primary/20">
+                <h3 className="text-sm uppercase tracking-wider text-primary font-semibold">Featured In:</h3>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                    <span>Netflix&apos;s Star Search (2026)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                    <span>Netflix is a Joke Comedy Festival</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                    <span>Moontower Comedy Festival</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                    <span>Toured with Dropkick Murphys</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="space-y-3 pt-6 border-t border-primary/20">
+                <h3 className="text-sm uppercase tracking-wider text-primary font-semibold">Collaborations:</h3>
+                <p className="text-muted-foreground">
+                  Worked with Bobcat Goldthwait, Felipe Esparza, Roy Wood Jr., Trae Crowder, and Eddie Pepitone.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   )

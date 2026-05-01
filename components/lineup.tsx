@@ -127,7 +127,7 @@ export function Lineup() {
             <div className="space-y-6">
               <div className="space-y-4">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Good Cop / Rad Cop (Netflix, Netflix is a Joke Festival, Moontower Comedy Fest) is a high-energy comedy duo from Atlanta, Georgia. With fast banter and barn-burning performances, they leave audiences on their feet singing and laughing.
+                  Good Cop / Rad Cop is a high-energy comedy duo from Atlanta, Georgia. With fast banter and barn-burning performances, they leave audiences on their feet singing and laughing.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
                   Armed with nothing but a guitar, a kazoo, and a robot that does crowdwork, comedians Dave Hannah and Ryan Darling sing, scream, and harmonize their way into the hearts of every crowd, with absurd and often poignant songs influenced by their love of punk and country.
@@ -158,9 +158,28 @@ export function Lineup() {
 
               <div className="space-y-3 pt-6 border-t border-primary/20">
                 <h3 className="text-sm uppercase tracking-wider text-primary font-semibold">Collaborations:</h3>
-                <p className="text-muted-foreground">
-                  Worked with Bobcat Goldthwait, Felipe Esparza, Roy Wood Jr., Trae Crowder, and Eddie Pepitone.
-                </p>
+                <ul className="space-y-2 text-muted-foreground">
+                  <li className="flex items-start gap-2">
+                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                    <span>Bobcat Goldthwait</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                    <span>Felipe Esparza</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                    <span>Roy Wood Jr.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                    <span>Trae Crowder</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
+                    <span>Eddie Pepitone</span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

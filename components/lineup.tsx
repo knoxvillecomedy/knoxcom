@@ -151,7 +151,7 @@ export function Lineup() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                    <span>Toured with Dropkick Murphys</span>
+                    <span>On tour with the Dropkick Murphys</span>
                   </li>
                 </ul>
               </div>

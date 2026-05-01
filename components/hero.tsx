@@ -49,7 +49,7 @@ export function Hero() {
         </h1>
         
         <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto text-pretty font-sans">
-          Two nights of laughs, local comics, and good vibes. Knoxville&apos;s comedy scene is about to get loud.
+          Two nights of laughs, stand-up comedy, and good vibes. Knoxville&apos;s comedy scene is about to get loud.
         </p>
         
         <Button 
@@ -57,8 +57,8 @@ export function Hero() {
           className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-10 py-6 h-auto font-semibold shadow-lg transition-all hover:scale-105 hover:shadow-xl"
           asChild
         >
-          <a href="https://www.tixtree.com/e/hoot-in-the-holler-fundraiser-c3eb4c2ca88a" target="_blank" rel="noopener noreferrer">
-            Get Fundraiser Tickets
+          <a href="#fundraiser-show">
+            Support The Fest
           </a>
         </Button>
       </div>

@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
 
 const navLinks = [
   { href: "#about", label: "About" },
@@ -62,15 +61,6 @@ export function Navigation() {
               {link.label}
             </button>
           ))}
-          <Button 
-            size="sm" 
-            className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold"
-            asChild
-          >
-            <a href="https://www.tixtree.com/e/hoot-in-the-holler-fundraiser-c3eb4c2ca88a" target="_blank" rel="noopener noreferrer">
-              Fundraiser Tickets
-            </a>
-          </Button>
         </div>
 
         {/* Mobile Hamburger */}
@@ -97,15 +87,6 @@ export function Navigation() {
               {link.label}
             </button>
           ))}
-          <Button 
-            size="lg" 
-            className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold mt-2"
-            asChild
-          >
-            <a href="https://www.tixtree.com/e/hoot-in-the-holler-fundraiser-c3eb4c2ca88a" target="_blank" rel="noopener noreferrer">
-              Fundraiser Tickets
-            </a>
-          </Button>
         </div>
       </div>
     </nav>

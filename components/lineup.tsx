@@ -1,7 +1,7 @@
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
-import { Mic, Star, Sparkles, CircleDot } from "lucide-react"
+import { Mic, Star, Sparkles, CircleDot, Music, Zap } from "lucide-react"
 import Image from "next/image"
 
 export function Lineup() {
@@ -87,97 +87,116 @@ export function Lineup() {
         </div>
 
         {/* Good Cop / Rad Cop Headliner Section */}
-        <div className="mt-20 pt-16 border-t border-primary/20">
-          <div className="text-center mb-12 animate-slide-up">
-            <span className="inline-block px-4 py-2 bg-primary/10 rounded-full text-sm uppercase tracking-wider text-primary font-semibold mb-4">
-              Fest Headliner
-            </span>
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
+        <div className="mt-20 pt-16 relative">
+          {/* Decorative background elements for headliner */}
+          <div className="absolute -top-8 -left-12 w-48 h-48 bg-gradient-to-br from-primary/5 to-chart-2/5 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-20 -right-12 w-64 h-64 bg-gradient-to-tl from-accent/10 to-primary/5 rounded-full blur-3xl pointer-events-none" />
+          
+          <div className="border-t-2 border-gradient-to-r from-primary/0 via-primary/40 to-primary/0" />
+          
+          <div className="text-center mb-12 animate-slide-up relative z-10">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <Music className="w-5 h-5 text-accent animate-pulse-soft" />
+              <span className="inline-block px-4 py-2 bg-gradient-to-r from-primary/15 to-chart-2/15 rounded-full text-sm uppercase tracking-wider text-primary font-semibold border border-primary/20">
+                Fest Headliner
+              </span>
+              <Zap className="w-5 h-5 text-accent animate-pulse-soft" style={{ animationDelay: '0.3s' }} />
+            </div>
+            <h2 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent mb-3">
               Good Cop / Rad Cop
             </h2>
+            <div className="h-1 w-20 bg-gradient-to-r from-primary via-chart-2 to-accent mx-auto mb-6 rounded-full" />
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               High-energy comedy duo from Atlanta bringing fast banter and barn-burning performances.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center relative z-10">
             {/* Images */}
             <div className="space-y-6">
-              <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl hover:shadow-2xl transition-all duration-500 hover:scale-105 group border-2 border-primary/10 hover:border-primary/40">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gcrc-kInLqSLLkZEbxZeeKgYwfdasYzPo0R.jpg"
                   alt="Good Cop / Rad Cop headshot with Dave Hannah and Ryan Darling against purple background"
                   width={600}
                   height={500}
-                  className="object-cover w-full h-auto"
+                  className="object-cover w-full h-auto group-hover:brightness-110 transition-all duration-500"
                 />
               </div>
-              <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl hover:shadow-2xl transition-all duration-500 hover:scale-105 group border-2 border-chart-2/10 hover:border-chart-2/40">
+                <div className="absolute inset-0 bg-gradient-to-tl from-chart-2/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gcrc2-biyf4fBs0kLo8zrRrXLcvvJ98NWkpB.jpg"
                   alt="Good Cop / Rad Cop performing live on stage with guitar engaging the crowd"
                   width={600}
                   height={400}
-                  className="object-cover w-full h-auto"
+                  className="object-cover w-full h-auto group-hover:brightness-110 transition-all duration-500"
                 />
               </div>
             </div>
 
             {/* Bio and Details */}
             <div className="space-y-6">
-              <div className="space-y-4">
-                <p className="text-lg text-muted-foreground leading-relaxed">
+              <div className="space-y-4 bg-gradient-to-br from-card/50 to-card/25 rounded-xl p-6 border border-primary/10 backdrop-blur-sm hover:border-primary/30 transition-colors duration-300">
+                <p className="text-lg text-muted-foreground leading-relaxed font-medium">
                   Armed with nothing but a guitar, a kazoo, and a robot that does crowdwork, comedians Dave Hannah and Ryan Darling sing, scream, and harmonize their way into the hearts of every crowd, with absurd and often poignant songs influenced by their love of punk and country.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-lg text-muted-foreground leading-relaxed font-medium">
                   They&apos;ve crowd-surfed in living rooms, performed singing telegrams for Mother&apos;s Day, and played the 7th inning stretch for minor league baseball games. Good Cop/ Rad Cop is a musical comedy experience that feels like a week&apos;s worth of summer camp packed into one show.
                 </p>
               </div>
 
-              <div className="space-y-3 pt-6 border-t border-primary/20">
-                <h3 className="text-sm uppercase tracking-wider text-primary font-semibold">Featured In:</h3>
+              <div className="space-y-3 pt-6 border-t-2 border-gradient-to-r from-primary/0 via-primary/20 to-primary/0">
+                <h3 className="text-sm uppercase tracking-wider text-primary font-semibold flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  Featured In
+                </h3>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                    <span>Netflix&apos;s Star Search (2026)</span>
+                  <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+                    <span className="w-2.5 h-2.5 rounded-full bg-gradient-to-br from-primary to-chart-2 mt-2 flex-shrink-0" />
+                    <span className="font-medium">Netflix&apos;s Star Search (2026)</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                    <span>Netflix is a Joke Comedy Festival</span>
+                  <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+                    <span className="w-2.5 h-2.5 rounded-full bg-gradient-to-br from-primary to-chart-2 mt-2 flex-shrink-0" />
+                    <span className="font-medium">Netflix is a Joke Comedy Festival</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                    <span>Moontower Comedy Festival</span>
+                  <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+                    <span className="w-2.5 h-2.5 rounded-full bg-gradient-to-br from-primary to-chart-2 mt-2 flex-shrink-0" />
+                    <span className="font-medium">Moontower Comedy Festival</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                    <span>On tour with the Dropkick Murphys</span>
+                  <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+                    <span className="w-2.5 h-2.5 rounded-full bg-gradient-to-br from-primary to-chart-2 mt-2 flex-shrink-0" />
+                    <span className="font-medium">On tour with the Dropkick Murphys</span>
                   </li>
                 </ul>
               </div>
 
-              <div className="space-y-3 pt-6 border-t border-primary/20">
-                <h3 className="text-sm uppercase tracking-wider text-primary font-semibold">Collaborations:</h3>
+              <div className="space-y-3 pt-6 border-t-2 border-gradient-to-r from-accent/0 via-accent/20 to-accent/0">
+                <h3 className="text-sm uppercase tracking-wider text-accent font-semibold flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-accent" />
+                  Collaborations
+                </h3>
                 <ul className="space-y-2 text-muted-foreground">
-                  <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                    <span>Bobcat Goldthwait</span>
+                  <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+                    <span className="w-2.5 h-2.5 rounded-full bg-gradient-to-br from-accent to-chart-3 mt-2 flex-shrink-0" />
+                    <span className="font-medium">Bobcat Goldthwait</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                    <span>Felipe Esparza</span>
+                  <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+                    <span className="w-2.5 h-2.5 rounded-full bg-gradient-to-br from-accent to-chart-3 mt-2 flex-shrink-0" />
+                    <span className="font-medium">Felipe Esparza</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                    <span>Roy Wood Jr.</span>
+                  <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+                    <span className="w-2.5 h-2.5 rounded-full bg-gradient-to-br from-accent to-chart-3 mt-2 flex-shrink-0" />
+                    <span className="font-medium">Roy Wood Jr.</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                    <span>Trae Crowder</span>
+                  <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+                    <span className="w-2.5 h-2.5 rounded-full bg-gradient-to-br from-accent to-chart-3 mt-2 flex-shrink-0" />
+                    <span className="font-medium">Trae Crowder</span>
                   </li>
-                  <li className="flex items-start gap-2">
-                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0" />
-                    <span>Eddie Pepitone</span>
+                  <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+                    <span className="w-2.5 h-2.5 rounded-full bg-gradient-to-br from-accent to-chart-3 mt-2 flex-shrink-0" />
+                    <span className="font-medium">Eddie Pepitone</span>
                   </li>
                 </ul>
               </div>

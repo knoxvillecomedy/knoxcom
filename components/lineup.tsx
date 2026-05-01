@@ -96,7 +96,7 @@ export function Lineup() {
               Good Cop / Rad Cop
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Songs, screams, and screaming laughs with guitar, kazoo, and a robot.
+              High-energy comedy duo from Atlanta bringing fast banter and barn-burning performances.
             </p>
           </div>
 
@@ -127,10 +127,10 @@ export function Lineup() {
             <div className="space-y-6">
               <div className="space-y-4">
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Good Cop / Rad Cop is a high-energy comedy duo from Atlanta, Georgia. With fast banter and barn-burning performances, they leave audiences on their feet singing and laughing.
+                  Armed with nothing but a guitar, a kazoo, and a robot that does crowdwork, comedians Dave Hannah and Ryan Darling sing, scream, and harmonize their way into the hearts of every crowd, with absurd and often poignant songs influenced by their love of punk and country.
                 </p>
                 <p className="text-lg text-muted-foreground leading-relaxed">
-                  Armed with nothing but a guitar, a kazoo, and a robot that does crowdwork, comedians Dave Hannah and Ryan Darling sing, scream, and harmonize their way into the hearts of every crowd, with absurd and often poignant songs influenced by their love of punk and country.
+                  They&apos;ve crowd-surfed in living rooms, performed singing telegrams for Mother&apos;s Day, and played the 7th inning stretch for minor league baseball games. Good Cop/ Rad Cop is a musical comedy experience that feels like a week&apos;s worth of summer camp packed into one show.
                 </p>
               </div>
 

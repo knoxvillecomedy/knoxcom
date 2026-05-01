@@ -105,7 +105,7 @@ export function Lineup() {
             <div className="space-y-6">
               <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GoodCopRadCop_Fly25_1128-b8cICOUv1nEIDgYSzy19EHHLWBa2bg.jpg"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gcrc-kInLqSLLkZEbxZeeKgYwfdasYzPo0R.jpg"
                   alt="Good Cop / Rad Cop headshot with Dave Hannah and Ryan Darling against purple background"
                   width={600}
                   height={500}
@@ -114,7 +114,7 @@ export function Lineup() {
               </div>
               <div className="relative rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20250728-_M2A0920-DNhpGrwO09yrWY0IF0GnRywaWHXlQ5.jpg"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gcrc2-biyf4fBs0kLo8zrRrXLcvvJ98NWkpB.jpg"
                   alt="Good Cop / Rad Cop performing live on stage with guitar engaging the crowd"
                   width={600}
                   height={400}

@@ -96,7 +96,7 @@ export function Lineup() {
               Good Cop / Rad Cop
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              High-energy comedy duo from Atlanta bringing fast banter and barn-burning performances.
+              Songs, screams, and screaming laughs with guitar, kazoo, and a robot.
             </p>
           </div>
 

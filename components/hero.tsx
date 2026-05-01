@@ -58,7 +58,7 @@ export function Hero() {
           asChild
         >
           <a href="#fundraiser-show">
-            Support The Fest.
+            Support The Fest
           </a>
         </Button>
       </div>

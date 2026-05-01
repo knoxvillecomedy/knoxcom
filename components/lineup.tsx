@@ -48,7 +48,7 @@ export function Lineup() {
             The Experience
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Full lineup coming soon. Here&apos;s what you can expect.
+            Festival schedule coming soon. Here&apos;s what you can expect.
           </p>
         </div>
 

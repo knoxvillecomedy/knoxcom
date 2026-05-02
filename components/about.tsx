@@ -96,47 +96,6 @@ const tier1Sponsors = [
   },
 ]
 
-const renderSponsor = (sponsor: typeof tier3Sponsors[0], size: 'large' | 'medium' | 'small') => {
-  const hasLogo = sponsor.url !== ""
-  const containerClass = size === 'large' ? 'bg-card rounded-xl p-4 border border-border' : 'bg-card rounded-lg p-3 border border-border'
-  const imageWrapperClass = size === 'large' ? 'w-32 h-32 md:w-40 md:h-40' : size === 'medium' ? 'w-24 h-24 md:w-28 md:h-28' : 'w-20 h-20 md:w-24 md:h-24'
-  const placeholderClass = size === 'large' ? 'w-32 h-32 md:w-40 md:h-40' : size === 'medium' ? 'w-24 h-24 md:w-28 md:h-28' : 'w-20 h-20 md:w-24 md:h-24'
-
-  if (hasLogo) {
-    return (
-      <a
-        href={sponsor.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group block"
-        title={`Visit ${sponsor.name} (opens in new tab)`}
-      >
-        <div className={`${containerClass} shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-2 group-hover:border-primary/30`}>
-          <Image
-            src={sponsor.logo}
-            alt={sponsor.alt}
-            width={160}
-            height={160}
-            className={`object-contain ${imageWrapperClass} opacity-95 group-hover:opacity-100 transition-opacity`}
-          />
-        </div>
-      </a>
-    )
-  }
-
-  return (
-    <div className="group block" title={sponsor.name}>
-      <div className={`${containerClass} shadow-sm transition-all duration-300 group-hover:shadow-md group-hover:-translate-y-1 group-hover:border-primary/30`}>
-        <div className={`${placeholderClass} flex items-center justify-center bg-amber-100/50 rounded-md`}>
-          <span className="text-xs md:text-sm text-amber-900/70 text-center font-medium px-2 leading-tight">
-            {sponsor.name}
-          </span>
-        </div>
-      </div>
-    </div>
-  )
-}
-
 export function About() {
   return (
     <section id="about" className="py-12 md:py-20 px-4 bg-background relative overflow-hidden">
@@ -167,54 +126,79 @@ export function About() {
 
         {/* Sponsor Logos Section */}
         <div className="mt-16 pt-12 border-t border-border">
-          <h3 className="text-xl font-semibold text-foreground mb-12">
+          <h3 className="text-xl font-semibold text-foreground mb-10">
             Thanks to our Festival Sponsors:
           </h3>
 
           {/* Tier 3 Sponsors - Featured */}
-          <div className="mb-14">
-            <h4 className="text-sm font-medium text-muted-foreground mb-6 tracking-wide uppercase">
-              Tier 3
-            </h4>
-            <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
-              {tier3Sponsors.map((sponsor) => (
-                <div key={sponsor.name}>
-                  {renderSponsor(sponsor, 'large')}
+          <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 mb-10">
+            {tier3Sponsors.map((sponsor) => (
+              <a
+                key={sponsor.name}
+                href={sponsor.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block"
+                title={`Visit ${sponsor.name} (opens in new tab)`}
+              >
+                <div className="bg-card rounded-xl p-4 border border-border shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-2 group-hover:border-primary/30">
+                  <Image
+                    src={sponsor.logo}
+                    alt={sponsor.alt}
+                    width={160}
+                    height={160}
+                    className="object-contain w-32 h-32 md:w-40 md:h-40 opacity-95 group-hover:opacity-100 transition-opacity"
+                  />
                 </div>
-              ))}
-            </div>
+              </a>
+            ))}
           </div>
 
           {/* Tier 2 Sponsors */}
-          <div className="mb-14">
-            <h4 className="text-sm font-medium text-muted-foreground mb-6 tracking-wide uppercase">
-              Tier 2
-            </h4>
-            <div className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
-              {tier2Sponsors.map((sponsor) => (
-                <div key={sponsor.name}>
-                  {renderSponsor(sponsor, 'medium')}
+          <div className="flex flex-wrap justify-center items-center gap-5 md:gap-8 mb-10">
+            {tier2Sponsors.map((sponsor) => (
+              <div
+                key={sponsor.name}
+                className="group block"
+                title={sponsor.name}
+              >
+                <div className="bg-card rounded-lg p-3 border border-border shadow-sm transition-all duration-300 group-hover:shadow-md group-hover:-translate-y-1 group-hover:border-primary/30">
+                  <div className="w-24 h-24 md:w-28 md:h-28 flex items-center justify-center bg-muted rounded-md">
+                    <span className="text-xs md:text-sm text-muted-foreground text-center font-medium px-2">
+                      {sponsor.name}
+                    </span>
+                  </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
 
           {/* Tier 1 Sponsors */}
-          <div className="mb-8">
-            <h4 className="text-sm font-medium text-muted-foreground mb-6 tracking-wide uppercase">
-              Tier 1
-            </h4>
-            <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8">
-              {tier1Sponsors.map((sponsor) => (
-                <div key={sponsor.name}>
-                  {renderSponsor(sponsor, 'small')}
+          <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 mb-8">
+            {tier1Sponsors.map((sponsor) => (
+              <a
+                key={sponsor.name}
+                href={sponsor.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block"
+                title={`Visit ${sponsor.name} (opens in new tab)`}
+              >
+                <div className="bg-card rounded-lg p-3 border border-border shadow-sm transition-all duration-300 group-hover:shadow-md group-hover:-translate-y-1 group-hover:border-primary/30">
+                  <Image
+                    src={sponsor.logo}
+                    alt={sponsor.alt}
+                    width={120}
+                    height={120}
+                    className="object-contain w-20 h-20 md:w-24 md:h-24 opacity-90 group-hover:opacity-100 transition-opacity"
+                  />
                 </div>
-              ))}
-            </div>
+              </a>
+            ))}
           </div>
 
           {/* Sponsors Full Notice */}
-          <div className="flex items-center justify-center gap-2 mt-12 text-muted-foreground text-sm">
+          <div className="flex items-center justify-center gap-2 mt-8 text-muted-foreground text-sm">
             <Heart className="w-4 h-4 fill-accent text-accent" />
             <span>Sponsors list is full</span>
             <Heart className="w-4 h-4 fill-accent text-accent" />

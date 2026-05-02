@@ -163,13 +163,14 @@ export function Lineup() {
               {/* Gradient border effect */}
               <div className="absolute -inset-0.5 bg-gradient-to-br from-chart-2/40 via-accent/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
               <div className="relative rounded-2xl overflow-hidden bg-card">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gcrc2-biyf4fBs0kLo8zrRrXLcvvJ98NWkpB.jpg"
-                  alt="Good Cop / Rad Cop performing live on stage with guitar engaging the crowd"
-                  width={600}
-                  height={400}
-                  className="object-cover w-full h-auto group-hover:scale-105 transition-transform duration-500"
-                />
+                <div className="relative w-full h-64">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gcrc2-biyf4fBs0kLo8zrRrXLcvvJ98NWkpB.jpg"
+                    alt="Good Cop / Rad Cop performing live on stage with guitar engaging the crowd"
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
                 {/* Overlay on hover */}
                 <div className="absolute inset-0 bg-gradient-to-t from-chart-2/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>

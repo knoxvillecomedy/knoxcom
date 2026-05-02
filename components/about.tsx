@@ -174,7 +174,7 @@ export function About() {
           {/* Tier 3 Sponsors - Featured */}
           <div className="mb-14">
             <h4 className="text-sm font-medium text-muted-foreground mb-6 tracking-wide uppercase">
-              Gold
+              Tier 3
             </h4>
             <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10">
               {tier3Sponsors.map((sponsor) => (
@@ -188,7 +188,7 @@ export function About() {
           {/* Tier 2 Sponsors */}
           <div className="mb-14">
             <h4 className="text-sm font-medium text-muted-foreground mb-6 tracking-wide uppercase">
-              Silver
+              Tier 2
             </h4>
             <div className="flex flex-wrap justify-center items-center gap-5 md:gap-8">
               {tier2Sponsors.map((sponsor) => (
@@ -202,7 +202,7 @@ export function About() {
           {/* Tier 1 Sponsors */}
           <div className="mb-8">
             <h4 className="text-sm font-medium text-muted-foreground mb-6 tracking-wide uppercase">
-              Bronze
+              Tier 1
             </h4>
             <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8">
               {tier1Sponsors.map((sponsor) => (

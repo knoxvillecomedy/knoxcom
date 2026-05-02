@@ -72,7 +72,7 @@ export function About() {
         
         <div className="space-y-4 text-lg md:text-xl text-muted-foreground leading-relaxed">
           <p className="animate-slide-up" style={{ animationDelay: '0.1s' }}>
-            The Hoot in The Holler is Knoxville&apos;s brand new comedy festival, bringing together the best local and regional talent for a weekend of non-stop laughs.
+            The Hoot in The Holler is Knoxville&apos;s brand new comedy festival, bringing together the best local and regional talent for a weekend of live standup and variety shows.
           </p>
           <p className="text-foreground font-medium animate-slide-up" style={{ animationDelay: '0.2s' }}>
             Get in early. Laugh hard. Tell your friends you were there first.

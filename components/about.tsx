@@ -74,10 +74,7 @@ export function About() {
           <p className="animate-slide-up" style={{ animationDelay: '0.1s' }}>
             The Hoot in The Holler is Knoxville&apos;s brand new comedy festival, bringing together the best local and regional talent for a weekend of non-stop laughs.
           </p>
-          <p className="animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            Whether you&apos;re a comedy regular or just looking for a good time, this inaugural event is your chance to be part of something special from the very beginning.
-          </p>
-          <p className="text-foreground font-medium animate-slide-up" style={{ animationDelay: '0.3s' }}>
+          <p className="text-foreground font-medium animate-slide-up" style={{ animationDelay: '0.2s' }}>
             Get in early. Laugh hard. Tell your friends you were there first.
           </p>
         </div>

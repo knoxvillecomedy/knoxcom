@@ -195,7 +195,7 @@ export function About() {
           </div>
 
           {/* Tier 1 Sponsors */}
-          <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 mb-8">
+          <div className="grid grid-cols-3 gap-4 md:gap-8 mb-8 justify-items-center">
             {tier1Sponsors.map((sponsor) => (
               <div key={sponsor.name}>
                 {renderSponsor(sponsor, 'small')}

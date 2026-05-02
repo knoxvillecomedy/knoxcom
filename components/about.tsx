@@ -22,6 +22,39 @@ const tier3Sponsors = [
     url: "https://www.allstarparties.com/",
     alt: "All Star Parties and Events logo - Knoxville event planning sponsor",
   },
+  {
+    name: "Serendipity Hair Studio",
+    logo: "/logos/sponsors/serendipity-hair.jpg",
+    url: "",
+    alt: "Serendipity Hair Studio logo - Knoxville hair salon sponsor",
+  },
+  {
+    name: "Best Bagels",
+    logo: "/logos/sponsors/best-bagels.jpg",
+    url: "",
+    alt: "Best Bagels logo - Knoxville bagel shop sponsor",
+  },
+]
+
+const tier2Sponsors = [
+  {
+    name: "Pink Pony Parlor",
+    logo: "/logos/sponsors/pink-pony.jpg",
+    url: "",
+    alt: "Pink Pony Parlor logo - Knoxville sponsor",
+  },
+  {
+    name: "Nick Dwyer Tree Care",
+    logo: "/logos/sponsors/nick-dwyer.jpg",
+    url: "",
+    alt: "Nick Dwyer Tree Care logo - Knoxville tree service sponsor",
+  },
+  {
+    name: "Bath Lab",
+    logo: "/logos/sponsors/bath-lab.jpg",
+    url: "",
+    alt: "Bath Lab logo - Knoxville bath products sponsor",
+  },
 ]
 
 const tier1Sponsors = [
@@ -48,6 +81,18 @@ const tier1Sponsors = [
     logo: "/logos/sponsors/mowalition.jpg",
     url: "https://www.facebook.com/themowalitionknoxville/",
     alt: "H&H Lawn Service The Mowalition logo - Knoxville lawn care sponsor",
+  },
+  {
+    name: "Amy Herrmann Realty",
+    logo: "/logos/sponsors/amy-herrmann.jpg",
+    url: "",
+    alt: "Amy Herrmann Realty logo - Knoxville real estate sponsor",
+  },
+  {
+    name: "Aaron Cody Campbell",
+    logo: "/logos/sponsors/aaron-cody.jpg",
+    url: "",
+    alt: "Aaron Cody Campbell logo - Knoxville sponsor",
   },
 ]
 
@@ -106,6 +151,25 @@ export function About() {
                   />
                 </div>
               </a>
+            ))}
+          </div>
+
+          {/* Tier 2 Sponsors */}
+          <div className="flex flex-wrap justify-center items-center gap-5 md:gap-8 mb-10">
+            {tier2Sponsors.map((sponsor) => (
+              <div
+                key={sponsor.name}
+                className="group block"
+                title={sponsor.name}
+              >
+                <div className="bg-card rounded-lg p-3 border border-border shadow-sm transition-all duration-300 group-hover:shadow-md group-hover:-translate-y-1 group-hover:border-primary/30">
+                  <div className="w-24 h-24 md:w-28 md:h-28 flex items-center justify-center bg-muted rounded-md">
+                    <span className="text-xs md:text-sm text-muted-foreground text-center font-medium px-2">
+                      {sponsor.name}
+                    </span>
+                  </div>
+                </div>
+              </div>
             ))}
           </div>
 

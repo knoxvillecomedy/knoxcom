@@ -48,7 +48,7 @@ export function Hero() {
           <span className="block text-accent italic" style={{ textShadow: "3px 3px 0 rgba(0,0,0,0.4), 6px 6px 0 rgba(0,0,0,0.2)" }}>in The Holler</span>
         </h1>
         
-        <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto text-pretty">
+        <p className="text-xl md:text-2xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto text-pretty font-sans">
           Two nights of laughs, standup comedy, and good vibes in Knoxville&apos;s Happy Holler Historic District.
         </p>
         

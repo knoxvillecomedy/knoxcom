@@ -1,6 +1,5 @@
 "use client"
 
-import { useState, useEffect } from "react"
 import Image from "next/image"
 import { Quote, Smile, Heart, Star } from "lucide-react"
 
@@ -97,94 +96,7 @@ const tier1Sponsors = [
   },
 ]
 
-const renderSponsor = (sponsor: typeof tier1Sponsors[0], tier: 'rainbow' | 'bronze' | 'black', size: 'large' | 'medium' | 'small', rainbowColor?: string) => {
-  const hasLogo = sponsor.url !== ""
-  
-  // Border colors for each tier
-  const getBorderClass = () => {
-    if (tier === 'rainbow' && rainbowColor) {
-      return `border-4 shadow-lg transition-colors duration-300 ${rainbowColor}`
-    }
-    const borderColors = {
-      rainbow: 'border-4 border-red-500 shadow-lg shadow-red-500/30',
-      bronze: 'border-4 border-orange-700 shadow-lg shadow-orange-700/30',
-      black: 'border-4 border-black shadow-lg shadow-black/30',
-    }
-    return borderColors[tier]
-  }
-  
-  const sizeClasses = {
-    large: { container: 'rounded-xl p-4', image: 'w-32 h-32 md:w-40 md:h-40', placeholder: 'w-32 h-32 md:w-40 md:h-40' },
-    medium: { container: 'rounded-lg p-3', image: 'w-24 h-24 md:w-28 md:h-28', placeholder: 'w-24 h-24 md:w-28 md:h-28' },
-    small: { container: 'rounded-lg p-3', image: 'w-20 h-20 md:w-24 md:h-24', placeholder: 'w-20 h-20 md:w-24 md:h-24' },
-  }
-  
-  const sizeConfig = sizeClasses[size]
-  const borderClass = getBorderClass()
-
-  if (hasLogo) {
-    return (
-      <a
-        href={sponsor.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group block"
-        title={`Visit ${sponsor.name} (opens in new tab)`}
-      >
-        <div className={`bg-card ${sizeConfig.container} ${borderClass} transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-2`}>
-          <Image
-            src={sponsor.logo}
-            alt={sponsor.alt}
-            width={160}
-            height={160}
-            className={`object-contain ${sizeConfig.image} opacity-95 group-hover:opacity-100 transition-opacity`}
-          />
-        </div>
-      </a>
-    )
-  }
-
-  return (
-    <div className="group block" title={sponsor.name}>
-      <div className={`bg-card ${sizeConfig.container} ${borderClass} transition-all duration-300 group-hover:shadow-xl group-hover:-translate-y-1`}>
-        <div className={`${sizeConfig.placeholder} flex items-center justify-center bg-amber-100/50 rounded-md`}>
-          <span className="text-xs md:text-sm text-amber-900/70 text-center font-medium px-2 leading-tight">
-            {sponsor.name}
-          </span>
-        </div>
-      </div>
-    </div>
-  )
-}
-
 export function About() {
-  const [rainbowColor, setRainbowColor] = useState('')
-
-  useEffect(() => {
-    const handleScroll = () => {
-      // Calculate scroll position (0 to 1)
-      const scrollProgress = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) || 0
-      
-      // Rainbow colors that cycle through the spectrum
-      const rainbowColors = [
-        'border-red-500 shadow-red-500/30',
-        'border-orange-500 shadow-orange-500/30',
-        'border-yellow-500 shadow-yellow-500/30',
-        'border-green-500 shadow-green-500/30',
-        'border-blue-500 shadow-blue-500/30',
-        'border-purple-500 shadow-purple-500/30',
-        'border-pink-500 shadow-pink-500/30',
-      ]
-      
-      // Get color based on scroll position
-      const colorIndex = Math.floor(scrollProgress * (rainbowColors.length - 1))
-      setRainbowColor(rainbowColors[colorIndex])
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
   return (
     <section id="about" className="py-12 md:py-20 px-4 bg-background relative overflow-hidden">
       {/* Decorative elements */}
@@ -218,30 +130,70 @@ export function About() {
             Thanks to our Festival Sponsors:
           </h3>
 
-          {/* Tier 3 Sponsors - Featured (Rainbow) */}
+          {/* Tier 3 Sponsors - Featured */}
           <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 mb-10">
             {tier3Sponsors.map((sponsor) => (
-              <div key={sponsor.name}>
-                {renderSponsor(sponsor, 'rainbow', 'large', rainbowColor)}
-              </div>
+              <a
+                key={sponsor.name}
+                href={sponsor.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block"
+                title={`Visit ${sponsor.name} (opens in new tab)`}
+              >
+                <div className="bg-card rounded-xl p-4 border border-border shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-2 group-hover:border-primary/30">
+                  <Image
+                    src={sponsor.logo}
+                    alt={sponsor.alt}
+                    width={160}
+                    height={160}
+                    className="object-contain w-32 h-32 md:w-40 md:h-40 opacity-95 group-hover:opacity-100 transition-opacity"
+                  />
+                </div>
+              </a>
             ))}
           </div>
 
-          {/* Tier 2 Sponsors (Bronze) */}
+          {/* Tier 2 Sponsors */}
           <div className="flex flex-wrap justify-center items-center gap-5 md:gap-8 mb-10">
             {tier2Sponsors.map((sponsor) => (
-              <div key={sponsor.name}>
-                {renderSponsor(sponsor, 'bronze', 'medium')}
+              <div
+                key={sponsor.name}
+                className="group block"
+                title={sponsor.name}
+              >
+                <div className="bg-card rounded-lg p-3 border border-border shadow-sm transition-all duration-300 group-hover:shadow-md group-hover:-translate-y-1 group-hover:border-primary/30">
+                  <div className="w-24 h-24 md:w-28 md:h-28 flex items-center justify-center bg-muted rounded-md">
+                    <span className="text-xs md:text-sm text-muted-foreground text-center font-medium px-2">
+                      {sponsor.name}
+                    </span>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
 
-          {/* Tier 1 Sponsors (Black) */}
+          {/* Tier 1 Sponsors */}
           <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 mb-8">
             {tier1Sponsors.map((sponsor) => (
-              <div key={sponsor.name}>
-                {renderSponsor(sponsor, 'black', 'small')}
-              </div>
+              <a
+                key={sponsor.name}
+                href={sponsor.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block"
+                title={`Visit ${sponsor.name} (opens in new tab)`}
+              >
+                <div className="bg-card rounded-lg p-3 border border-border shadow-sm transition-all duration-300 group-hover:shadow-md group-hover:-translate-y-1 group-hover:border-primary/30">
+                  <Image
+                    src={sponsor.logo}
+                    alt={sponsor.alt}
+                    width={120}
+                    height={120}
+                    className="object-contain w-20 h-20 md:w-24 md:h-24 opacity-90 group-hover:opacity-100 transition-opacity"
+                  />
+                </div>
+              </a>
             ))}
           </div>
 

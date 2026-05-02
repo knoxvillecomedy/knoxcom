@@ -159,15 +159,24 @@ export function Lineup() {
             </div>
 
             {/* Photo 2 */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl group cursor-pointer md:order-2 order-3">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl group cursor-pointer md:order-2 order-3 flex flex-col bg-card">
               {/* Gradient border effect */}
-              <div className="absolute -inset-0.5 bg-gradient-to-br from-chart-2/40 via-accent/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
-              <div className="relative rounded-2xl overflow-hidden bg-card">
+              <div className="absolute -inset-1 bg-gradient-to-br from-chart-2/40 via-accent/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
+              
+              {/* Tagline space at top */}
+              <div className="relative z-10 flex-1 flex items-center justify-center p-8">
+                <p className="text-center text-muted-foreground text-lg leading-relaxed">
+                  High-energy comedy duo from Atlanta bringing fast banter and barn-burning performances.
+                </p>
+              </div>
+              
+              {/* Photo at bottom */}
+              <div className="relative z-10 rounded-b-2xl overflow-hidden">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gcrc2-biyf4fBs0kLo8zrRrXLcvvJ98NWkpB.jpg"
                   alt="Good Cop / Rad Cop performing live on stage with guitar engaging the crowd"
                   width={600}
-                  height={400}
+                  height={300}
                   className="object-cover w-full h-auto group-hover:scale-105 transition-transform duration-500"
                 />
                 {/* Overlay on hover */}

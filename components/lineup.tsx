@@ -152,14 +152,7 @@ export function Lineup() {
 
             {/* Bio and Details */}
             <div className="space-y-6">
-              <div className="space-y-4 rounded-2xl bg-gradient-to-br from-primary/8 to-chart-2/5 p-8 border border-primary/20 hover:border-primary/40 transition-colors duration-300">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Armed with nothing but a guitar, a kazoo, and a robot that does crowdwork, comedians Dave Hannah and Ryan Darling sing, scream, and harmonize their way into the hearts of every crowd, with absurd and often poignant songs influenced by their love of punk and country.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  They&apos;ve crowd-surfed in living rooms, performed singing telegrams for Mother&apos;s Day, and played the 7th inning stretch for minor league baseball games. Good Cop/ Rad Cop is a musical comedy experience that feels like a week&apos;s worth of summer camp packed into one show.
-                </p>
-              </div>
+
 
               <div className="space-y-4 rounded-xl bg-gradient-to-br from-primary/5 to-transparent p-6 border-l-4 border-primary/60">
                 <h3 className="text-sm uppercase tracking-wider text-primary font-semibold">

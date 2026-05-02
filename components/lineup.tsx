@@ -159,7 +159,7 @@ export function Lineup() {
             </div>
 
             {/* Photo 2 */}
-            <div className="relative rounded-2xl overflow-visible shadow-2xl group cursor-pointer md:order-2 order-3 w-fit mx-auto">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl group cursor-pointer md:order-2 order-3">
               {/* Gradient border effect */}
               <div className="absolute -inset-0.5 bg-gradient-to-br from-chart-2/40 via-accent/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
               <div className="relative rounded-2xl overflow-hidden bg-card">

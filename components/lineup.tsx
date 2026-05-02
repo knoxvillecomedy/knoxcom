@@ -183,34 +183,6 @@ export function Lineup() {
               </div>
             </div>
 
-            {/* Collaborations - Full width below */}
-            <div className="space-y-4 rounded-xl bg-gradient-to-br from-primary/5 to-transparent p-6 border-l-4 border-primary/60">
-              <h3 className="text-sm uppercase tracking-wider text-primary font-semibold">
-                Collaborations
-              </h3>
-              <ul className="grid md:grid-cols-2 gap-3 text-muted-foreground">
-                <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
-                  <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
-                  <span>Bobcat Goldthwait</span>
-                </li>
-                <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
-                  <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
-                  <span>Felipe Esparza</span>
-                </li>
-                <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
-                  <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
-                  <span>Roy Wood Jr.</span>
-                </li>
-                <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
-                  <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
-                  <span>Trae Crowder</span>
-                </li>
-                <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
-                  <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
-                  <span>Eddie Pepitone</span>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>

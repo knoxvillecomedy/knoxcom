@@ -82,7 +82,7 @@ export function About() {
         {/* Sponsor Logos Section */}
         <div className="mt-16 pt-12 border-t border-border">
           <h3 className="text-xl font-semibold text-foreground mb-10">
-            Thanks to our Festival Sponsors
+            Thanks to our Festival Sponsors:
           </h3>
 
           {/* Tier 3 Sponsors - Featured */}

@@ -1,9 +1,7 @@
 "use client"
 
-import { useState } from "react"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import { Handshake, Heart, Star, Copy, Check } from "lucide-react"
+import { Heart, Star } from "lucide-react"
 
 const tier3Sponsors = [
   {
@@ -54,16 +52,6 @@ const tier1Sponsors = [
 ]
 
 export function Sponsors() {
-  const [showEmail, setShowEmail] = useState(false)
-  const [copied, setCopied] = useState(false)
-  const email = "yellowdoormediatn@gmail.com"
-
-  const handleCopy = async () => {
-    await navigator.clipboard.writeText(email)
-    setCopied(true)
-    setTimeout(() => setCopied(false), 2000)
-  }
-
   return (
     <section id="sponsors" className="py-12 md:py-20 px-4 bg-secondary relative overflow-hidden">
       {/* Decorative elements */}
@@ -131,38 +119,12 @@ export function Sponsors() {
           ))}
         </div>
 
-        {/* Become a Sponsor CTA */}
-        {!showEmail ? (
-          <Button
-            variant="outline"
-            size="lg"
-            className="border-primary text-primary hover:bg-primary hover:text-primary-foreground text-lg px-8 py-5 h-auto font-semibold transition-all hover:scale-105"
-            onClick={() => setShowEmail(true)}
-          >
-            <Handshake className="w-5 h-5 mr-2" />
-            Become a Sponsor
-          </Button>
-        ) : (
-          <div className="bg-card rounded-xl p-6 border border-border inline-block animate-slide-up">
-            <p className="text-muted-foreground text-sm mb-3">
-              Send us an email to discuss sponsorship opportunities:
-            </p>
-            <div className="flex items-center justify-center gap-3">
-              <span className="text-foreground font-medium text-lg">{email}</span>
-              <button
-                onClick={handleCopy}
-                className="p-2 rounded-md hover:bg-muted transition-colors"
-                title={copied ? "Copied!" : "Click to copy"}
-              >
-                {copied ? (
-                  <Check className="w-5 h-5 text-green-600" />
-                ) : (
-                  <Copy className="w-5 h-5 text-muted-foreground hover:text-foreground transition-colors" />
-                )}
-              </button>
-            </div>
-          </div>
-        )}
+        {/* Sponsor list full notice */}
+        <div className="bg-card rounded-xl p-6 border border-border inline-block">
+          <p className="text-foreground font-semibold text-lg">
+            Our sponsor list is full for this year&apos;s festival!
+          </p>
+        </div>
       </div>
     </section>
   )

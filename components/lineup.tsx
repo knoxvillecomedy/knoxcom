@@ -167,7 +167,7 @@ export function Lineup() {
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gcrc2-biyf4fBs0kLo8zrRrXLcvvJ98NWkpB.jpg"
                   alt="Good Cop / Rad Cop performing live on stage with guitar engaging the crowd"
                   width={600}
-                  height={300}
+                  height={400}
                   className="object-cover w-full h-auto group-hover:scale-105 transition-transform duration-500"
                 />
                 {/* Overlay on hover */}

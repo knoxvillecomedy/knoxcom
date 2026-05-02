@@ -113,7 +113,7 @@ export function About() {
           </div>
 
           {/* Tier 1 Sponsors */}
-          <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8">
+          <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 mb-8">
             {tier1Sponsors.map((sponsor) => (
               <a
                 key={sponsor.name}
@@ -134,6 +134,13 @@ export function About() {
                 </div>
               </a>
             ))}
+          </div>
+
+          {/* Sponsors Full Notice */}
+          <div className="flex items-center justify-center gap-2 mt-8 text-muted-foreground text-sm">
+            <Heart className="w-4 h-4 fill-accent text-accent" />
+            <span>Sponsors list is full</span>
+            <Heart className="w-4 h-4 fill-accent text-accent" />
           </div>
         </div>
       </div>

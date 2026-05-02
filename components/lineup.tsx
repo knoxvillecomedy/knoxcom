@@ -159,11 +159,11 @@ export function Lineup() {
             </div>
 
             {/* Photo 2 */}
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl group cursor-pointer md:order-2 order-3">
+            <div className="relative rounded-2xl overflow-hidden group cursor-pointer md:order-2 order-3">
               {/* Gradient border effect */}
               <div className="absolute -inset-0.5 bg-gradient-to-br from-chart-2/40 via-accent/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
-              <div className="relative rounded-2xl overflow-hidden bg-card">
-                <div className="relative w-full h-64">
+              <div className="relative rounded-2xl overflow-hidden bg-card flex items-center justify-center h-64">
+                <div className="relative w-full h-full">
                   <Image
                     src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gcrc2-biyf4fBs0kLo8zrRrXLcvvJ98NWkpB.jpg"
                     alt="Good Cop / Rad Cop performing live on stage with guitar engaging the crowd"

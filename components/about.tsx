@@ -1,5 +1,6 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import { Quote, Smile, Heart, Star } from "lucide-react"
 
@@ -96,14 +97,20 @@ const tier1Sponsors = [
   },
 ]
 
-const renderSponsor = (sponsor: typeof tier1Sponsors[0], tier: 'gold' | 'silver' | 'bronze', size: 'large' | 'medium' | 'small') => {
+const renderSponsor = (sponsor: typeof tier1Sponsors[0], tier: 'rainbow' | 'bronze' | 'black', size: 'large' | 'medium' | 'small', rainbowColor?: string) => {
   const hasLogo = sponsor.url !== ""
   
   // Border colors for each tier
-  const borderColors = {
-    gold: 'border-4 border-yellow-500 shadow-lg shadow-yellow-500/30',
-    silver: 'border-4 border-gray-400 shadow-lg shadow-gray-400/30',
-    bronze: 'border-4 border-orange-700 shadow-lg shadow-orange-700/30',
+  const getBorderClass = () => {
+    if (tier === 'rainbow' && rainbowColor) {
+      return `border-4 shadow-lg transition-colors duration-300 ${rainbowColor}`
+    }
+    const borderColors = {
+      rainbow: 'border-4 border-red-500 shadow-lg shadow-red-500/30',
+      bronze: 'border-4 border-orange-700 shadow-lg shadow-orange-700/30',
+      black: 'border-4 border-black shadow-lg shadow-black/30',
+    }
+    return borderColors[tier]
   }
   
   const sizeClasses = {
@@ -113,7 +120,7 @@ const renderSponsor = (sponsor: typeof tier1Sponsors[0], tier: 'gold' | 'silver'
   }
   
   const sizeConfig = sizeClasses[size]
-  const borderClass = borderColors[tier]
+  const borderClass = getBorderClass()
 
   if (hasLogo) {
     return (
@@ -151,6 +158,33 @@ const renderSponsor = (sponsor: typeof tier1Sponsors[0], tier: 'gold' | 'silver'
 }
 
 export function About() {
+  const [rainbowColor, setRainbowColor] = useState('')
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Calculate scroll position (0 to 1)
+      const scrollProgress = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) || 0
+      
+      // Rainbow colors that cycle through the spectrum
+      const rainbowColors = [
+        'border-red-500 shadow-red-500/30',
+        'border-orange-500 shadow-orange-500/30',
+        'border-yellow-500 shadow-yellow-500/30',
+        'border-green-500 shadow-green-500/30',
+        'border-blue-500 shadow-blue-500/30',
+        'border-purple-500 shadow-purple-500/30',
+        'border-pink-500 shadow-pink-500/30',
+      ]
+      
+      // Get color based on scroll position
+      const colorIndex = Math.floor(scrollProgress * (rainbowColors.length - 1))
+      setRainbowColor(rainbowColors[colorIndex])
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <section id="about" className="py-12 md:py-20 px-4 bg-background relative overflow-hidden">
       {/* Decorative elements */}
@@ -184,29 +218,29 @@ export function About() {
             Thanks to our Festival Sponsors:
           </h3>
 
-          {/* Tier 3 Sponsors - Featured (Bronze) */}
+          {/* Tier 3 Sponsors - Featured (Rainbow) */}
           <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 mb-10">
             {tier3Sponsors.map((sponsor) => (
               <div key={sponsor.name}>
-                {renderSponsor(sponsor, 'bronze', 'large')}
+                {renderSponsor(sponsor, 'rainbow', 'large', rainbowColor)}
               </div>
             ))}
           </div>
 
-          {/* Tier 2 Sponsors (Silver) */}
+          {/* Tier 2 Sponsors (Bronze) */}
           <div className="flex flex-wrap justify-center items-center gap-5 md:gap-8 mb-10">
             {tier2Sponsors.map((sponsor) => (
               <div key={sponsor.name}>
-                {renderSponsor(sponsor, 'silver', 'medium')}
+                {renderSponsor(sponsor, 'bronze', 'medium')}
               </div>
             ))}
           </div>
 
-          {/* Tier 1 Sponsors (Gold) */}
+          {/* Tier 1 Sponsors (Black) */}
           <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 mb-8">
             {tier1Sponsors.map((sponsor) => (
               <div key={sponsor.name}>
-                {renderSponsor(sponsor, 'gold', 'small')}
+                {renderSponsor(sponsor, 'black', 'small')}
               </div>
             ))}
           </div>

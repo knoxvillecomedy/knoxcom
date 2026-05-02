@@ -115,103 +115,93 @@ export function Lineup() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center relative z-10">
-            {/* Images */}
-            <div className="space-y-6">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl group cursor-pointer">
-                {/* Gradient border effect */}
-                <div className="absolute -inset-0.5 bg-gradient-to-br from-primary/40 via-chart-2/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
-                <div className="relative rounded-2xl overflow-hidden bg-card">
-                  <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gcrc-kInLqSLLkZEbxZeeKgYwfdasYzPo0R.jpg"
-                    alt="Good Cop / Rad Cop headshot with Dave Hannah and Ryan Darling against purple background"
-                    width={600}
-                    height={500}
-                    className="object-cover w-full h-auto group-hover:scale-105 transition-transform duration-500"
-                  />
-                  {/* Overlay on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                </div>
-              </div>
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl group cursor-pointer">
-                {/* Gradient border effect */}
-                <div className="absolute -inset-0.5 bg-gradient-to-br from-chart-2/40 via-accent/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
-                <div className="relative rounded-2xl overflow-hidden bg-card">
-                  <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gcrc2-biyf4fBs0kLo8zrRrXLcvvJ98NWkpB.jpg"
-                    alt="Good Cop / Rad Cop performing live on stage with guitar engaging the crowd"
-                    width={600}
-                    height={400}
-                    className="object-cover w-full h-auto group-hover:scale-105 transition-transform duration-500"
-                  />
-                  {/* Overlay on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-chart-2/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                </div>
+          <div className="grid md:grid-cols-2 gap-12 relative z-10">
+            {/* Photo 1 */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl group cursor-pointer md:order-1 order-1">
+              {/* Gradient border effect */}
+              <div className="absolute -inset-0.5 bg-gradient-to-br from-primary/40 via-chart-2/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
+              <div className="relative rounded-2xl overflow-hidden bg-card">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gcrc-kInLqSLLkZEbxZeeKgYwfdasYzPo0R.jpg"
+                  alt="Good Cop / Rad Cop headshot with Dave Hannah and Ryan Darling against purple background"
+                  width={600}
+                  height={500}
+                  className="object-cover w-full h-auto group-hover:scale-105 transition-transform duration-500"
+                />
+                {/* Overlay on hover */}
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
             </div>
 
-            {/* Bio and Details */}
-            <div className="space-y-6">
-              <div className="space-y-4 rounded-2xl bg-gradient-to-br from-primary/8 to-chart-2/5 p-8 border border-primary/20 hover:border-primary/40 transition-colors duration-300">
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Armed with nothing but a guitar, a kazoo, and a robot that does crowdwork, comedians Dave Hannah and Ryan Darling sing, scream, and harmonize their way into the hearts of every crowd, with absurd and often poignant songs influenced by their love of punk and country.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  They&apos;ve crowd-surfed in living rooms, performed singing telegrams for Mother&apos;s Day, and played the 7th inning stretch for minor league baseball games. Good Cop/ Rad Cop is a musical comedy experience that feels like a week&apos;s worth of summer camp packed into one show.
-                </p>
-              </div>
+            {/* Featured In */}
+            <div className="space-y-4 rounded-xl bg-gradient-to-br from-primary/5 to-transparent p-6 border-l-4 border-primary/60 md:order-3 order-2 md:row-span-2">
+              <h3 className="text-sm uppercase tracking-wider text-primary font-semibold">
+                Featured In
+              </h3>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+                  <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
+                  <span>Netflix&apos;s Star Search (2026)</span>
+                </li>
+                <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+                  <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
+                  <span>Netflix is a Joke Comedy Festival</span>
+                </li>
+                <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+                  <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
+                  <span>Moontower Comedy Festival</span>
+                </li>
+                <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+                  <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
+                  <span>On tour with the Dropkick Murphys</span>
+                </li>
+              </ul>
+            </div>
 
-              <div className="space-y-4 rounded-xl bg-gradient-to-br from-primary/5 to-transparent p-6 border-l-4 border-primary/60">
-                <h3 className="text-sm uppercase tracking-wider text-primary font-semibold">
-                  Featured In
-                </h3>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
-                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
-                    <span>Netflix&apos;s Star Search (2026)</span>
-                  </li>
-                  <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
-                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
-                    <span>Netflix is a Joke Comedy Festival</span>
-                  </li>
-                  <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
-                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
-                    <span>Moontower Comedy Festival</span>
-                  </li>
-                  <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
-                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
-                    <span>On tour with the Dropkick Murphys</span>
-                  </li>
-                </ul>
+            {/* Photo 2 */}
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl group cursor-pointer md:order-2 order-3">
+              {/* Gradient border effect */}
+              <div className="absolute -inset-0.5 bg-gradient-to-br from-chart-2/40 via-accent/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0" />
+              <div className="relative rounded-2xl overflow-hidden bg-card">
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/gcrc2-biyf4fBs0kLo8zrRrXLcvvJ98NWkpB.jpg"
+                  alt="Good Cop / Rad Cop performing live on stage with guitar engaging the crowd"
+                  width={600}
+                  height={400}
+                  className="object-cover w-full h-auto group-hover:scale-105 transition-transform duration-500"
+                />
+                {/* Overlay on hover */}
+                <div className="absolute inset-0 bg-gradient-to-t from-chart-2/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
+            </div>
 
-              <div className="space-y-4 rounded-xl bg-gradient-to-br from-primary/5 to-transparent p-6 border-l-4 border-primary/60">
-                <h3 className="text-sm uppercase tracking-wider text-primary font-semibold">
-                  Collaborations
-                </h3>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
-                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
-                    <span>Bobcat Goldthwait</span>
-                  </li>
-                  <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
-                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
-                    <span>Felipe Esparza</span>
-                  </li>
-                  <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
-                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
-                    <span>Roy Wood Jr.</span>
-                  </li>
-                  <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
-                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
-                    <span>Trae Crowder</span>
-                  </li>
-                  <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
-                    <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
-                    <span>Eddie Pepitone</span>
-                  </li>
-                </ul>
-              </div>
+            {/* Collaborations */}
+            <div className="space-y-4 rounded-xl bg-gradient-to-br from-primary/5 to-transparent p-6 border-l-4 border-primary/60 md:order-4 order-4">
+              <h3 className="text-sm uppercase tracking-wider text-primary font-semibold">
+                Collaborations
+              </h3>
+              <ul className="space-y-3 text-muted-foreground">
+                <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+                  <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
+                  <span>Bobcat Goldthwait</span>
+                </li>
+                <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+                  <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
+                  <span>Felipe Esparza</span>
+                </li>
+                <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+                  <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
+                  <span>Roy Wood Jr.</span>
+                </li>
+                <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+                  <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
+                  <span>Trae Crowder</span>
+                </li>
+                <li className="flex items-start gap-3 hover:translate-x-1 transition-transform duration-200">
+                  <span className="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0 ring-1 ring-primary/40 ring-offset-2 ring-offset-transparent" />
+                  <span>Eddie Pepitone</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

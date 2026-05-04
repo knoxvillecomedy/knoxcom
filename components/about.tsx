@@ -100,12 +100,24 @@ const renderSponsor = (sponsor: typeof tier1Sponsors[0], size: 'large' | 'medium
   const hasUrl = sponsor.url !== ""
   
   const sizeClasses = {
-    large: { container: 'rounded-xl p-4', image: 'w-32 h-32 md:w-40 md:h-40', placeholder: 'w-32 h-32 md:w-40 md:h-40' },
-    medium: { container: 'rounded-lg p-3', image: 'w-28 h-28 md:w-32 md:h-32', placeholder: 'w-28 h-28 md:w-32 md:h-32' },
-    small: { container: 'rounded-lg p-3', image: 'w-20 h-20 md:w-24 md:h-24', placeholder: 'w-20 h-20 md:w-24 md:h-24' },
+    large: { container: 'rounded-xl p-4', image: 'w-32 h-32 md:w-40 md:h-40' },
+    medium: { container: 'rounded-lg p-3', image: 'w-28 h-28 md:w-32 md:h-32' },
+    small: { container: 'rounded-lg p-3', image: 'w-20 h-20 md:w-24 md:h-24' },
   }
   
   const sizeConfig = sizeClasses[size]
+
+  const imageEl = (
+    <div className="bg-card border border-border shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-2 group-hover:border-primary/30" style={{ borderRadius: size === 'large' ? '0.75rem' : '0.5rem', padding: size === 'large' ? '1rem' : '0.75rem' }}>
+      <Image
+        src={sponsor.logo}
+        alt={sponsor.alt}
+        width={160}
+        height={160}
+        className={`object-contain ${sizeConfig.image} opacity-95 group-hover:opacity-100 transition-opacity`}
+      />
+    </div>
+  )
 
   if (hasUrl) {
     return (
@@ -116,28 +128,14 @@ const renderSponsor = (sponsor: typeof tier1Sponsors[0], size: 'large' | 'medium
         className="group block"
         title={`Visit ${sponsor.name} (opens in new tab)`}
       >
-        <div className="bg-card border border-border shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-2 group-hover:border-primary/30" style={{ borderRadius: size === 'large' ? '0.75rem' : '0.5rem', padding: size === 'large' ? '1rem' : '0.75rem' }}>
-          <Image
-            src={sponsor.logo}
-            alt={sponsor.alt}
-            width={160}
-            height={160}
-            className={`object-contain ${sizeConfig.image} opacity-95 group-hover:opacity-100 transition-opacity`}
-          />
-        </div>
+        {imageEl}
       </a>
     )
   }
 
   return (
     <div className="group block" title={sponsor.name}>
-      <div className="bg-card border border-border shadow-sm transition-all duration-300 group-hover:shadow-md group-hover:-translate-y-1 group-hover:border-primary/30" style={{ borderRadius: size === 'large' ? '0.75rem' : '0.5rem', padding: size === 'large' ? '1rem' : '0.75rem' }}>
-        <div className={`${sizeConfig.placeholder} flex items-center justify-center bg-amber-100/50 rounded-md`}>
-          <span className="text-xs md:text-sm text-amber-900/70 text-center font-medium px-2 leading-tight">
-            {sponsor.name}
-          </span>
-        </div>
-      </div>
+      {imageEl}
     </div>
   )
 }

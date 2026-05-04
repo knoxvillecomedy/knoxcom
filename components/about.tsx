@@ -39,7 +39,7 @@ const tier3Sponsors = [
 const tier2Sponsors = [
   {
     name: "Pink Pony Parlor Tattoo Studio",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pink%20pony%20parlor-0DWu2Fm8sSmM25ycQTzz9bBfU4Yf2i.jpg",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ppp-PcAeWLgaGvpHfZdqBp1nqNmeg8nbOD.jpg",
     url: "",
     alt: "Pink Pony Parlor Tattoo Studio logo - Knoxville sponsor",
   },

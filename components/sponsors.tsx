@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { Heart, Star } from "lucide-react"
 
 const tier3Sponsors = [
@@ -83,11 +82,9 @@ export function Sponsors() {
               title={`Visit ${sponsor.name} (opens in new tab)`}
             >
               <div className="bg-card rounded-xl p-4 border border-border shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-2 group-hover:border-primary/30">
-                <Image
+                <img
                   src={sponsor.logo}
                   alt={sponsor.alt}
-                  width={160}
-                  height={160}
                   className="object-contain w-32 h-32 md:w-40 md:h-40 opacity-95 group-hover:opacity-100 transition-opacity"
                 />
               </div>
@@ -107,11 +104,9 @@ export function Sponsors() {
               title={`Visit ${sponsor.name} (opens in new tab)`}
             >
               <div className="bg-card rounded-lg p-3 border border-border shadow-sm transition-all duration-300 group-hover:shadow-md group-hover:-translate-y-1 group-hover:border-primary/30">
-                <Image
+                <img
                   src={sponsor.logo}
                   alt={sponsor.alt}
-                  width={120}
-                  height={120}
                   className="object-contain w-20 h-20 md:w-24 md:h-24 opacity-90 group-hover:opacity-100 transition-opacity"
                 />
               </div>

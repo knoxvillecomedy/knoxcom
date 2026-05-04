@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { Heart, Star } from "lucide-react"
 
 const tier3Sponsors = [
@@ -50,6 +51,53 @@ const tier1Sponsors = [
   },
 ]
 
+const renderSponsor = (sponsor: typeof tier1Sponsors[0], size: 'large' | 'small') => {
+  const hasUrl = sponsor.url !== "#"
+  
+  const sizeClasses = {
+    large: { container: 'rounded-xl p-4', image: 'w-32 h-32 md:w-40 md:h-40', placeholder: 'w-32 h-32 md:w-40 md:h-40' },
+    small: { container: 'rounded-lg p-3', image: 'w-20 h-20 md:w-24 md:h-24', placeholder: 'w-20 h-20 md:w-24 md:h-24' },
+  }
+  
+  const sizeConfig = sizeClasses[size]
+
+  if (hasUrl) {
+    return (
+      <a
+        href={sponsor.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group block"
+        title={`Visit ${sponsor.name} (opens in new tab)`}
+      >
+        <div className="bg-card border border-border shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-2 group-hover:border-primary/30 flex items-center justify-center" style={{ borderRadius: size === 'large' ? '0.75rem' : '0.5rem', padding: size === 'large' ? '1rem' : '0.75rem' }}>
+          <Image
+            src={sponsor.logo}
+            alt={sponsor.alt}
+            width={160}
+            height={160}
+            className={`object-contain ${sizeConfig.image} opacity-95 group-hover:opacity-100 transition-opacity`}
+          />
+        </div>
+      </a>
+    )
+  }
+
+  return (
+    <div className="group block" title={sponsor.name}>
+      <div className="bg-card border border-border shadow-sm transition-all duration-300 group-hover:shadow-md group-hover:-translate-y-1 group-hover:border-primary/30 flex items-center justify-center" style={{ borderRadius: size === 'large' ? '0.75rem' : '0.5rem', padding: size === 'large' ? '1rem' : '0.75rem' }}>
+        <Image
+          src={sponsor.logo}
+          alt={sponsor.alt}
+          width={160}
+          height={160}
+          className={`object-contain ${sizeConfig.image} opacity-95 group-hover:opacity-100 transition-opacity`}
+        />
+      </div>
+    </div>
+  )
+}
+
 export function Sponsors() {
   return (
     <section id="sponsors" className="py-12 md:py-20 px-4 bg-secondary relative overflow-hidden">
@@ -73,44 +121,18 @@ export function Sponsors() {
         {/* Tier 3 Sponsors - Featured */}
         <div className="flex flex-wrap justify-center items-center gap-6 md:gap-10 mb-10">
           {tier3Sponsors.map((sponsor) => (
-            <a
-              key={sponsor.name}
-              href={sponsor.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block"
-              title={`Visit ${sponsor.name} (opens in new tab)`}
-            >
-              <div className="bg-card rounded-xl p-4 border border-border shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-2 group-hover:border-primary/30 flex items-center justify-center min-h-40">
-                <img
-                  src={sponsor.logo}
-                  alt={sponsor.alt}
-                  className="object-contain w-32 h-32 md:w-40 md:h-40 opacity-95 group-hover:opacity-100 transition-opacity"
-                />
-              </div>
-            </a>
+            <div key={sponsor.name}>
+              {renderSponsor(sponsor, 'large')}
+            </div>
           ))}
         </div>
 
         {/* Tier 1 Sponsors */}
         <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 mb-12">
           {tier1Sponsors.map((sponsor) => (
-            <a
-              key={sponsor.name}
-              href={sponsor.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block"
-              title={`Visit ${sponsor.name} (opens in new tab)`}
-            >
-              <div className="bg-card rounded-lg p-3 border border-border shadow-sm transition-all duration-300 group-hover:shadow-md group-hover:-translate-y-1 group-hover:border-primary/30 flex items-center justify-center min-h-28">
-                <img
-                  src={sponsor.logo}
-                  alt={sponsor.alt}
-                  className="object-contain w-20 h-20 md:w-24 md:h-24 opacity-90 group-hover:opacity-100 transition-opacity"
-                />
-              </div>
-            </a>
+            <div key={sponsor.name}>
+              {renderSponsor(sponsor, 'small')}
+            </div>
           ))}
         </div>
 

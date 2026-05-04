@@ -25,13 +25,13 @@ const tier3Sponsors = [
   {
     name: "Serendipity Hair Studio",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Serendipity%20hair%20studio-NqzmUSceo2IcFsUOSHgeWIHGIDqagq.jpg",
-    url: "",
+    url: "https://serendipityhairstudio.glossgenius.com/",
     alt: "Serendipity Hair Studio logo - Knoxville hair salon sponsor",
   },
   {
     name: "Best Bagels and Deli",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/best%20bagels-Y9tcWHT7dKDh0XPjxxmjws2fRY5x1z.jpg",
-    url: "",
+    url: "https://www.facebook.com/BestBagelsandDeli/photos",
     alt: "Best Bagels and Deli logo - Knoxville bagel shop sponsor",
   },
 ]
@@ -40,19 +40,19 @@ const tier2Sponsors = [
   {
     name: "Pink Pony Parlor Tattoo Studio",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ppp-PcAeWLgaGvpHfZdqBp1nqNmeg8nbOD.jpg",
-    url: "",
+    url: "https://www.instagram.com/pinkponyparlor/",
     alt: "Pink Pony Parlor Tattoo Studio logo - Knoxville sponsor",
   },
   {
     name: "Nick Dwyer Arborist Tree Care",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nick%20dwyer%20tree%20care-FmbKg673Klo2cgLMb56ZPNgAvPj0lx.jpg",
-    url: "",
+    url: "https://nickdwyertreecare.com/",
     alt: "Nick Dwyer Arborist Tree Care logo - Knoxville tree service sponsor",
   },
   {
     name: "The Bath Lab",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/the%20bath%20lab-0cXMjMsBRrN2zGhpBvKihiujrJru70.jpg",
-    url: "",
+    url: "https://www.thebathlab.net/",
     alt: "The Bath Lab logo - Knoxville bath products sponsor",
   },
 ]
@@ -85,13 +85,13 @@ const tier1Sponsors = [
   {
     name: "Amy Herrmann Realtor",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/amy%20herrmann%20realtor-tJJflX22bV2op66PYReRH4SPnOuAjs.jpg",
-    url: "",
+    url: "https://findahomewithamy.com/",
     alt: "Amy Herrmann Realtor logo - Knoxville real estate sponsor",
   },
   {
     name: "Aaron Cody Campbell Photography",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/aaron%20cody%20campbell-mJcCa8uB2YpxY6K1ZOSGUs5mJxG0AM.jpg",
-    url: "",
+    url: "https://www.facebook.com/nasnut67",
     alt: "Aaron Cody Campbell Photography logo - Knoxville sponsor",
   },
 ]

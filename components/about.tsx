@@ -24,36 +24,36 @@ const tier3Sponsors = [
   },
   {
     name: "Serendipity Hair Studio",
-    logo: "/logos/sponsors/serendipity-hair.jpg",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Serendipity%20hair%20studio-NqzmUSceo2IcFsUOSHgeWIHGIDqagq.jpg",
     url: "",
     alt: "Serendipity Hair Studio logo - Knoxville hair salon sponsor",
   },
   {
-    name: "Best Bagels",
-    logo: "/logos/sponsors/best-bagels.jpg",
+    name: "Best Bagels and Deli",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/best%20bagels-Y9tcWHT7dKDh0XPjxxmjws2fRY5x1z.jpg",
     url: "",
-    alt: "Best Bagels logo - Knoxville bagel shop sponsor",
+    alt: "Best Bagels and Deli logo - Knoxville bagel shop sponsor",
   },
 ]
 
 const tier2Sponsors = [
   {
-    name: "Pink Pony Parlor",
-    logo: "/logos/sponsors/pink-pony.jpg",
+    name: "Pink Pony Parlor Tattoo Studio",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pink%20pony%20parlor-0DWu2Fm8sSmM25ycQTzz9bBfU4Yf2i.jpg",
     url: "",
-    alt: "Pink Pony Parlor logo - Knoxville sponsor",
+    alt: "Pink Pony Parlor Tattoo Studio logo - Knoxville sponsor",
   },
   {
-    name: "Nick Dwyer Tree Care",
-    logo: "/logos/sponsors/nick-dwyer.jpg",
+    name: "Nick Dwyer Arborist Tree Care",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nick%20dwyer%20tree%20care-FmbKg673Klo2cgLMb56ZPNgAvPj0lx.jpg",
     url: "",
-    alt: "Nick Dwyer Tree Care logo - Knoxville tree service sponsor",
+    alt: "Nick Dwyer Arborist Tree Care logo - Knoxville tree service sponsor",
   },
   {
-    name: "Bath Lab",
-    logo: "/logos/sponsors/bath-lab.jpg",
+    name: "The Bath Lab",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/the%20bath%20lab-0cXMjMsBRrN2zGhpBvKihiujrJru70.jpg",
     url: "",
-    alt: "Bath Lab logo - Knoxville bath products sponsor",
+    alt: "The Bath Lab logo - Knoxville bath products sponsor",
   },
 ]
 
@@ -83,16 +83,16 @@ const tier1Sponsors = [
     alt: "H&H Lawn Service The Mowalition logo - Knoxville lawn care sponsor",
   },
   {
-    name: "Amy Herrmann Realty",
-    logo: "/logos/sponsors/amy-herrmann.jpg",
+    name: "Amy Herrmann Realtor",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/amy%20herrmann%20realtor-tJJflX22bV2op66PYReRH4SPnOuAjs.jpg",
     url: "",
-    alt: "Amy Herrmann Realty logo - Knoxville real estate sponsor",
+    alt: "Amy Herrmann Realtor logo - Knoxville real estate sponsor",
   },
   {
-    name: "Aaron Cody Campbell",
-    logo: "/logos/sponsors/aaron-cody.jpg",
+    name: "Aaron Cody Campbell Photography",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/aaron%20cody%20campbell-mJcCa8uB2YpxY6K1ZOSGUs5mJxG0AM.jpg",
     url: "",
-    alt: "Aaron Cody Campbell logo - Knoxville sponsor",
+    alt: "Aaron Cody Campbell Photography logo - Knoxville sponsor",
   },
 ]
 

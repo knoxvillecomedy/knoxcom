@@ -1,53 +1,52 @@
 "use client"
 
-import Image from "next/image"
 import { Heart, Star } from "lucide-react"
 
 const tier3Sponsors = [
   {
-    name: "The Pink Cactus",
-    logo: "/logos/sponsors/pink-cactus.jpg",
-    url: "https://www.thepinkcactusknox.com/",
-    alt: "The Pink Cactus bar and restaurant logo - Knoxville comedy festival sponsor",
+    name: "Best Bagels and Deli",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/best%20bagels-Y9tcWHT7dKDh0XPjxxmjws2fRY5x1z.jpg",
+    url: "#",
+    alt: "Best Bagels and Deli logo - Knoxville food sponsor",
   },
   {
-    name: "Knox Box Karaoke",
-    logo: "/logos/sponsors/knox-box.jpg",
-    url: "https://www.thepinkcactusknox.com/",
-    alt: "Knox Box Karaoke logo - Knoxville entertainment sponsor",
+    name: "The Bath Lab",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/the%20bath%20lab-0cXMjMsBRrN2zGhpBvKihiujrJru70.jpg",
+    url: "#",
+    alt: "The Bath Lab logo - Knoxville wellness sponsor",
   },
   {
-    name: "All Star Parties & Events",
-    logo: "/logos/sponsors/all-star.jpg",
-    url: "https://www.allstarparties.com/",
-    alt: "All Star Parties and Events logo - Knoxville event planning sponsor",
+    name: "Nick Dwyer Arborist Tree Care",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nick%20dwyer%20tree%20care-FmbKg673Klo2cgLMb56ZPNgAvPj0lx.jpg",
+    url: "#",
+    alt: "Nick Dwyer Arborist Tree Care logo - Knoxville landscaping sponsor",
   },
 ]
 
 const tier1Sponsors = [
   {
-    name: "Frog Juice Boocherie",
-    logo: "/logos/sponsors/boocherie.jpg",
-    url: "https://www.frogjuicekombucha.com/the-boocherie",
-    alt: "Frog Juice Boocherie kombucha logo - local Knoxville beverage sponsor",
+    name: "Serendipity Hair Studio",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Serendipity%20hair%20studio-NqzmUSceo2IcFsUOSHgeWIHGIDqagq.jpg",
+    url: "#",
+    alt: "Serendipity Hair Studio logo - Knoxville salon sponsor",
   },
   {
-    name: "Young Healing Arts Massage",
-    logo: "/logos/sponsors/young-healing.jpg",
-    url: "https://www.instagram.com/young_healing_knoxville/",
-    alt: "Young Healing Arts Massage logo - Knoxville wellness sponsor",
+    name: "Aaron Cody Campbell Photography",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/aaron%20cody%20campbell-mJcCa8uB2YpxY6K1ZOSGUs5mJxG0AM.jpg",
+    url: "#",
+    alt: "Aaron Cody Campbell Photography logo - Knoxville photography sponsor",
   },
   {
-    name: "Knox and Go",
-    logo: "/logos/sponsors/knox-go.jpg",
-    url: "https://www.instagram.com/knoxandgo/",
-    alt: "Knox and Go logo - Knoxville local business sponsor",
+    name: "Pink Pony Parlor Tattoo Studio",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pink%20pony%20parlor-0DWu2Fm8sSmM25ycQTzz9bBfU4Yf2i.jpg",
+    url: "#",
+    alt: "Pink Pony Parlor Tattoo Studio logo - Knoxville tattoo sponsor",
   },
   {
-    name: "The Mowalition Lawn Care",
-    logo: "/logos/sponsors/mowalition.jpg",
-    url: "https://www.facebook.com/themowalitionknoxville/",
-    alt: "H&H Lawn Service The Mowalition logo - Knoxville lawn care sponsor",
+    name: "Amy Herrmann Realtor",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/amy%20herrmann%20realtor-tJJflX22bV2op66PYReRH4SPnOuAjs.jpg",
+    url: "#",
+    alt: "Amy Herrmann Realtor logo - Knoxville real estate sponsor",
   },
 ]
 
@@ -82,12 +81,10 @@ export function Sponsors() {
               className="group block"
               title={`Visit ${sponsor.name} (opens in new tab)`}
             >
-              <div className="bg-card rounded-xl p-4 border border-border shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-2 group-hover:border-primary/30">
-                <Image
+              <div className="bg-card rounded-xl p-4 border border-border shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-2 group-hover:border-primary/30 flex items-center justify-center min-h-40">
+                <img
                   src={sponsor.logo}
                   alt={sponsor.alt}
-                  width={160}
-                  height={160}
                   className="object-contain w-32 h-32 md:w-40 md:h-40 opacity-95 group-hover:opacity-100 transition-opacity"
                 />
               </div>
@@ -106,12 +103,10 @@ export function Sponsors() {
               className="group block"
               title={`Visit ${sponsor.name} (opens in new tab)`}
             >
-              <div className="bg-card rounded-lg p-3 border border-border shadow-sm transition-all duration-300 group-hover:shadow-md group-hover:-translate-y-1 group-hover:border-primary/30">
-                <Image
+              <div className="bg-card rounded-lg p-3 border border-border shadow-sm transition-all duration-300 group-hover:shadow-md group-hover:-translate-y-1 group-hover:border-primary/30 flex items-center justify-center min-h-28">
+                <img
                   src={sponsor.logo}
                   alt={sponsor.alt}
-                  width={120}
-                  height={120}
                   className="object-contain w-20 h-20 md:w-24 md:h-24 opacity-90 group-hover:opacity-100 transition-opacity"
                 />
               </div>

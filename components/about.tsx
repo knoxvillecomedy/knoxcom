@@ -24,36 +24,36 @@ const tier3Sponsors = [
   },
   {
     name: "Serendipity Hair Studio",
-    logo: "/logos/sponsors/serendipity-hair.jpg",
-    url: "",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Serendipity%20hair%20studio-NqzmUSceo2IcFsUOSHgeWIHGIDqagq.jpg",
+    url: "https://serendipityhairstudio.glossgenius.com/",
     alt: "Serendipity Hair Studio logo - Knoxville hair salon sponsor",
   },
   {
-    name: "Best Bagels",
-    logo: "/logos/sponsors/best-bagels.jpg",
-    url: "",
-    alt: "Best Bagels logo - Knoxville bagel shop sponsor",
+    name: "Best Bagels and Deli",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/best%20bagels-Y9tcWHT7dKDh0XPjxxmjws2fRY5x1z.jpg",
+    url: "https://www.facebook.com/BestBagelsandDeli/photos",
+    alt: "Best Bagels and Deli logo - Knoxville bagel shop sponsor",
   },
 ]
 
 const tier2Sponsors = [
   {
-    name: "Pink Pony Parlor",
-    logo: "/logos/sponsors/pink-pony.jpg",
-    url: "",
-    alt: "Pink Pony Parlor logo - Knoxville sponsor",
+    name: "Pink Pony Parlor Tattoo Studio",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ppp-PcAeWLgaGvpHfZdqBp1nqNmeg8nbOD.jpg",
+    url: "https://www.instagram.com/pinkponyparlor/",
+    alt: "Pink Pony Parlor Tattoo Studio logo - Knoxville sponsor",
   },
   {
-    name: "Nick Dwyer Tree Care",
-    logo: "/logos/sponsors/nick-dwyer.jpg",
-    url: "",
-    alt: "Nick Dwyer Tree Care logo - Knoxville tree service sponsor",
+    name: "Nick Dwyer Arborist Tree Care",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nick%20dwyer%20tree%20care-FmbKg673Klo2cgLMb56ZPNgAvPj0lx.jpg",
+    url: "https://nickdwyertreecare.com/",
+    alt: "Nick Dwyer Arborist Tree Care logo - Knoxville tree service sponsor",
   },
   {
-    name: "Bath Lab",
-    logo: "/logos/sponsors/bath-lab.jpg",
-    url: "",
-    alt: "Bath Lab logo - Knoxville bath products sponsor",
+    name: "The Bath Lab",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/the%20bath%20lab-0cXMjMsBRrN2zGhpBvKihiujrJru70.jpg",
+    url: "https://www.thebathlab.net/",
+    alt: "The Bath Lab logo - Knoxville bath products sponsor",
   },
 ]
 
@@ -66,7 +66,7 @@ const tier1Sponsors = [
   },
   {
     name: "Young Healing Arts Massage",
-    logo: "/logos/sponsors/young-healing.jpg",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yha-Q1hcOp7BqtEIuapVkXG0O2eerbrLIM.jpg",
     url: "https://www.instagram.com/young_healing_knoxville/",
     alt: "Young Healing Arts Massage logo - Knoxville wellness sponsor",
   },
@@ -83,16 +83,16 @@ const tier1Sponsors = [
     alt: "H&H Lawn Service The Mowalition logo - Knoxville lawn care sponsor",
   },
   {
-    name: "Amy Herrmann Realty",
-    logo: "/logos/sponsors/amy-herrmann.jpg",
-    url: "",
-    alt: "Amy Herrmann Realty logo - Knoxville real estate sponsor",
+    name: "Amy Herrmann Realtor",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/amy%20herrmann%20realtor-tJJflX22bV2op66PYReRH4SPnOuAjs.jpg",
+    url: "https://findahomewithamy.com/",
+    alt: "Amy Herrmann Realtor logo - Knoxville real estate sponsor",
   },
   {
-    name: "Aaron Cody Campbell",
-    logo: "/logos/sponsors/aaron-cody.jpg",
-    url: "",
-    alt: "Aaron Cody Campbell logo - Knoxville sponsor",
+    name: "Aaron Cody Campbell Photography",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/aaron%20cody%20campbell-mJcCa8uB2YpxY6K1ZOSGUs5mJxG0AM.jpg",
+    url: "https://www.facebook.com/nasnut67",
+    alt: "Aaron Cody Campbell Photography logo - Knoxville sponsor",
   },
 ]
 
@@ -100,12 +100,24 @@ const renderSponsor = (sponsor: typeof tier1Sponsors[0], size: 'large' | 'medium
   const hasUrl = sponsor.url !== ""
   
   const sizeClasses = {
-    large: { container: 'rounded-xl p-4', image: 'w-32 h-32 md:w-40 md:h-40', placeholder: 'w-32 h-32 md:w-40 md:h-40' },
-    medium: { container: 'rounded-lg p-3', image: 'w-28 h-28 md:w-32 md:h-32', placeholder: 'w-28 h-28 md:w-32 md:h-32' },
-    small: { container: 'rounded-lg p-3', image: 'w-20 h-20 md:w-24 md:h-24', placeholder: 'w-20 h-20 md:w-24 md:h-24' },
+    large: { container: 'rounded-xl p-4', image: 'w-32 h-32 md:w-40 md:h-40' },
+    medium: { container: 'rounded-lg p-3', image: 'w-28 h-28 md:w-32 md:h-32' },
+    small: { container: 'rounded-lg p-3', image: 'w-20 h-20 md:w-24 md:h-24' },
   }
   
   const sizeConfig = sizeClasses[size]
+
+  const imageEl = (
+    <div className="bg-card border border-border shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-2 group-hover:border-primary/30" style={{ borderRadius: size === 'large' ? '0.75rem' : '0.5rem', padding: size === 'large' ? '1rem' : '0.75rem' }}>
+      <Image
+        src={sponsor.logo}
+        alt={sponsor.alt}
+        width={160}
+        height={160}
+        className={`object-contain ${sizeConfig.image} opacity-95 group-hover:opacity-100 transition-opacity`}
+      />
+    </div>
+  )
 
   if (hasUrl) {
     return (
@@ -116,28 +128,14 @@ const renderSponsor = (sponsor: typeof tier1Sponsors[0], size: 'large' | 'medium
         className="group block"
         title={`Visit ${sponsor.name} (opens in new tab)`}
       >
-        <div className="bg-card border border-border shadow-sm transition-all duration-300 group-hover:shadow-lg group-hover:-translate-y-2 group-hover:border-primary/30" style={{ borderRadius: size === 'large' ? '0.75rem' : '0.5rem', padding: size === 'large' ? '1rem' : '0.75rem' }}>
-          <Image
-            src={sponsor.logo}
-            alt={sponsor.alt}
-            width={160}
-            height={160}
-            className={`object-contain ${sizeConfig.image} opacity-95 group-hover:opacity-100 transition-opacity`}
-          />
-        </div>
+        {imageEl}
       </a>
     )
   }
 
   return (
     <div className="group block" title={sponsor.name}>
-      <div className="bg-card border border-border shadow-sm transition-all duration-300 group-hover:shadow-md group-hover:-translate-y-1 group-hover:border-primary/30" style={{ borderRadius: size === 'large' ? '0.75rem' : '0.5rem', padding: size === 'large' ? '1rem' : '0.75rem' }}>
-        <div className={`${sizeConfig.placeholder} flex items-center justify-center bg-amber-100/50 rounded-md`}>
-          <span className="text-xs md:text-sm text-amber-900/70 text-center font-medium px-2 leading-tight">
-            {sponsor.name}
-          </span>
-        </div>
-      </div>
+      {imageEl}
     </div>
   )
 }

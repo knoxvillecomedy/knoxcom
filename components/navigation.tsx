@@ -67,7 +67,7 @@ export function Navigation() {
             asChild
           >
             <a href="https://www.tixtree.com/e/hoot-in-the-holler-fundraiser-c3eb4c2ca88a" target="_blank" rel="noopener noreferrer">
-              Fundraiser Tickets
+              Tix Drop May 9th!
             </a>
           </Button>
         </div>

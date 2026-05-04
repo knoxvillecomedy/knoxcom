@@ -5,49 +5,49 @@ import { Heart, Star } from "lucide-react"
 
 const tier3Sponsors = [
   {
-    name: "Best Bagels and Deli",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/best%20bagels-ZME5GSYqPbunGg2bOAcPSihGKfItHo.jpg",
-    url: "#",
-    alt: "Best Bagels and Deli logo - Knoxville food sponsor",
+    name: "The Pink Cactus",
+    logo: "/logos/sponsors/pink-cactus.jpg",
+    url: "https://www.thepinkcactusknox.com/",
+    alt: "The Pink Cactus bar and restaurant logo - Knoxville comedy festival sponsor",
   },
   {
-    name: "The Bath Lab",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/the%20bath%20lab-FcnkMPmmtl09q6aQIWAb2Oe3fN9t4Q.jpg",
-    url: "#",
-    alt: "The Bath Lab logo - Knoxville wellness sponsor",
+    name: "Knox Box Karaoke",
+    logo: "/logos/sponsors/knox-box.jpg",
+    url: "https://www.thepinkcactusknox.com/",
+    alt: "Knox Box Karaoke logo - Knoxville entertainment sponsor",
   },
   {
-    name: "Nick Dwyer Arborist Tree Care",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/nick%20dwyer%20tree%20care-iSkGUqXeVq60IqkZhAd6A7Cp5HZRlh.jpg",
-    url: "#",
-    alt: "Nick Dwyer Arborist Tree Care logo - Knoxville landscaping sponsor",
+    name: "All Star Parties & Events",
+    logo: "/logos/sponsors/all-star.jpg",
+    url: "https://www.allstarparties.com/",
+    alt: "All Star Parties and Events logo - Knoxville event planning sponsor",
   },
 ]
 
 const tier1Sponsors = [
   {
-    name: "Serendipity Hair Studio",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Serendipity%20hair%20studio-ye1ki1nug0bRVvRsHj2IeSnjDwGUVS.jpg",
-    url: "#",
-    alt: "Serendipity Hair Studio logo - Knoxville salon sponsor",
+    name: "Frog Juice Boocherie",
+    logo: "/logos/sponsors/boocherie.jpg",
+    url: "https://www.frogjuicekombucha.com/the-boocherie",
+    alt: "Frog Juice Boocherie kombucha logo - local Knoxville beverage sponsor",
   },
   {
-    name: "Aaron Cody Campbell Photography",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/aaron%20cody%20campbell-tiYbWNmUJ74fHK5kyU8Vc0f2rA1Uui.jpg",
-    url: "#",
-    alt: "Aaron Cody Campbell Photography logo - Knoxville photography sponsor",
+    name: "Young Healing Arts Massage",
+    logo: "/logos/sponsors/young-healing.jpg",
+    url: "https://www.instagram.com/young_healing_knoxville/",
+    alt: "Young Healing Arts Massage logo - Knoxville wellness sponsor",
   },
   {
-    name: "Pink Pony Parlor Tattoo Studio",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pink%20pony%20parlor-sbpCxdSpLsQm2TTaI7r04BdAJBDEuN.jpg",
-    url: "#",
-    alt: "Pink Pony Parlor Tattoo Studio logo - Knoxville tattoo sponsor",
+    name: "Knox and Go",
+    logo: "/logos/sponsors/knox-go.jpg",
+    url: "https://www.instagram.com/knoxandgo/",
+    alt: "Knox and Go logo - Knoxville local business sponsor",
   },
   {
-    name: "Amy Herrmann Realtor",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/amy%20herrmann%20realtor-8a849SGhGYnDum3uSafs2C3vT9XJD9.jpg",
-    url: "#",
-    alt: "Amy Herrmann Realtor logo - Knoxville real estate sponsor",
+    name: "The Mowalition Lawn Care",
+    logo: "/logos/sponsors/mowalition.jpg",
+    url: "https://www.facebook.com/themowalitionknoxville/",
+    alt: "H&H Lawn Service The Mowalition logo - Knoxville lawn care sponsor",
   },
 ]
 

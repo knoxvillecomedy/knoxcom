@@ -66,7 +66,7 @@ const tier1Sponsors = [
   },
   {
     name: "Young Healing Arts Massage",
-    logo: "/logos/sponsors/young-healing.jpg",
+    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/yha-Q1hcOp7BqtEIuapVkXG0O2eerbrLIM.jpg",
     url: "https://www.instagram.com/young_healing_knoxville/",
     alt: "Young Healing Arts Massage logo - Knoxville wellness sponsor",
   },

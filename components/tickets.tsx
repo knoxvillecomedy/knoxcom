@@ -47,28 +47,20 @@ export function Tickets() {
         </div>
         
         <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-          Festival Tickets
+          Fundraiser Show
         </h2>
         
         <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
-          Secure your passes for Knoxville&apos;s inaugural comedy festival. Choose your ticket tier below.
+          Join us at The Pink Cactus for a one-off comedy showcase to help kickstart Knoxville&apos;s inaugural comedy festival.
         </p>
 
-        {/* Ticket widgets - three tiers in column layout */}
-        <div className="flex flex-col gap-8 mb-8">
-          {/* Tier 1 */}
-          <div 
-            id="tixtree-wrapper" 
-            className="w-full [&>iframe]:w-full [&>iframe]:border-0"
-          />
-          
-          {/* Tier 2 */}
-          <div 
-            id="tixtree-wrapper" 
-            className="w-full [&>iframe]:w-full [&>iframe]:border-0"
-          />
-          
-          {/* Tier 3 */}
+        <p className="text-sm text-muted-foreground flex items-center justify-center gap-2 mb-8">
+          <Sparkles className="w-4 h-4 text-accent" />
+          Festival passes coming soon!
+        </p>
+
+        {/* Tixtree widget - the script creates an iframe that renders here */}
+        <div className="mb-8">
           <div 
             id="tixtree-wrapper" 
             className="w-full [&>iframe]:w-full [&>iframe]:border-0"

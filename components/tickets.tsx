@@ -54,9 +54,9 @@ export function Tickets() {
           Join us at The Pink Cactus for a one-off comedy showcase to help kickstart Knoxville&apos;s inaugural comedy festival.
         </p>
 
-        <p className="text-sm text-muted-foreground flex items-center justify-center gap-2 mb-8">
+        <p className="text-sm text-accent flex items-center justify-center gap-2 mb-8 font-semibold">
           <Sparkles className="w-4 h-4 text-accent" />
-          Festival passes coming soon!
+          Festival passes are now live!
         </p>
 
         {/* Tixtree widget - the script creates an iframe that renders here */}

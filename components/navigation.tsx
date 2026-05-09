@@ -61,15 +61,12 @@ export function Navigation() {
               {link.label}
             </button>
           ))}
-          <Button 
-            size="sm" 
-            className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold"
-            asChild
+          <button
+            onClick={() => handleLinkClick("#tickets")}
+            className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold h-8 rounded-md gap-1.5 px-3 inline-flex items-center justify-center whitespace-nowrap text-sm transition-all"
           >
-            <a href="https://www.tixtree.com/e/hoot-in-the-holler-fundraiser-c3eb4c2ca88a" target="_blank" rel="noopener noreferrer">
-              Get Passes
-            </a>
-          </Button>
+            Get Tickets
+          </button>
         </div>
 
         {/* Mobile Hamburger */}
@@ -98,12 +95,10 @@ export function Navigation() {
           ))}
           <Button 
             size="lg" 
-            className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold mt-2"
-            asChild
+            className="bg-accent text-accent-foreground hover:bg-accent/90 font-semibold mt-2 w-full"
+            onClick={() => handleLinkClick("#tickets")}
           >
-            <a href="https://www.tixtree.com/e/hoot-in-the-holler-fundraiser-c3eb4c2ca88a" target="_blank" rel="noopener noreferrer">
-              Get Passes
-            </a>
+            Get Tickets
           </Button>
         </div>
       </div>

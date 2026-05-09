@@ -83,8 +83,8 @@ export default function AboutPage() {
         {/* Logo */}
         <div className="flex justify-center mb-8">
           <Image
-            src="/logos/knoxville-comedy.jpg"
-            alt="Knoxville Comedy logo - local comedy community organization in East Tennessee"
+            src="/logos/knoxville-comedy-logo.jpg"
+            alt="Knoxville Comedy logo - hexagon with crown and KC initials"
             width={260}
             height={260}
             className="object-contain"

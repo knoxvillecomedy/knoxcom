@@ -98,8 +98,10 @@ export default function AboutPage() {
         {/* Body content - consistent card style */}
         <div className="space-y-6 font-sans">
           {/* Intro & History */}
-          <p className="text-lg leading-relaxed font-sans text-foreground">
-            We love comedy, and we love Knoxville — well, except I-40 eastbound during rush hour... This project was founded by local comedy producers who have been part of Knoxville&apos;s growing independent comedy scene since the closing of Side Splitters Comedy Club in 2014.
+          <p className="text-lg leading-relaxed font-sans text-foreground whitespace-pre-wrap">
+            We love comedy, and we love Knoxville — well, except I-40 during rush hour... 
+
+This project was founded by local comedy producers who have been part of Knoxville&apos;s growing independent comedy scene since the closing of Side Splitters Comedy Club in 2014.
           </p>
           
           {/* Mission */}

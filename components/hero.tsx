@@ -52,12 +52,12 @@ export function Hero() {
           Two nights of laughs, standup comedy, and good vibes in Knoxville&apos;s Happy Holler Historic District.
         </p>
         
-        <a href="#fundraiser-show">
+        <a href="https://www.tixtree.com/e/festival-passes-9cbc6f54d416" target="_blank" rel="noopener noreferrer">
           <Button 
             size="lg" 
             className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-10 py-6 h-auto font-semibold shadow-lg transition-all hover:scale-105 hover:shadow-xl"
           >
-            Support The Fest
+            Tickets on sale now!
           </Button>
         </a>
       </div>

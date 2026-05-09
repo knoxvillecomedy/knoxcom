@@ -51,7 +51,7 @@ export function Tickets() {
         </h2>
         
         <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
-          Join us at The Pink Cactus for a one-off comedy showcase to help kickstart Knoxville&apos;s inaugural comedy festival.
+          Join us at Central Cinema for Knoxville&apos;s inaugural comedy festival.
         </p>
 
         <p className="text-sm flex items-center justify-center gap-2 mb-8 font-semibold" style={{ color: '#ff7e00' }}>

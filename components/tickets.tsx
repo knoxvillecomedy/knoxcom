@@ -16,7 +16,8 @@ export function Tickets() {
     script.id = "tixtree-script"
     script.src = "https://www.tixtree.com/widgets/tixtree.js"
     script.setAttribute("data-type", "event")
-    script.setAttribute("data-id", "hoot-in-the-holler-fundraiser-c3eb4c2ca88a")
+    // This will find all tixtree-wrapper elements and render widgets in them
+    script.setAttribute("data-auto", "true")
     document.body.appendChild(script)
 
     return () => {
@@ -58,20 +59,20 @@ export function Tickets() {
         <div className="flex flex-col gap-6 mb-8">
           {/* Ticket Widget 1 */}
           <div 
-            id="tixtree-wrapper-1" 
             className="w-full [&>iframe]:w-full [&>iframe]:border-0"
+            data-tix-event="hoot-in-the-holler-fundraiser-c3eb4c2ca88a"
           />
           
           {/* Ticket Widget 2 */}
           <div 
-            id="tixtree-wrapper-2" 
             className="w-full [&>iframe]:w-full [&>iframe]:border-0"
+            data-tix-event="hoot-in-the-holler-fundraiser-c3eb4c2ca88a"
           />
           
           {/* Ticket Widget 3 */}
           <div 
-            id="tixtree-wrapper-3" 
             className="w-full [&>iframe]:w-full [&>iframe]:border-0"
+            data-tix-event="hoot-in-the-holler-fundraiser-c3eb4c2ca88a"
           />
         </div>
       </div>

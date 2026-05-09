@@ -5,27 +5,29 @@ import { Ticket, Sparkles, Star } from "lucide-react"
 
 export function Tickets() {
   useEffect(() => {
+    // Check if script already exists
+    if (document.getElementById("tixtree-script")) {
+      return
+    }
+
     // Create and append the script element to document body
     // Tixtree widget expects the script to be in the body, not inside a container
     const script = document.createElement("script")
+    script.id = "tixtree-script"
     script.src = "https://www.tixtree.com/widgets/tixtree.js"
     script.setAttribute("data-type", "event")
     script.setAttribute("data-id", "hoot-in-the-holler-fundraiser-c3eb4c2ca88a")
-    
-    // When script loads, tell tixtree to initialize all widgets
-    script.onload = () => {
-      if (window.tixtree) {
-        window.tixtree.init()
-      }
-    }
-    
     document.body.appendChild(script)
 
     return () => {
-      const scriptToRemove = document.querySelector('script[src="https://www.tixtree.com/widgets/tixtree.js"]')
+      // Cleanup on unmount
+      const scriptToRemove = document.getElementById("tixtree-script")
       if (scriptToRemove) {
         scriptToRemove.remove()
       }
+      // Also remove any iframes created by tixtree
+      const iframes = document.querySelectorAll('iframe[id^="tixtree"]')
+      iframes.forEach(iframe => iframe.remove())
     }
   }, [])
 
@@ -52,23 +54,23 @@ export function Tickets() {
           Secure your passes for Knoxville&apos;s inaugural comedy festival. Choose your ticket tier below.
         </p>
 
-        {/* Ticket widgets in column layout */}
-        <div className="flex flex-col gap-6 mb-8">
-          {/* Ticket Widget 1 */}
+        {/* Ticket widgets - three tiers in column layout */}
+        <div className="flex flex-col gap-8 mb-8">
+          {/* Tier 1 */}
           <div 
-            id="tixtree-wrapper-1"
+            id="tixtree-wrapper" 
             className="w-full [&>iframe]:w-full [&>iframe]:border-0"
           />
           
-          {/* Ticket Widget 2 */}
+          {/* Tier 2 */}
           <div 
-            id="tixtree-wrapper-2"
+            id="tixtree-wrapper" 
             className="w-full [&>iframe]:w-full [&>iframe]:border-0"
           />
           
-          {/* Ticket Widget 3 */}
+          {/* Tier 3 */}
           <div 
-            id="tixtree-wrapper-3"
+            id="tixtree-wrapper" 
             className="w-full [&>iframe]:w-full [&>iframe]:border-0"
           />
         </div>

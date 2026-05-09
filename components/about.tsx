@@ -169,7 +169,7 @@ export function About() {
         </div>
 
         {/* Sponsor Logos Section */}
-        <div className="mt-16 pt-12 border-t border-border">
+        <div id="sponsors" className="mt-16 pt-12 border-t border-border">
           <h3 className="text-xl font-semibold text-foreground mb-10">
             Thanks to our Festival Sponsors:
           </h3>

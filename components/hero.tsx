@@ -52,15 +52,14 @@ export function Hero() {
           Two nights of laughs, standup comedy, and good vibes in Knoxville&apos;s Happy Holler Historic District.
         </p>
         
-        <Button 
-          size="lg" 
-          className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-10 py-6 h-auto font-semibold shadow-lg transition-all hover:scale-105 hover:shadow-xl"
-          asChild
-        >
-          <a href="#fundraiser-show">
+        <a href="#fundraiser-show">
+          <Button 
+            size="lg" 
+            className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-10 py-6 h-auto font-semibold shadow-lg transition-all hover:scale-105 hover:shadow-xl"
+          >
             Support The Fest
-          </a>
-        </Button>
+          </Button>
+        </a>
       </div>
     </section>
   )

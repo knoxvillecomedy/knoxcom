@@ -11,15 +11,12 @@ export function PromoPopup() {
 
   useEffect(() => {
     setIsMounted(true)
-    
-    // Check if user has already closed the popup
-    const isClosed = localStorage.getItem(POPUP_CLOSED_KEY) === 'true'
-    if (isClosed) {
-      return
-    }
 
     const handleScroll = () => {
-      // Show popup after scrolling down 400px
+      // Check if user has already closed the popup
+      const isClosed = localStorage.getItem(POPUP_CLOSED_KEY) === 'true'
+      
+      // Show popup after scrolling down 400px, only if not already closed
       if (window.scrollY > 400 && !isClosed) {
         setIsVisible(true)
       }

@@ -3,13 +3,24 @@
 import { useState, useEffect } from 'react'
 import { X } from 'lucide-react'
 
+const POPUP_CLOSED_KEY = 'promo-popup-closed'
+
 export function PromoPopup() {
   const [isVisible, setIsVisible] = useState(false)
+  const [isMounted, setIsMounted] = useState(false)
 
   useEffect(() => {
+    setIsMounted(true)
+    
+    // Check if user has already closed the popup
+    const isClosed = localStorage.getItem(POPUP_CLOSED_KEY) === 'true'
+    if (isClosed) {
+      return
+    }
+
     const handleScroll = () => {
       // Show popup after scrolling down 400px
-      if (window.scrollY > 400) {
+      if (window.scrollY > 400 && !isClosed) {
         setIsVisible(true)
       }
     }
@@ -18,14 +29,19 @@ export function PromoPopup() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  if (!isVisible) return null
+  if (!isMounted || !isVisible) return null
+
+  const handleClose = () => {
+    setIsVisible(false)
+    localStorage.setItem(POPUP_CLOSED_KEY, 'true')
+  }
 
   return (
     <div className="fixed bottom-4 left-4 right-4 z-50 max-w-sm animate-slide-up md:bottom-6 md:left-6 md:right-auto">
       <div className="bg-primary text-primary-foreground rounded-lg shadow-lg border border-primary/20 overflow-hidden">
         {/* Close button */}
         <button
-          onClick={() => setIsVisible(false)}
+          onClick={handleClose}
           className="absolute top-3 right-3 p-1 hover:bg-primary-foreground/10 rounded-md transition-colors"
           aria-label="Close"
         >
@@ -54,7 +70,7 @@ export function PromoPopup() {
             onClick={() => {
               const ticketsSection = document.getElementById('tickets')
               ticketsSection?.scrollIntoView({ behavior: 'smooth' })
-              setIsVisible(false)
+              handleClose()
             }}
             className="w-full mt-4 bg-primary-foreground text-primary font-semibold py-2 px-4 rounded-md hover:bg-primary-foreground/90 transition-colors text-sm"
           >

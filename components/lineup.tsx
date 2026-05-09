@@ -48,7 +48,7 @@ export function Lineup() {
             The Experience
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Festival schedule coming soon. Here&apos;s what you can expect.
+            Full festival schedule coming soon. Here&apos;s what you can expect.
           </p>
         </div>
 
@@ -75,10 +75,10 @@ export function Lineup() {
               </div>
               
               <CardContent className="pt-6 pb-6 px-6">
-                <h3 className="text-xl font-semibold text-card-foreground mb-3">
+                <h3 className="text-xl font-semibold text-card-foreground mb-3 text-center">
                   {feature.title}
                 </h3>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-center">
                   {feature.description}
                 </p>
               </CardContent>

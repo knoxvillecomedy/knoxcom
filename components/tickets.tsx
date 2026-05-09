@@ -16,7 +16,7 @@ export function Tickets() {
     script.id = "tixtree-script"
     script.src = "https://www.tixtree.com/widgets/tixtree.js"
     script.setAttribute("data-type", "event")
-    script.setAttribute("data-id", "hoot-in-the-holler-fundraiser-c3eb4c2ca88a")
+    script.setAttribute("data-id", "festival-passes-9cbc6f54d416")
     document.body.appendChild(script)
 
     return () => {

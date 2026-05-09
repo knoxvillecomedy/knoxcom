@@ -16,7 +16,7 @@ export function Tickets() {
     script.id = "tixtree-script"
     script.src = "https://www.tixtree.com/widgets/tixtree.js"
     script.setAttribute("data-type", "event")
-    script.setAttribute("data-id", "hoot-in-the-holler-fundraiser-c3eb4c2ca88a")
+    script.setAttribute("data-id", "festival-passes-9cbc6f54d416")
     document.body.appendChild(script)
 
     return () => {
@@ -47,16 +47,16 @@ export function Tickets() {
         </div>
         
         <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-          Fundraiser Show
+          Festival Passes
         </h2>
         
         <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
-          Join us at The Pink Cactus for a one-off comedy showcase to help kickstart Knoxville&apos;s inaugural comedy festival.
+          Join us at Central Cinema for Knoxville&apos;s inaugural comedy festival.
         </p>
 
-        <p className="text-sm text-muted-foreground flex items-center justify-center gap-2 mb-8">
-          <Sparkles className="w-4 h-4 text-accent" />
-          Festival passes coming soon!
+        <p className="text-sm flex items-center justify-center gap-2 mb-8 font-semibold" style={{ color: '#ff7e00' }}>
+          <Sparkles className="w-4 h-4" style={{ color: '#ff7e00' }} />
+          Festival passes are now live!
         </p>
 
         {/* Tixtree widget - the script creates an iframe that renders here */}

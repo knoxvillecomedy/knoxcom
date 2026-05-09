@@ -56,8 +56,7 @@ export function Tickets() {
 
         <p className="text-sm text-accent flex items-center justify-center gap-2 mb-8 font-semibold">
           <Sparkles className="w-4 h-4 text-accent" />
-          Festival passes are now live!
-        </p>
+          Fest schedule details coming soon!        </p>
 
         {/* Tixtree widget - the script creates an iframe that renders here */}
         <div className="mb-8">

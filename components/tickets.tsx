@@ -47,16 +47,17 @@ export function Tickets() {
         </div>
         
         <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
-          Fundraiser Show
+          Festival Passes
         </h2>
         
         <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
           Join us at The Pink Cactus for a one-off comedy showcase to help kickstart Knoxville&apos;s inaugural comedy festival.
         </p>
 
-        <p className="text-sm text-accent flex items-center justify-center gap-2 mb-8 font-semibold">
-          <Sparkles className="w-4 h-4 text-accent" />
-          Fest schedule details coming soon!        </p>
+        <p className="text-sm flex items-center justify-center gap-2 mb-8 font-semibold" style={{ color: '#ff7e00' }}>
+          <Sparkles className="w-4 h-4" style={{ color: '#ff7e00' }} />
+          Festival passes are now live!
+        </p>
 
         {/* Tixtree widget - the script creates an iframe that renders here */}
         <div className="mb-8">

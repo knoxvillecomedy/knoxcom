@@ -5,30 +5,27 @@ import { Ticket, Sparkles, Star } from "lucide-react"
 
 export function Tickets() {
   useEffect(() => {
-    // Check if script already exists
-    if (document.getElementById("tixtree-script")) {
-      return
-    }
-
     // Create and append the script element to document body
     // Tixtree widget expects the script to be in the body, not inside a container
     const script = document.createElement("script")
-    script.id = "tixtree-script"
     script.src = "https://www.tixtree.com/widgets/tixtree.js"
     script.setAttribute("data-type", "event")
-    // This will find all tixtree-wrapper elements and render widgets in them
-    script.setAttribute("data-auto", "true")
+    script.setAttribute("data-id", "hoot-in-the-holler-fundraiser-c3eb4c2ca88a")
+    
+    // When script loads, tell tixtree to initialize all widgets
+    script.onload = () => {
+      if (window.tixtree) {
+        window.tixtree.init()
+      }
+    }
+    
     document.body.appendChild(script)
 
     return () => {
-      // Cleanup on unmount
-      const scriptToRemove = document.getElementById("tixtree-script")
+      const scriptToRemove = document.querySelector('script[src="https://www.tixtree.com/widgets/tixtree.js"]')
       if (scriptToRemove) {
         scriptToRemove.remove()
       }
-      // Also remove any iframes created by tixtree
-      const iframes = document.querySelectorAll('iframe[id^="tixtree"]')
-      iframes.forEach(iframe => iframe.remove())
     }
   }, [])
 
@@ -59,20 +56,20 @@ export function Tickets() {
         <div className="flex flex-col gap-6 mb-8">
           {/* Ticket Widget 1 */}
           <div 
+            id="tixtree-wrapper-1"
             className="w-full [&>iframe]:w-full [&>iframe]:border-0"
-            data-tix-event="hoot-in-the-holler-fundraiser-c3eb4c2ca88a"
           />
           
           {/* Ticket Widget 2 */}
           <div 
+            id="tixtree-wrapper-2"
             className="w-full [&>iframe]:w-full [&>iframe]:border-0"
-            data-tix-event="hoot-in-the-holler-fundraiser-c3eb4c2ca88a"
           />
           
           {/* Ticket Widget 3 */}
           <div 
+            id="tixtree-wrapper-3"
             className="w-full [&>iframe]:w-full [&>iframe]:border-0"
-            data-tix-event="hoot-in-the-holler-fundraiser-c3eb4c2ca88a"
           />
         </div>
       </div>

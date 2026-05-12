@@ -13,8 +13,8 @@ const jsonLd = {
   '@type': 'Event',
   name: 'The Hoot in The Holler',
   description: "Knoxville's inaugural comedy festival featuring stand-up comedy, specialty shows, and surprise guests at Central Cinema.",
-  startDate: '2026-07-18T19:00:00-04:00',
-  endDate: '2026-07-19T23:00:00-04:00',
+  startDate: '2026-07-17T19:00:00-04:00',
+  endDate: '2026-07-18T23:00:00-04:00',
   eventStatus: 'https://schema.org/EventScheduled',
   eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
   location: {

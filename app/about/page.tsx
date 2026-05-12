@@ -13,12 +13,43 @@ export const metadata: Metadata = {
     title: 'About Knoxville Comedy | East Tennessee Comedy Scene',
     description: 'Meet the organizers behind Knoxville Comedy and The Hoot in The Holler festival. Local comedy producers building a thriving comedy scene in East Tennessee.',
     url: 'https://knoxvillecomedy.com/about',
+    images: [
+      {
+        url: '/logos/knoxville-comedy-logo.jpg',
+        width: 260,
+        height: 260,
+        alt: 'Knoxville Comedy logo - hexagon with crown and KC initials',
+      },
+    ],
   },
 }
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-background relative overflow-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://knoxvillecomedy.com',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'About',
+                item: 'https://knoxvillecomedy.com/about',
+              },
+            ],
+          }),
+        }}
+      />
       {/* Aggressive geometric background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Large diagonal stripes */}

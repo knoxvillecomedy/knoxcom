@@ -56,7 +56,7 @@ export function Tickets() {
 
         <p className="text-sm flex items-center justify-center gap-2 mb-8 font-semibold" style={{ color: '#ff7e00' }}>
           <Sparkles className="w-4 h-4" style={{ color: '#ff7e00' }} />
-          Festival passes are now live!
+          Buying through Tixtree lowers fees by 68%!
         </p>
 
         {/* Tixtree widget - the script creates an iframe that renders here */}

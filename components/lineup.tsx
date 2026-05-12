@@ -66,7 +66,7 @@ export function Lineup() {
                   alt={feature.alt}
                   fill
                   className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-500 will-change-transform"
-                  style={{ objectPosition: `center ${feature.imagePosition}` }}
+                  style={{ objectPosition: `center ${feature.imagePosition}`, backfaceVisibility: 'hidden' }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent pointer-events-none z-10" />
                 <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-primary/90 flex items-center justify-center z-20">
@@ -130,6 +130,7 @@ export function Lineup() {
                       width={600}
                       height={500}
                       className="object-cover w-full h-auto group-hover:scale-105 transition-transform duration-500"
+                      style={{ backfaceVisibility: 'hidden' }}
                     />
                     {/* Overlay on hover */}
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -150,6 +151,7 @@ export function Lineup() {
                       width={600}
                       height={400}
                       className="object-cover w-full h-auto group-hover:scale-105 transition-transform duration-500"
+                      style={{ backfaceVisibility: 'hidden' }}
                     />
                     {/* Overlay on hover */}
                     <div className="absolute inset-0 bg-gradient-to-t from-chart-2/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

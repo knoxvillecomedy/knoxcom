@@ -65,7 +65,7 @@ export function Lineup() {
                   src={feature.image}
                   alt={feature.alt}
                   fill
-                  className="object-cover opacity-80 group-hover:scale-105 transition-transform duration-500 will-change-transform"
+                  className="object-cover opacity-80 will-change-transform"
                   style={{ objectPosition: `center ${feature.imagePosition}`, backfaceVisibility: 'hidden' }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent pointer-events-none z-10" />
@@ -129,7 +129,7 @@ export function Lineup() {
                       alt="Good Cop / Rad Cop headshot with Dave Hannah and Ryan Darling against purple background"
                       width={600}
                       height={500}
-                      className="object-cover w-full h-auto group-hover:scale-105 transition-transform duration-500"
+                      className="object-cover w-full h-auto"
                       style={{ backfaceVisibility: 'hidden' }}
                     />
                     {/* Overlay on hover */}
@@ -150,7 +150,7 @@ export function Lineup() {
                       alt="Good Cop / Rad Cop performing live on stage with guitar engaging the crowd"
                       width={600}
                       height={400}
-                      className="object-cover w-full h-auto group-hover:scale-105 transition-transform duration-500"
+                      className="object-cover w-full h-auto"
                       style={{ backfaceVisibility: 'hidden' }}
                     />
                     {/* Overlay on hover */}

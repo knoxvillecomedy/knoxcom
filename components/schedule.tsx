@@ -59,15 +59,7 @@ export function Schedule() {
             <CalendarDays className="w-7 h-7 text-primary-foreground" />
           </div>
 
-          <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground mb-4">Schedule</h2>
-
-          <p className="text-lg text-primary-foreground/80 max-w-2xl mx-auto">
-            Two days of stand-up, specialty shows, and surprise guests at The Hoot in the Holler.
-          </p>
-
-          <p className="text-sm text-primary-foreground/70 mt-3">
-            Presented by Tiny Stage Comedy and Yellow Door Media
-          </p>
+          <h2 className="text-3xl md:text-5xl font-bold text-primary-foreground">Schedule</h2>
         </div>
 
         {/* Day cards */}

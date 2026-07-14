@@ -1,7 +1,7 @@
 "use client"
 
 import { Card, CardContent } from "@/components/ui/card"
-import { Mic, Star, Sparkles, CircleDot } from "lucide-react"
+import { Mic, Star, Sparkles, CircleDot, CalendarDays } from "lucide-react"
 import Image from "next/image"
 
 export function Lineup() {
@@ -47,9 +47,16 @@ export function Lineup() {
           <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4">
             The Experience
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Full festival schedule coming soon. Here&apos;s what you can expect.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
+            Here&apos;s what you can expect across two days of comedy.
           </p>
+          <a
+            href="#schedule"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+          >
+            <CalendarDays className="w-5 h-5" />
+            View Full Schedule
+          </a>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">

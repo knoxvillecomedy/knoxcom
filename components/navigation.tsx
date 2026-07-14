@@ -9,7 +9,7 @@ const navLinks = [
   { href: "#experience", label: "Experience" },
   { href: "#venue", label: "Venue" },
   { href: "#sponsors", label: "Sponsors" },
-  { href: "#newsletter", label: "Newsletter" },
+  { href: "#schedule", label: "Schedule" },
 ]
 
 export function Navigation() {

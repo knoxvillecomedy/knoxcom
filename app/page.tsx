@@ -5,7 +5,7 @@ import { Lineup } from "@/components/lineup"
 import { Venue } from "@/components/venue"
 import { Tickets } from "@/components/tickets"
 import { Organizers } from "@/components/organizers"
-import { Newsletter } from "@/components/newsletter"
+import { Schedule } from "@/components/schedule"
 import { Footer } from "@/components/footer"
 
 const jsonLd = {
@@ -60,7 +60,7 @@ export default function Home() {
       <Venue />
       <Tickets />
       <Organizers />
-      <Newsletter />
+      <Schedule />
       <Footer />
     </main>
   )

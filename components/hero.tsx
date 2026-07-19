@@ -54,7 +54,7 @@ export function Hero() {
               variant="outline"
               className="bg-transparent border-2 border-primary-foreground/40 text-primary-foreground hover:bg-primary-foreground/10 text-base px-8 py-6 h-auto font-semibold transition-all hover:scale-105 gap-2"
             >
-              Watch the 2026 Recap
+              Watch the 2026 Hoot Fest Recap
               <ArrowRight className="w-5 h-5" />
             </Button>
           </Link>

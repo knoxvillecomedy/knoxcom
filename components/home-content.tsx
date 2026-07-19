@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "Where can I see live comedy in Knoxville?",
     answer:
-      "Knoxville Comedy produces and promotes independent stand-up shows at venues across Knoxville and East Tennessee throughout the year. Sign up for our text list or follow us on Instagram to see where the next show is happening.",
+      "Since the closing of Side Splitters Comedy Club in 2014, Knoxville's independent comedy scene has grown organically through the hard work of multiple local producers. Sign up for our text list or follow us on Instagram to see where the next show is happening.",
   },
   {
     question: "How do I get tickets to Knoxville comedy shows?",

@@ -27,7 +27,7 @@ export function Navigation() {
         >
           <span className="flex items-center justify-center rounded-lg bg-black p-1.5 shadow-md">
             <Image
-              src="/logos/knoxville-comedy.png"
+              src="/logos/knoxville-comedy-header.png"
               alt="Knoxville Comedy logo"
               width={44}
               height={44}

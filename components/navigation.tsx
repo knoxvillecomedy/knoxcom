@@ -43,7 +43,7 @@ export function Navigation() {
               Knoxville Comedy
             </span>
             <span className="text-primary-foreground/70 text-[11px] md:text-xs font-medium uppercase tracking-wider">
-              Live comedy tickets
+              Stand up tickets
             </span>
           </span>
         </Link>

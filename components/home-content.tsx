@@ -42,7 +42,7 @@ const faqs = [
   {
     question: "How can I stay updated on upcoming comedy shows in Knoxville?",
     answer:
-      "The fastest way is to join our text marketing list at the top of this page. You can also follow @knoxvillecomedy on Instagram for lineup announcements, ticket drops, and behind-the-scenes updates.",
+      "The fastest way is to join our text marketing list at the top of this page. You can also follow @tinystagecomedy and @yellowdoormediatn on Instagram for lineup announcements, ticket drops, and behind-the-scenes updates.",
   },
 ]
 

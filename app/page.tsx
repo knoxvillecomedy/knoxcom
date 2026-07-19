@@ -4,17 +4,22 @@ import { Footer } from "@/components/footer"
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Organization',
+  '@type': 'WebSite',
   name: 'Knoxville Comedy',
   url: 'https://knoxvillecomedy.com',
   description:
-    "Knoxville Comedy is an independent comedy production company building a thriving comedy scene in East Tennessee, and the team behind The Hoot in The Holler festival.",
-  sameAs: ['https://www.instagram.com/knoxvillecomedy'],
-  location: {
-    '@type': 'City',
-    name: 'Knoxville',
-    areaServed: 'East Tennessee',
+    'Knoxville Comedy is your home for tickets to live, independent stand-up comedy shows in Knoxville, Tennessee.',
+  publisher: {
+    '@type': 'EntertainmentBusiness',
+    name: 'Knoxville Comedy',
+    url: 'https://knoxvillecomedy.com',
+    logo: 'https://knoxvillecomedy.com/logos/knoxville-comedy.png',
+    areaServed: {
+      '@type': 'City',
+      name: 'Knoxville',
+    },
   },
+  sameAs: ['https://www.instagram.com/knoxvillecomedy'],
 }
 
 export default function Home() {

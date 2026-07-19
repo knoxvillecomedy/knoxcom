@@ -30,19 +30,19 @@ export function Hero() {
 
       <div className="relative z-10 text-center px-4 max-w-2xl mx-auto animate-slide-up">
         <p className="text-primary-foreground/80 text-sm md:text-base uppercase tracking-widest mb-4 font-medium">
-          Knoxville Comedy &bull; Happy Holler
+          Independent Stand-Up &bull; Knoxville, TN
         </p>
 
         <h1
-          className="font-display text-5xl md:text-7xl lg:text-8xl font-black text-primary-foreground mb-6 leading-none tracking-tight"
+          className="font-display text-5xl md:text-7xl lg:text-8xl font-black text-primary-foreground mb-6 leading-none tracking-tight text-balance"
           style={{ textShadow: "3px 3px 0 rgba(0,0,0,0.3), 6px 6px 0 rgba(0,0,0,0.15)" }}
         >
-          <span className="block">The Hoot</span>
-          <span className="block text-accent italic" style={{ textShadow: "3px 3px 0 rgba(0,0,0,0.4), 6px 6px 0 rgba(0,0,0,0.2)" }}>in The Holler</span>
+          <span className="block">Live Comedy</span>
+          <span className="block text-accent italic" style={{ textShadow: "3px 3px 0 rgba(0,0,0,0.4), 6px 6px 0 rgba(0,0,0,0.2)" }}>in Knoxville</span>
         </h1>
 
         <p className="text-lg md:text-xl text-primary-foreground/90 mb-10 max-w-xl mx-auto text-pretty font-medium">
-          Knoxville&apos;s comedy festival is back in the works. Sign up for text updates so you never miss a show.
+          Your home for tickets to the best independent stand-up shows in Knoxville. Sign up for texts and never miss a lineup, ticket drop, or show night.
         </p>
 
         <SmsSignup />

@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 import { Menu, X } from "lucide-react"
 
@@ -18,15 +19,32 @@ export function Navigation() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm shadow-lg">
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="block" onClick={() => setIsOpen(false)}>
-          <span
-            className="font-display text-xl md:text-2xl font-bold text-primary-foreground block leading-none"
-            style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.4)" }}
-          >
-            The Hoot
+        <Link
+          href="/"
+          className="flex items-center gap-3"
+          onClick={() => setIsOpen(false)}
+          aria-label="Knoxville Comedy home"
+        >
+          <span className="flex items-center justify-center rounded-lg bg-black p-1.5 shadow-md">
+            <Image
+              src="/logos/knoxville-comedy.png"
+              alt="Knoxville Comedy logo"
+              width={44}
+              height={44}
+              className="h-9 w-9 md:h-10 md:w-10 object-contain"
+              priority
+            />
           </span>
-          <span className="text-primary-foreground/70 text-xs md:text-sm font-medium">
-            Knoxville Comedy
+          <span className="flex flex-col leading-none">
+            <span
+              className="font-display text-lg md:text-xl font-bold text-primary-foreground"
+              style={{ textShadow: "1px 1px 2px rgba(0,0,0,0.4)" }}
+            >
+              Knoxville Comedy
+            </span>
+            <span className="text-primary-foreground/70 text-[11px] md:text-xs font-medium uppercase tracking-wider">
+              Live comedy tickets
+            </span>
           </span>
         </Link>
 

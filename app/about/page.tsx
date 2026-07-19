@@ -1,7 +1,7 @@
-import Link from "next/link"
 import Image from "next/image"
-import { ArrowLeft } from "lucide-react"
 import type { Metadata } from "next"
+import { Navigation } from "@/components/navigation"
+import { Footer } from "@/components/footer"
 
 export const metadata: Metadata = {
   title: "About Knoxville Comedy | East Tennessee Comedy Scene",
@@ -27,6 +27,7 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-background relative overflow-hidden">
+      <Navigation />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -102,15 +103,7 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <div className="max-w-2xl mx-auto px-4 py-16 relative z-10">
-        <Link 
-          href="/" 
-          className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-12 group"
-        >
-          <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-          Back to The Hoot
-        </Link>
-        
+      <div className="max-w-2xl mx-auto px-4 pt-28 pb-16 relative z-10">
         {/* Logo */}
         <div className="flex justify-center mb-8">
           <Image
@@ -197,6 +190,7 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
+      <Footer />
     </main>
   )
 }

@@ -10,8 +10,8 @@ export function Footer() {
   return (
     <footer className="py-8 px-4 bg-foreground text-background">
       <div className="max-w-4xl mx-auto text-center">
-        <p className="text-lg font-semibold mb-2">The Hoot in The Holler</p>
-        <p className="text-background/70 text-sm mb-4">Central Cinema • Knoxville, TN</p>
+        <p className="text-lg font-semibold mb-2">Knoxville Comedy</p>
+        <p className="text-background/70 text-sm mb-4">Live stand-up comedy shows • Knoxville, TN</p>
         <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 mb-4">
           {footerLinks.map((link) => (
             <Link

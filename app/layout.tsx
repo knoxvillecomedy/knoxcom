@@ -78,18 +78,19 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'EntertainmentBusiness',
+              '@id': 'https://knoxvillecomedy.com/#organization',
               name: 'Knoxville Comedy',
               url: 'https://knoxvillecomedy.com',
               logo: 'https://knoxvillecomedy.com/logos/knoxville-comedy.png',
               image: 'https://knoxvillecomedy.com/logos/knoxville-comedy.png',
               description:
-                'Knoxville Comedy is your home for tickets to live, independent stand-up comedy shows in Knoxville, Tennessee. Discover upcoming lineups and events across East Tennessee.',
+                'Knoxville Comedy is your year-round home for tickets to live, independent stand-up comedy shows in Knoxville, Tennessee. Discover upcoming lineups and events across East Tennessee.',
               slogan: 'Live comedy in Knoxville',
               sameAs: ['https://www.instagram.com/knoxvillecomedy'],
-              areaServed: {
-                '@type': 'City',
-                name: 'Knoxville',
-              },
+              areaServed: [
+                { '@type': 'City', name: 'Knoxville' },
+                { '@type': 'AdministrativeArea', name: 'East Tennessee' },
+              ],
               address: {
                 '@type': 'PostalAddress',
                 addressLocality: 'Knoxville',
@@ -101,6 +102,7 @@ export default function RootLayout({
                 'Stand-up comedy',
                 'Comedy shows',
                 'Comedy tickets',
+                'Knoxville events',
               ],
             }),
           }}

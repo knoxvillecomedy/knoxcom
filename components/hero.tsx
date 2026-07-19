@@ -42,7 +42,7 @@ export function Hero() {
         </h1>
 
         <p className="text-lg md:text-xl text-primary-foreground/90 mb-10 max-w-xl mx-auto text-pretty font-medium">
-          Your home for tickets to the best independent stand-up shows in Knoxville. Sign up for texts and never miss a lineup, ticket drop, or show night.
+          Your home for the best local stand-up shows in our Scruffy City. Sign up for texts and never miss a lineup, ticket drop, or flash promo. 
         </p>
 
         <SmsSignup />

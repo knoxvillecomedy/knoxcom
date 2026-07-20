@@ -95,65 +95,138 @@ export default function PrivacyPage() {
 
       <div className="max-w-2xl mx-auto px-4 pt-28 pb-16 relative z-10">
         <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2 text-center">Privacy Policy</h1>
-        <p className="text-muted-foreground text-sm text-center mb-12">Last updated: {lastUpdated}</p>
+        <p className="text-muted-foreground text-sm text-center mb-2">Effective date: {lastUpdated}</p>
+        <p className="text-muted-foreground text-sm text-center mb-12 max-w-md mx-auto text-balance">
+          We may update this policy from time to time. Changes will be posted on this page with an updated effective
+          date.
+        </p>
 
         <div className="space-y-6 font-sans text-foreground">
           <p className="text-lg leading-relaxed">
             Knoxville Comedy (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) respects your privacy. This policy
-            explains what information we collect, how we use it, and the choices you have when you visit our website or
-            sign up for updates about our shows.
+            explains what information we collect, how we use and protect it, and the choices you have when you visit our
+            website, purchase tickets, or sign up for updates about our shows.
           </p>
 
           <section className="bg-card border border-border rounded-xl p-6">
             <h2 className="text-lg font-bold text-foreground mb-3">Information We Collect</h2>
             <p className="text-muted-foreground leading-relaxed">
-              We only collect information you choose to give us. This may include your name, email address, and phone
-              number when you sign up for show announcements, purchase tickets, or contact us. We also collect basic,
-              anonymous analytics about how visitors use our site.
+              We collect information that you voluntarily provide to us. This may include your name, email address, and
+              phone number when you sign up for show announcements, purchase tickets, or contact us. We also collect
+              basic, aggregate analytics about how visitors interact with our site to help us improve user experience.
             </p>
           </section>
 
           <section className="bg-card border border-border rounded-xl p-6">
             <h2 className="text-lg font-bold text-foreground mb-3">How We Use Your Information</h2>
+            <p className="text-muted-foreground leading-relaxed mb-3">We use your personal information to:</p>
+            <ul className="list-disc pl-5 space-y-2 text-muted-foreground leading-relaxed">
+              <li>Process ticket sales and send order confirmations</li>
+              <li>
+                Deliver show announcements, event updates, and promotional content, including marketing communications
+                sent by us on behalf of our event partners and producers
+              </li>
+              <li>Respond to your inquiries and support requests</li>
+              <li>Maintain and improve site performance and security</li>
+            </ul>
+          </section>
+
+          <section className="bg-card border border-border rounded-xl p-6">
+            <h2 className="text-lg font-bold text-foreground mb-3">Service Providers &amp; Third Parties</h2>
+            <p className="text-muted-foreground leading-relaxed mb-3">
+              We do not sell, rent, or trade your personal information to third parties for marketing purposes.
+            </p>
+            <p className="text-muted-foreground leading-relaxed mb-3">
+              To run our events and digital operations, we share necessary information with trusted third-party service
+              providers who act on our behalf. Specifically:
+            </p>
+            <ul className="list-disc pl-5 space-y-2 text-muted-foreground leading-relaxed mb-3">
+              <li>
+                <span className="font-semibold text-foreground">Ticketing &amp; Payments:</span> We use TixTree to
+                process ticket purchases and manage guest lists.
+              </li>
+              <li>
+                <span className="font-semibold text-foreground">SMS Communications:</span> We use Textedly to deliver
+                text message updates and announcements.
+              </li>
+            </ul>
             <p className="text-muted-foreground leading-relaxed">
-              We use your information to send you show announcements and updates, process ticket orders, respond to your
-              questions, and improve our website. We do not sell, rent, or trade your personal information to third
-              parties.
+              These service providers are granted access only to the information needed to perform their specific
+              functions and are obligated to keep your data secure.
             </p>
           </section>
 
           <section className="bg-card border border-border rounded-xl p-6">
             <h2 className="text-lg font-bold text-foreground mb-3">SMS / Text Messaging</h2>
-            <p className="text-muted-foreground leading-relaxed">
-              If you opt in to text message updates, we will send you occasional messages about upcoming shows and
+            <p className="text-muted-foreground leading-relaxed mb-3">
+              If you opt in to text message updates, we will send you occasional messages regarding upcoming shows and
               events. Message and data rates may apply. You can opt out at any time by replying{" "}
               <span className="font-semibold text-foreground">STOP</span>, or reply{" "}
-              <span className="font-semibold text-foreground">HELP</span> for assistance. Mobile opt-in information and
-              consent are never shared with third parties for marketing purposes.
+              <span className="font-semibold text-foreground">HELP</span> for assistance.
+            </p>
+            <p className="text-muted-foreground leading-relaxed">
+              Mobile opt-in information and consent are strictly kept confidential and will never be shared with third
+              parties or affiliates for marketing or promotional purposes.
             </p>
           </section>
 
           <section className="bg-card border border-border rounded-xl p-6">
             <h2 className="text-lg font-bold text-foreground mb-3">Cookies &amp; Analytics</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Our site may use cookies and similar technologies to understand how visitors interact with our pages. You
-              can disable cookies in your browser settings, though some features may not work as intended.
+              Our site uses cookies and similar technologies to understand how visitors navigate our pages and to
+              optimize site functionality. You can choose to disable cookies through your web browser settings, though
+              doing so may affect how certain features function.
             </p>
           </section>
 
           <section className="bg-card border border-border rounded-xl p-6">
-            <h2 className="text-lg font-bold text-foreground mb-3">Your Choices</h2>
+            <h2 className="text-lg font-bold text-foreground mb-3">Children&apos;s Privacy</h2>
             <p className="text-muted-foreground leading-relaxed">
-              You can unsubscribe from email updates using the link in any message, and you can opt out of text messages
-              by replying STOP. To request that we delete your information, just reach out to us using the contact
-              details below.
+              Our website is not directed toward children under the age of 13, and we do not knowingly collect personal
+              information from anyone under 13.
+            </p>
+          </section>
+
+          <section className="bg-card border border-border rounded-xl p-6">
+            <h2 className="text-lg font-bold text-foreground mb-3">Data Security &amp; Retention</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              We use reasonable physical, administrative, and technical safeguards to protect your personal information
+              against unauthorized access, loss, or alteration. We retain your personal data only as long as necessary
+              to fulfill the operational purposes described in this policy or to comply with applicable legal
+              requirements.
+            </p>
+          </section>
+
+          <section className="bg-card border border-border rounded-xl p-6">
+            <h2 className="text-lg font-bold text-foreground mb-3">Your Rights &amp; Choices</h2>
+            <p className="text-muted-foreground leading-relaxed mb-3">
+              You have control over your personal information:
+            </p>
+            <ul className="list-disc pl-5 space-y-2 text-muted-foreground leading-relaxed mb-3">
+              <li>
+                <span className="font-semibold text-foreground">Email:</span> Unsubscribe at any time by clicking the
+                &ldquo;unsubscribe&rdquo; link at the bottom of any promotional email.
+              </li>
+              <li>
+                <span className="font-semibold text-foreground">SMS:</span> Opt out of text alerts at any time by
+                replying <span className="font-semibold text-foreground">STOP</span> to any message.
+              </li>
+              <li>
+                <span className="font-semibold text-foreground">Access, Correction, &amp; Deletion:</span> You have the
+                right to request access to the personal information we hold about you, request corrections to inaccurate
+                data, or ask us to delete your personal details.
+              </li>
+            </ul>
+            <p className="text-muted-foreground leading-relaxed">
+              To submit a data request, please reach out using the contact information below.
             </p>
           </section>
 
           <section className="bg-card border border-border rounded-xl p-6">
             <h2 className="text-lg font-bold text-foreground mb-3">Contact Us</h2>
             <p className="text-muted-foreground leading-relaxed">
-              If you have any questions about this privacy policy or how we handle your information, contact us at{" "}
+              If you have questions about this privacy policy or wish to exercise your privacy rights, please contact us
+              at{" "}
               <a
                 href="mailto:hello@knoxvillecomedy.com"
                 className="font-semibold text-foreground underline underline-offset-4 hover:text-primary transition-colors"

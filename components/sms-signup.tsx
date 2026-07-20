@@ -16,10 +16,10 @@ export function SmsSignup() {
         updates below.
       </p>
 
-      <div id="sms-signup-embed">
+      <div id="sms-signup-embed" className="w-full overflow-hidden">
         <iframe
           src="https://formstax.co/2669ca17"
-          style={{ height: "800px", width: "100%", border: "none" }}
+          style={{ height: "auto", minHeight: "600px", width: "100%", border: "none" }}
           title="Text to Consent Form"
         />
       </div>

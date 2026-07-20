@@ -2,7 +2,7 @@ import { MessageSquareText } from "lucide-react"
 
 export function SmsSignup() {
   return (
-    <div className="bg-card text-card-foreground rounded-2xl shadow-xl border border-border p-6 md:p-8 mx-auto text-left">
+    <div className="bg-card text-card-foreground rounded-2xl shadow-xl border border-border p-6 md:p-8 w-full max-w-4xl mx-auto text-left">
       <div className="flex items-center gap-3 mb-2">
         <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary shrink-0">
           <MessageSquareText className="w-5 h-5" />

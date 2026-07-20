@@ -28,7 +28,7 @@ export function Hero() {
         <div className="absolute bottom-[40%] right-[40%] w-8 h-8 rounded-sm bg-accent/25 rotate-45 animate-wiggle" />
       </div>
 
-      <div className="relative z-10 text-center px-4 max-w-2xl mx-auto animate-slide-up">
+      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto animate-slide-up">
         <p className="text-primary-foreground/80 text-sm md:text-base uppercase tracking-widest mb-4 font-medium">
           Independent Stand-Up &bull; Knoxville, TN
         </p>

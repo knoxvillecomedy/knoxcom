@@ -13,19 +13,30 @@ const _fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: 'The Hoot in The Holler | Knoxville Comedy Festival | July 17-18, 2026',
-  description: 'Knoxville Comedy Festival 2026 - Live stand-up comedy at Central Cinema in Happy Holler. Two nights of laughs with local & national comedians. Get festival passes now!',
+  title: 'Live Comedy in Knoxville | Stand-Up Show Tickets | Knoxville Comedy',
+  description:
+    'Find tickets to live comedy in Knoxville, TN. Knoxville Comedy is your home for independent stand-up shows, lineups, and events across East Tennessee. Get tickets and text updates.',
   generator: 'v0.app',
   metadataBase: new URL('https://knoxvillecomedy.com'),
+  keywords: [
+    'live comedy Knoxville',
+    'Knoxville comedy shows',
+    'comedy tickets Knoxville',
+    'stand-up comedy Knoxville TN',
+    'things to do in Knoxville',
+    'Knoxville comedy events',
+    'independent comedy Knoxville',
+  ],
   icons: {
     icon: '/icon.png',
     apple: '/icon.png',
   },
   openGraph: {
-    title: 'The Hoot in The Holler | Knoxville Comedy Festival',
-    description: 'Knoxville Comedy Festival 2026 - Two nights of stand-up comedy, specialty shows, and surprise guests at Central Cinema. July 17-18, 2026.',
+    title: 'Live Comedy in Knoxville | Stand-Up Show Tickets',
+    description:
+      'Your home for tickets to the best independent stand-up comedy shows in Knoxville, TN. See upcoming lineups and get text updates on new shows.',
     url: 'https://knoxvillecomedy.com',
-    siteName: 'The Hoot in The Holler',
+    siteName: 'Knoxville Comedy',
     locale: 'en_US',
     type: 'website',
     images: [
@@ -33,14 +44,15 @@ export const metadata: Metadata = {
         url: '/images/central-live.jpg',
         width: 1200,
         height: 630,
-        alt: 'Live comedy show at Central Cinema Knoxville',
+        alt: 'Live stand-up comedy show in Knoxville, Tennessee',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The Hoot in The Holler | Knoxville Comedy Festival',
-    description: 'Knoxville Comedy Festival 2026 at Central Cinema. July 17-18, 2026.',
+    title: 'Live Comedy in Knoxville | Stand-Up Show Tickets',
+    description:
+      'Tickets to independent stand-up comedy shows in Knoxville, TN. See upcoming lineups and get text updates.',
   },
   robots: {
     index: true,
@@ -65,23 +77,33 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
-              '@type': 'Organization',
+              '@type': 'EntertainmentBusiness',
+              '@id': 'https://knoxvillecomedy.com/#organization',
               name: 'Knoxville Comedy',
               url: 'https://knoxvillecomedy.com',
-              logo: 'https://knoxvillecomedy.com/logos/knoxville-comedy-logo.jpg',
-              description: 'Knoxville Comedy is an independent comedy production company building a thriving comedy scene in East Tennessee.',
-              sameAs: [
-                'https://www.instagram.com/knoxvillecomedy',
+              logo: 'https://knoxvillecomedy.com/logos/knoxville-comedy.png',
+              image: 'https://knoxvillecomedy.com/logos/knoxville-comedy.png',
+              description:
+                'Knoxville Comedy is your year-round home for tickets to live, independent stand-up comedy shows in Knoxville, Tennessee. Discover upcoming lineups and events across East Tennessee.',
+              slogan: 'Live comedy in Knoxville',
+              sameAs: ['https://www.instagram.com/knoxvillecomedy'],
+              areaServed: [
+                { '@type': 'City', name: 'Knoxville' },
+                { '@type': 'AdministrativeArea', name: 'East Tennessee' },
               ],
-              founder: {
-                '@type': 'Person',
-                name: 'Knoxville Comedy Team',
+              address: {
+                '@type': 'PostalAddress',
+                addressLocality: 'Knoxville',
+                addressRegion: 'TN',
+                addressCountry: 'US',
               },
-              location: {
-                '@type': 'City',
-                name: 'Knoxville',
-                areaServed: 'East Tennessee',
-              },
+              knowsAbout: [
+                'Live comedy',
+                'Stand-up comedy',
+                'Comedy shows',
+                'Comedy tickets',
+                'Knoxville events',
+              ],
             }),
           }}
         />

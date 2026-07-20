@@ -1,49 +1,30 @@
 import { Navigation } from "@/components/navigation"
 import { Hero } from "@/components/hero"
-import { About } from "@/components/about"
-import { Lineup } from "@/components/lineup"
-import { Venue } from "@/components/venue"
-import { Tickets } from "@/components/tickets"
-import { Organizers } from "@/components/organizers"
-import { Schedule } from "@/components/schedule"
+import { HomeContent, homeFaqs } from "@/components/home-content"
 import { Footer } from "@/components/footer"
 
-const jsonLd = {
+const websiteLd = {
   '@context': 'https://schema.org',
-  '@type': 'Event',
-  name: 'The Hoot in The Holler',
-  description: "Knoxville's inaugural comedy festival featuring stand-up comedy, specialty shows, and surprise guests at Central Cinema.",
-  startDate: '2026-07-17T19:00:00-04:00',
-  endDate: '2026-07-18T23:00:00-04:00',
-  eventStatus: 'https://schema.org/EventScheduled',
-  eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-  location: {
-    '@type': 'Place',
-    name: 'Central Cinema',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: '1205 N Central St',
-      addressLocality: 'Knoxville',
-      addressRegion: 'TN',
-      postalCode: '37917',
-      addressCountry: 'US',
+  '@type': 'WebSite',
+  '@id': 'https://knoxvillecomedy.com/#website',
+  name: 'Knoxville Comedy',
+  url: 'https://knoxvillecomedy.com',
+  description:
+    'Your year-round home for tickets to live, independent stand-up comedy shows in Knoxville, Tennessee.',
+  publisher: { '@id': 'https://knoxvillecomedy.com/#organization' },
+}
+
+const faqLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: homeFaqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
     },
-  },
-  organizer: {
-    '@type': 'Organization',
-    name: 'Knoxville Comedy',
-    url: 'https://knoxvillecomedy.com',
-  },
-  performer: {
-    '@type': 'PerformingGroup',
-    name: 'Local and Regional Comedians',
-  },
-  offers: {
-    '@type': 'Offer',
-    url: 'https://knoxvillecomedy.com/#tickets',
-    priceCurrency: 'USD',
-    availability: 'https://schema.org/InStock',
-  },
+  })),
 }
 
 export default function Home() {
@@ -51,16 +32,11 @@ export default function Home() {
     <main>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([websiteLd, faqLd]) }}
       />
       <Navigation />
       <Hero />
-      <About />
-      <Lineup />
-      <Venue />
-      <Tickets />
-      <Organizers />
-      <Schedule />
+      <HomeContent />
       <Footer />
     </main>
   )

@@ -2,7 +2,7 @@ import { MessageSquareText } from "lucide-react"
 
 export function SmsSignup() {
   return (
-    <div className="bg-card text-card-foreground rounded-2xl shadow-xl border border-border p-6 md:p-8 max-w-md mx-auto text-left">
+    <div className="bg-card text-card-foreground rounded-2xl shadow-xl border border-border p-6 md:p-8 mx-auto text-left">
       <div className="flex items-center gap-3 mb-2">
         <span className="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary shrink-0">
           <MessageSquareText className="w-5 h-5" />
@@ -16,22 +16,12 @@ export function SmsSignup() {
         updates below.
       </p>
 
-      {/*
-        ==========================================================================
-        PASTE YOUR TEXT-MARKETING EMBED CODE BELOW.
-        Replace the entire placeholder block in this <div> with the snippet
-        provided by your SMS marketing provider (SimpleTexting, Community,
-        Attentive, EZ Texting, etc.).
-        ==========================================================================
-      */}
       <div id="sms-signup-embed">
-        {/* Placeholder shown until the real embed is pasted in */}
-        <div className="rounded-xl border border-dashed border-border bg-muted/50 p-5 text-center">
-          <p className="text-sm font-medium text-foreground mb-1">Text sign-up widget</p>
-          <p className="text-xs text-muted-foreground">
-            Your text-marketing embed code will appear here.
-          </p>
-        </div>
+        <iframe
+          src="https://formstax.co/2669ca17"
+          style={{ height: "800px", width: "100%", border: "none" }}
+          title="Text to Consent Form"
+        />
       </div>
 
       <p className="text-[11px] leading-relaxed text-muted-foreground mt-4">
